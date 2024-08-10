@@ -1,0 +1,1256 @@
+<!DOCTYPE html><html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>SCENE: Evaluating Explainable AI Techniques Using Soft Counterfactuals | Paper to HTML | Allen Institute for AI</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+        <link rel="stylesheet" href="/static/a11y.css">
+        <link rel="stylesheet" href="/static/style.css">
+        <link rel="icon" href="/static/favicon.ico">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@SemanticScholar">
+        <meta name="twitter:image" content="https://papertohtml.org/static/social.png">
+        <meta name="twitter:title" content="SCENE: Evaluating Explainable AI Techniques Using Soft Counterfactuals | Paper to HTML | Allen Institute for AI">
+        <meta name="twitter:description" content="Convert scientific papers to accessible HTML on demand. Paper to HTML is a free service of the non-profit AI2.">
+    </head>
+    <body>
+
+        
+
+<div class="sr-only">
+    <p>Go To:</p>
+    <a href="#paper-title">Paper Title</a>
+    <a href="#paper-authors">Paper Authors</a>
+    <a href="#paper-toc">Table Of Contents</a>
+    <a href="#paper-abstract">Abstract</a>
+    <a href="#paper-references">References</a>
+</div>
+
+<header class="app__header">
+    <div class="app__navigation">
+        <a href="/" class="button">Home</a>
+        <a href="https://allenai.org"><img src="https://cdn.jsdelivr.net/npm/@allenai/varnish@2.0.7/dist/ai2.svg" alt="Allen Institute for AI" class="logo"></a>
+    </div>
+
+    <div class="settings" aria-hidden="true">
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggler button" tabindex="-1".>Reading Aids</a>
+            <div class="popover">
+                <div class="options options--4">
+                    <a href="#" class="option js-aid on">None</a>
+                    <a href="#" class="option js-aid" data-aid="aid--dyslexia">Dyslexic Friendly</a>
+                    <a href="#" class="option js-aid" data-aid="aid--focused">Focus</a>
+                    <a href="#" class="option js-aid" data-aid="aid--xl">Extra Large</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggler button" tabindex="-1".>Display Settings</a>
+            <div class="popover">
+                <div class="options">
+                    <a href="#" class="option js-themer on">Light</a>
+                    <a href="#" class="option js-themer" data-theme="theme--reversed">Dark</a>
+                    <a href="#" class="option js-themer" data-theme="theme--apple2">Retro</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="app">
+
+<!-- <div>
+    <p><a href="/about">Learn more about this prototype</a></p>
+<div> -->
+
+<article class="paper">
+    <div class="paper__head">
+        
+        <div>
+            <a href="mailto:accessibility@semanticscholar.org?subject=[Paper To HTML] Problem with upload 9cd44409f0bb4826bb2e3c4a4abeea59987e5dc9&body=Please describe the main issues you encountered (optional):%0D%0A%0D%0A%0D%0ATo help us debug, please consider attaching the PDF or other file you uploaded. Note that Paper to HTML is designed primarily to handle scientific papers; if you are uploading a different type of document, performance may be poor.%0D%0A%0D%0ADebug:%0D%0Ahttps://papertohtml.org/paper?id=9cd44409f0bb4826bb2e3c4a4abeea59987e5dc9">
+                Report a problem with this paper
+            </a>
+        </div>
+        <p> </p>
+        <h1 class="paper__title" id="paper-title">SCENE: Evaluating Explainable AI Techniques Using Soft Counterfactuals</h1>
+        <!-- <form action="/download", method="GET">
+            <button type="submit" name="id" value=9cd44409f0bb4826bb2e3c4a4abeea59987e5dc9> Download HTML </button>
+        </form> -->
+        <h2 class="sr-only" id="paper-authors">Authors</h2>
+        <ul class="paper__meta">
+             
+                <li class="paper__meta-item">Haoran 
+                    
+                Zheng</li> 
+            
+            
+            
+            
+            
+        </ul>
+
+        <a href="#" aria-hidden="true" class="js-toc-toggle toc-toggle">Table Of Contents</a>
+    </div>
+
+    <nav class="paper__nav">
+        <div class="paper__toc card">
+            <!-- TOC -->
+            <h2 id="paper-toc" class="toc__header">Table of Contents</h2>
+            <ul>
+                
+                    <li><a href="#paper-abstract">Abstract</a></li>
+                
+                
+                <li>
+                    <a href="#section-body-1">1. Introduction</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-2">2. Dataset Description And Task Overview</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-3">3.1 Previous Works</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-4">3.2.1 Counterfactuals Generation</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-5">3.2.2 Counterfactual Evaluation</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-6">4. Experimental Design</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-7">4.1 Token Extraction</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-8">Grad L2 Norm:</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-9">4.2 Creating Soft Counterfactuals</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-10">4.3 Evaluation Of Soft Counterfactuals</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-11">5.1 Cnn (Table 2):</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-12">5.2 Rnn (Table 3):</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-13">5.3 Transformer (Table 4):</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-14">6. Conclusion</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-15">7. Future Work</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-16">SECTION</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-17">SECTION</a>
+                    
+                    
+                    <ul>
+                    
+                    
+                        
+                        <li>
+                            <a href="#fig-17-1">
+                                
+                                Table 1...
+                                
+                                
+                            </a>
+                        </li>
+                    
+                        
+                        <li>
+                            <a href="#fig-17-2">
+                                
+                                Table 2...
+                                
+                                
+                            </a>
+                        </li>
+                    
+                        
+                        <li>
+                            <a href="#fig-17-3">
+                                
+                                Table 3...
+                                
+                                
+                            </a>
+                        </li>
+                    
+                        
+                        <li>
+                            <a href="#fig-17-4">
+                                
+                                Table 4...
+                                
+                                
+                            </a>
+                        </li>
+                    
+                    </ul>
+                    
+                </li>
+                
+                <li><a href="#paper-references">References</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="paper__text">
+        <!--Only show abstract if exists-->
+        
+            <h2 id="paper-abstract" tabindex="0"> Abstract </h2>
+            <p tabindex="0"> Explainable Artificial Intelligence (XAI) is essential for enhancing the transparency and accountability of AI models, especially in natural language processing (NLP) tasks. This paper introduces SCENE (Soft Counterfactual Evaluation for Natural language Explainability), a novel evaluation method that leverages large language models (LLMs) to generate Soft Counterfactual explanations in a zero-shot manner. 2 By focusing on token-based substitutions, SCENE creates contextually appropriate and semantically meaningful Soft Counterfactuals without extensive fine-tuning. SCENE adopts Validitysoft and Csoft metrics to evaluate the effectiveness of model-agnostic XAI methods in text classification tasks. Applied to CNN, RNN, and BERT architectures, SCENE provides valuable insights into the strengths and limitations of various XAI techniques.</p>
+        
+
+        <!-- Body text -->
+        
+            <h2 id="section-body-1" tabindex="0">1. Introduction </h2>
+            
+            
+            
+                
+                    <p tabindex="0">The majority of literature describes counterfactual explanations as "the smallest change to the feature values that changes the prediction to a predefined output" (Molnar, 2020, p. 263) , or, in other words, what could have happened differently. Its biggest advantage is being very "human-friendly," as it requires neither additional assumptions nor complex operations in the background. <a href="#BIBREF12"  id="BIBREF12-1. Introduction-ref">(Molnar, 2020)</a> In this approach, specific values in an input instance are perturbed while all other variables remain unchanged. This process aims to see how these adjustments impact the outcome. Any perturbation that leads to an output change is identified as a counterfactual. By comparing the original instance with these counterfactuals, we gain insights into the relationship between inputs and outputs. <a href="#BIBREF25"  id="BIBREF25-1. Introduction-ref">(Wachter et al., 2017;</a> <a href="#BIBREF17"  id="BIBREF17-1. Introduction-ref">Robeer et al., 2021)</a> . Furthermore, in the case of text data, particularly in classification tasks, perturbations usually involve replacing significant words or tokens with other highly significant ones that correspond to a different output class <a href="#BIBREF17"  id="BIBREF17-1. Introduction-ref">(Robeer et al., 2021;</a> <a href="#BIBREF26"  id="BIBREF26-1. Introduction-ref">Wu et al., 2021)</a> . </p>
+                
+            
+                
+                    <p tabindex="0">The fundamental challenge for the field of causal inference, as highlighted by <a href="#BIBREF9"  id="BIBREF9-1. Introduction-ref">Holland (1986)</a> , is that it is impossible to observe both original instance and its alternative simultaneously for a single unit of analysis. This unit of analysis refers to the smallest entity about which we aim to make counterfactual investigations. This challenge renders causal inference more complex than statistical inference and unachievable without making certain identification assumptions <a href="#BIBREF6"  id="BIBREF6-1. Introduction-ref">(Feder et al., 2022)</a> . </p>
+                
+            
+                
+                    <p tabindex="0">Although counterfactual predictions are typically unobservable, in scenarios where the causal system is the predictor (the text sequence classifier in our case) itself, it is feasible to generate counterfactuals. In the context of this paper, which focuses on text classification tasks that fit these criteria, we can measure treatment effects by comparing predictions under both factual and counterfactual conditions <a href="#BIBREF6"  id="BIBREF6-1. Introduction-ref">(Feder et al., 2022)</a> . Consequently, this approach enables us to evaluate the effectiveness of existing explainable AI (XAI) techniques in identifying significant tokens. </p>
+                
+            
+                
+                    <p tabindex="0">In this paper, we introduce SCENE (Soft Counterfactual Evaluation for Natural language Explainability), a novel approach that evaluates model-agnostic XAI techniques in natural language processing (NLP) tasks by leveraging large language models (LLMs) in a zero-shot manner to generate counterfactuals. </p>
+                
+            
+        
+            <h2 id="section-body-2" tabindex="0">2. Dataset Description And Task Overview </h2>
+            
+            
+            
+                
+                    <p tabindex="0">The data selected for this analysis is the Stanford Sentiment Treebank (SST2) <a href="#BIBREF28"  id="BIBREF28-2. Dataset Description And Task Overview-ref">(Zaidan et al., 2007)</a> . This dataset consists of realistic movie reviews with binary labels, positive and negative. The complexity of the dataset, with an average review length of 773 words, mirrors realworld textual data. With its detailed labels and diverse linguistic styles, SST2 is ideal for benchmarking sentiment analysis algorithms. In this study, we focus on sentiment analysis as a text classification task, leveraging the annotations and varied linguistic expressions within SST2 to evaluate the performance of various model-agnostic XAI techniques. </p>
+                
+            
+        
+            <h2 id="section-body-3" tabindex="0">3.1 Previous Works </h2>
+            
+            
+            
+                
+                    <p tabindex="0">Significant contributions have been made in previous works towards developing metrics for evaluating saliency explanations. One common approach involves erasure-based methods, where significant tokens are masked or pruned, and the original model outputs are compared with the post-erasure outputs holistically. Notable examples include the work by <a href="#BIBREF19"  id="BIBREF19-3.1 Previous Works-ref">Serrano and Smith (2019)</a> , which measured the percentage of decision changes after zeroing out the attention weights of "important" elements. Building on this concept, <a href="#BIBREF4"  id="BIBREF4-3.1 Previous Works-ref">DeYoung et al. (2019)</a> introduced the metrics of Comprehensiveness and Sufficiency to systematically evaluate erasure-based methods. These metrics quantify the impact on the model's predictions when the most important features are excluded or solely included. </p>
+                
+            
+                
+                    <p tabindex="0">However, previous works have raised some concerns with erasure-based approach. Feng et al. (2018) reveal not only that neural models can still make high-confidence predictions on reduced inputs, but also that these inputs are nonsensical to human observers, thereby highlighting interpretability issues. Intuitively, consider classifying the sentence "I love this movie" in a sentiment analysis task. If the token "love" is stripped or masked, resulting in "I [MASK] this movie," the sentence becomes incomplete and lacks actual sentiment and semantic meaning. These "damaged" versions of the inputs can fall outside the data distribution of the model's training sets, leading to imprecise evaluations of faithfulness <a href="#BIBREF8"  id="BIBREF8-3.1 Previous Works-ref">(Ge et al., 2021)</a> . </p>
+                
+            
+                
+                    <p tabindex="0">Another fundamental sanity check is the completeness axiom, also known as the Summation-to-Delta Property, as established by <a href="#BIBREF20"  id="BIBREF20-3.1 Previous Works-ref">Shrikumar et al. (2017)</a> and <a href="#BIBREF23"  id="BIBREF23-3.1 Previous Works-ref">Sundararajan et al. (2017)</a> . This axiom asserts that the sum of the attributions (explanations) equals the difference between the model's prediction for the original input and a baseline. This principle ensures that the explanation fully accounts for the model's decision, providing a comprehensive and theoretically sound foundation for attributing importance scores to individual tokens. Intuitively, this means that if the model's prediction changes significantly when a token is perturbed, the token's attribution should accurately reflect this change, adhering to the principle of completeness. </p>
+                
+            
+                
+                    <p tabindex="0">Inspired by the completeness axiom, the metric of infidelity was introduced <a href="#BIBREF27"  id="BIBREF27-3.1 Previous Works-ref">(Yeh et al., 2019)</a> . Infidelity measures the discrepancy between the predicted impact of perturbations on the model's output and the actual impact observed. In the context of sentiment analysis, which is the focus of this paper, the goal is to identify the most important tokens influencing sentiment. To recreate the experiment, we implicitly use the original input text embeddings as the baseline. The perturbation function is designed to introduce small random noise to these embeddings, thereby creating perturbed versions of the input. Specifically, noise sampled from a normal distribution is subtracted from the original embeddings. </p>
+                
+            
+                
+                    <p tabindex="0">! ∼ $ ! #$ % Φ( , ) − -( ) − ( − )./ & 0 Where: </p>
+                
+            
+                
+                    <p tabindex="0">is a black box function is the XAI technique is a random variable with probability measure While this mathematical operation on word embeddings is theoretically sound and highly effective for computational purposes, it results in high-dimensional vectors composed of embeddings that often do not correspond to real words. Consequently, this poses challenges for human observers in semantically interpreting how specific perturbations affect the model's predictions. Furthermore, although to a lesser degree, the concern of plausibility remains, as the perturbed versions of the inputs can still fall outside the original data distribution. </p>
+                
+            
+                
+                    <p tabindex="0">Despite these challenges, using the original input embeddings as the baseline has the advantage of maintaining the context and structure of the input text, ensuring that the perturbations are applied in a meaningful manner. Since the evaluation of infidelity involves comparing the changes in the model's output due to these perturbations with the attributions provided by the saliency explanation, a lower infidelity score indicates that the explanation method accurately captures the importance of the tokens in the input text, thus validating the effectiveness of the saliency explanations. </p>
+                
+            
+                
+                    <p tabindex="0">Lastly, human agreement is often used as a benchmark to evaluate saliency explanations <a href="#BIBREF4"  id="BIBREF4-3.1 Previous Works-ref">(DeYoung et al., 2019;</a> Atanasova, 2024) . Human agreement is measured by how well the identified tokens align with those annotated by humans. For models that make binary (yes/no) decisions about the relevance of saliency explanations, simpler metrics like accuracy or exact match are sufficient. In our case, most of the XAI methodologies generate continuous attribute importance scores, for which metrics such as the area under the precision-recall curve (AUPRC) and average precision, which evaluate the overlap between the model's extracted important tokens and the human-provided ones, are more appropriate. In this paper, we chose to use the human annotations collected by <a href="#BIBREF4"  id="BIBREF4-3.1 Previous Works-ref">DeYoung et al. (2019)</a> and the mean of the average precisions (MAP) to measure the performance of various XAI techniques (Atanasova, 2024). </p>
+                
+            
+                
+                    <p tabindex="0">= 1 8 8( ',) − ',)*+ ) ',) ) ' </p>
+                
+            
+                
+                    <p tabindex="0">Where: </p>
+                
+            
+                
+                    <p tabindex="0">is the number of instances </p>
+                
+            
+                
+                    <p tabindex="0">, and , are the precision and recall of the -th threshold and the -th instance. </p>
+                
+            
+        
+            <h2 id="section-body-4" tabindex="0">3.2.1 Counterfactuals Generation </h2>
+            
+            
+            
+                
+                    <p tabindex="0">To address the interpretability issues exhibited in other metrics, we explore counterfactual explanations as an alternative. The common approach for modern counterfactual generation has been to structure it as an optimization problem, aiming to find the minimal changes to certain features of an input that will alter the final output while keeping most features constant. This method aims to compute human-understandable and realistic counterfactuals effectively, addressing the need for easy comprehension by human observers <a href="#BIBREF25"  id="BIBREF25-3.2.1 Counterfactuals Generation-ref">(Wachter et al., 2017)</a> . </p>
+                
+            
+                
+                    <p tabindex="0">However, due to the high dimensionality and discrete nature of text data, this approach has its limitations. First and foremost, formulating the task of minimizing the distance between two inputs as an optimization problem is challenging because it necessitates calculating gradients for a discrete input <a href="#BIBREF1"  id="BIBREF1-3.2.1 Counterfactuals Generation-ref">(Belinkov and Glass, 2019)</a> . Moreover, creating traditional counterfactuals that change the output class becomes increasingly difficult with longer text inputs. For instance, consider a lengthy movie review from a reviewer who passionately loves a particular movie. If we replace only a few words or tokens with high positive sentiments with negative sentiments, the overall sentiment classification of the review is unlikely to change, thus rendering "flipping the class" unrealistic in such cases. </p>
+                
+            
+                
+                    <p tabindex="0">To address these challenges, we propose Soft Counterfactuals, a new class of counterfactuals where a final output change is not necessarily required. In this relaxed definition, instead of finding "the closest possible world," we provide a diverse range of relevant and insightful "close possible worlds" <a href="#BIBREF25"  id="BIBREF25-3.2.1 Counterfactuals Generation-ref">(Wachter et al., 2017)</a> . Soft Counterfactuals allow for granular insights, such as detecting subtle changes in feature values that influence outcome probabilities, rather than requiring a complete shift from one outcome to another. Furthermore, without relying on an optimization function to minimize the distance, we utilize the power of transformers to ensure that these counterfactuals are realistic and contextually appropriate <a href="#BIBREF24"  id="BIBREF24-3.2.1 Counterfactuals Generation-ref">(Vaswani et al., 2017)</a> . </p>
+                
+            
+                
+                    <p tabindex="0">Another challenge in generating counterfactuals is resource constraints. Previous studies have explored human-generated counterfactuals for text data, but the high cost makes this approach impractical for large-scale operations. On average, workers spend 4 to 5 minutes revising a single input, and they are still prone to systematic omissions <a href="#BIBREF10"  id="BIBREF10-3.2.1 Counterfactuals Generation-ref">(Kaushik et al., 2019;</a> <a href="#BIBREF26"  id="BIBREF26-3.2.1 Counterfactuals Generation-ref">Wu et al., 2021)</a> . </p>
+                
+            
+                
+                    <p tabindex="0">To overcome this obstacle, researchers have explored automated approaches, particularly leveraging the advancements in large language models (LLMs) that have gained traction in recent years. Notable examples include <a href="#BIBREF26"  id="BIBREF26-3.2.1 Counterfactuals Generation-ref">Wu et al. (2021)</a> , who introduced Polyjuice, a fine-tuned GPT-2 model trained on multiple datasets with paired sentences. Polyjuice employs control codes (e.g., negation, lexical changes) and a fill-in-the-blank structure to generate specific types of counterfactuals. Similarly, Robeer et al. (2021) created realistic counterfactuals using a Counterfactual GAN architecture. These methods and their counterparts often require auxiliary models and/or training data, which is not always feasible due to the lack of task-specific datasets or the resource-intensive nature of fine-tuning models <a href="#BIBREF2"  id="BIBREF2-3.2.1 Counterfactuals Generation-ref">(Bhattacharjee et al., 2024)</a> . <a href="#BIBREF2"  id="BIBREF2-3.2.1 Counterfactuals Generation-ref">Bhattacharjee et al. (2024)</a> proposed an alternative, utilizing zero-shot state-of-the-art LLMs to generate counterfactuals, but this approach can raise further concerns about the interpretability of the counterfactual generation process. Despite significant strides in generating realistic and high-quality counterfactuals with LLMs, most efforts have been directed towards using counterfactuals as a data augmentation tool. However, when the goal is to create standardized evaluation metrics for XAI techniques on text classification problems, the task becomes more straightforward. </p>
+                
+            
+                
+                    <p tabindex="0">In SCENE, we do not require counterfactuals to be perfect paraphrased representations of the original instances. Instead, we focus on token-based substitutions and compare the outputs holistically. Therefore, an offthe-shelf (zero-shot) BERT model for masked language modeling (BertForMaskedLM) is sufficient for the task <a href="#BIBREF5"  id="BIBREF5-3.2.1 Counterfactuals Generation-ref">(Devlin et al., 2018;</a> <a href="#BIBREF16"  id="BIBREF16-3.2.1 Counterfactuals Generation-ref">Ribeiro et al., 2020)</a> . This approach is computationally efficient, requires no further fine-tuning, and can leverage GPU advantages. </p>
+                
+            
+                
+                    <p tabindex="0">In summary, SCENE is an approach that uses masked language modeling (MLM) for token-based substitution. We select and mask certain number of tokens, then replace them with likely alternatives to craft Soft Counterfactuals using a zero-shot BertForMaskedLM. This approach allows SCENE to measure faithfulness, as defined by Atanasova (2024), which refers to whether an explanation technique's predictions are faithful to the model's inner workings and not based on arbitrary choices. Additionally, SCENE measures confidence indication, as defined by Atanasova (2024), which refers to whether a token contributed significantly to the prediction. </p>
+                
+            
+        
+            <h2 id="section-body-5" tabindex="0">3.2.2 Counterfactual Evaluation </h2>
+            
+            
+            
+                
+                    <p tabindex="0">The flexibility of Soft Counterfactuals offers convenience in generating realistic counterfactuals for text data but also poses challenges in evaluating the results. In this paper, we adopt the Validitysoft and Counterfactual Evaluation Scoresoft (Csoft) formulations defined by <a href="#BIBREF8"  id="BIBREF8-3.2.2 Counterfactual Evaluation-ref">Ge et al. (2021)</a> to evaluate XAI techniques' ability to provide relevant saliency explanations. In other words, these formulations assess the techniques' ability to identify tokens with high significance. </p>
+                
+            
+                
+                    <p tabindex="0">Validity soft = 1 8 1 8-( ' D | ' ) − -',0 D F ',0 12 . . 3 04+ 5 '4+ </p>
+                
+            
+                
+                    <p tabindex="0">Where: </p>
+                
+            
+                
+                    <p tabindex="0">N is the number of original instances K is the number of Soft Counterfactuals generated for one instance (4| ) is the probability of the predicted label given the original input for instance n 8 , 4 9 , : is the probability of the predicted label given the Soft Counterfactual input for instance n Validitysoft, inspired by the commonly used Validity metric for counterfactual evaluations, measures the average change in probabilities from the original predictions to the predictions made with counterfactual inputs for the same class. This metric assesses the extent of probability shifts-the higher the score, the better the method is at selecting the significant tokens <a href="#BIBREF13"  id="BIBREF13-3.2.2 Counterfactual Evaluation-ref">(Mothilal et al., 2020;</a> <a href="#BIBREF8"  id="BIBREF8-3.2.2 Counterfactual Evaluation-ref">Ge et al., 2021)</a> . </p>
+                
+            
+                
+                    <p tabindex="0">soft = 1 8 ∑ -( ' D | ' ) − -',0 D F ',0 12 . . 3 64+ ∑ dist-' , ',0 12 . 3 04+ 5 '4+ </p>
+                
+            
+                
+                    <p tabindex="0">Where: </p>
+                
+            
+                
+                    <p tabindex="0">N is the number of original instances K is the number of Soft Counterfactuals generated for one instance (4| ) is the probability of the predicted label given the original input for instance n 8 , 4 9 , : is the probability of the predicted label given the Soft Counterfactual input for instance n dist 8 , , : is the distance between the original instance and its Soft Counterfactuals </p>
+                
+            
+                
+                    <p tabindex="0">Csoft builds on the foundation of Validitysoft by incorporating a distance function to evaluate the faithfulness of the saliency explanations <a href="#BIBREF8"  id="BIBREF8-3.2.2 Counterfactual Evaluation-ref">(Ge et al., 2021)</a> . For the distance function, SCENE uses Universal Sentence Encoder, proposed by <a href="#BIBREF3"  id="BIBREF3-3.2.2 Counterfactual Evaluation-ref">Cer et al. (2018)</a> . In this approach, the encoder (BERT-uncased for this paper) employs attention mechanisms to generate context-aware representations of words in a sentence, taking into account both the sequence and the identities of surrounding words. These context-aware word representations are then averaged to produce a sentence-level embedding <a href="#BIBREF3"  id="BIBREF3-3.2.2 Counterfactual Evaluation-ref">(Cer et al., 2018)</a> . The higher the Csoft score, the better the method is at providing faithful and informative explanations.  </p>
+                
+            
+        
+            <h2 id="section-body-6" tabindex="0">4. Experimental Design </h2>
+            
+            
+            
+                
+                    <p tabindex="0">This section presents the experimental design of SCENE and the methods used to measure its performance. The experiment involves several stages: extraction of Algorithm 1: Pseudocode for SCENE significant tokens, generation of Soft Counterfactuals, and computation of evaluation metrics. </p>
+                
+            
+        
+            <h2 id="section-body-7" tabindex="0">4.1 Token Extraction </h2>
+            
+            
+            
+                
+                    <p tabindex="0">To identify the most significant tokens from the XAI results, SCENE extracts the top tokens based on their importance weights for each technique, respectively. Initially, the test set is passed through various XAI methods to ensure that attributions for all tokens are computed and saved for each method. Subsequently, the text is tokenized, with the first and last tokens removed to focus on the core content. The tokenized text is then paired with corresponding weights derived from three possible methods: mean, L2, or direct weighting. To ensure clarity, subword tokens indicated by '##' and their preceding tokens are filtered out. Additionally, non-alphabetic tokens are excluded unless they are single-character words such as 'I' or 'a'. The remaining tokens are sorted by their importance weights in descending order, and the top V tokens are selected. This approach allows for a systematic ranking of the most relevant tokens, providing a framework for analyzing the saliency explanations generated by ten XAI methods across three different popular model architectures: CNN, RNN, and Transformers. </p>
+                
+            
+                
+                    <p tabindex="0">We 2017, Gradient X Input serves as a straightforward method for visualizing each input feature's contribution to the output by multiplying the gradient of the output with respect to each input feature by the value of the input feature itself. </p>
+                
+            
+        
+            <h2 id="section-body-8" tabindex="0">Grad L2 Norm: </h2>
+            
+            
+            
+                
+                    <p tabindex="0">Closely related to Gradient X Input, Gradient L2-norm computes the L2-norm of the gradient of the model's output with respect to the inputs, which indicates the sensitivity of the model to changes in the input embeddings <a href="#BIBREF14"  id="BIBREF14-Grad L2 Norm:-ref">(Munn and Pitman, 2022)</a> . DeepLIFT: Proposed by <a href="#BIBREF20"  id="BIBREF20-Grad L2 Norm:-ref">Shrikumar et al. (2017)</a> , Deep Learning Important FeaTures (DeepLIFT) compares the activation of each neuron to its "reference activation"  </p>
+                
+            
+                
+                    <p tabindex="0"><tt>EQUATION () 4: Not extracted; please refer to original document.</tt></p>
+                
+            
+        
+            <h2 id="section-body-9" tabindex="0">4.2 Creating Soft Counterfactuals </h2>
+            
+            
+            
+                
+                    <p tabindex="0">To generate Soft Counterfactuals with relevant and informative token replacements, SCENE masks the important tokens identified by XAI techniques and substitutes them with alternative words. These previously identified important tokens are masked, and the masked text is then re-tokenized. Using a zero-shot BertFor-MaskedLM model, we predict possible replacements for the masked tokens, filtering out non-alphabetic words and those identical to the original tokens. From the top predictions, we randomly select a subset to generate K Soft Counterfactual samples. This process results in a collection of Soft Counterfactual texts, each with specified replacements for the masked tokens, enabling an indepth analysis of the impact of token-level changes on model predictions. Additionally, a random seed is used to ensure reproducibility and a diverse range of Soft Counterfactuals. </p>
+                
+            
+                
+                    <p tabindex="0">SCENE generates K Soft Counterfactuals where V significant tokens are replaced by likely alternatives. In our experiments, the parameters were set to K = 10 and V = 5.  </p>
+                
+            
+        
+            <h2 id="section-body-10" tabindex="0">4.3 Evaluation Of Soft Counterfactuals </h2>
+            
+            
+            
+                
+                    <p tabindex="0">Finally, SCENE computes the Validitysoft and Csoft (defined in 3.2.2) for the ten selected XAI methods across three different model architectures. We then present these results with two other metrics-infidelity and human agreements-to provide a comparison with SCENE. </p>
+                
+            
+                
+                    <p tabindex="0">Additionally, two possible ways to summarize these results are provided: the average of each token embedding attribution and the L2 norm. We also record the average time each XAI methodology spends on each test dataset instance, including both the inference and the calculation of attributions by the XAI methodology. 3 </p>
+                
+            
+        
+            <h2 id="section-body-11" tabindex="0">5.1 Cnn (Table 2): </h2>
+            
+            
+            
+                
+                    <p tabindex="0">For the CNN architecture, the metrics reveal different strengths for each technique. In terms of Human Agreement, Saliency (both Mean and L2) performs well in capturing important attributes, making it more aligned with human interpretation of the model's decisions. When measuring Infidelity, Deconvolution (both Mean and L2) outperformed others by remaining more stable after perturbations, indicating a higher fidelity to the model's behavior. </p>
+                
+            
+                
+                    <p tabindex="0">SHAP (both Mean and L2) showed strength in terms of the counterfactual metrics but exhibited high Infidelity and had a higher time cost, which may limit its practicality in real-time applications. Finally, gradient-based methods demonstrated greater efficiency regarding the time metric, providing faster explanations compared to other techniques. </p>
+                
+            
+        
+            <h2 id="section-body-12" tabindex="0">5.2 Rnn (Table 3): </h2>
+            
+            
+            
+                
+                    <p tabindex="0">Among the evaluated XAI techniques for RNN, Saliency (L2) stands out with the highest MAP at 0.3843, surpassing most other methods in this metric. Most L2 methods show similar MAP scores around 0.384, indicating comparable precision performance when considering L2 regularization. While most methods demonstrate average processing times under 0.05, LIME (both Mean and L2) requires significantly more time. Additionally, Saliency (both Mean and L2) exhibit slightly higher average infidelity (0.0006), suggesting they may be less reliable in generating consistent explanations compared to other techniques. </p>
+                
+            
+                
+                    <p tabindex="0">* Best results highlighted. Time measured in seconds by instance of text. Up/down arrows denote higher/lower values implying better performance for each metric. In terms of Validitysoft, Integrated Gradients (mean) show the highest values, indicating their effectiveness in significantly altering the probability distributions when counterfactuals are introduced. For Csoft, SHAP (L2) performs well, suggesting it provide more faithful explanations. </p>
+                
+            
+        
+            <h2 id="section-body-13" tabindex="0">5.3 Transformer (Table 4): </h2>
+            
+            
+            
+                
+                    <p tabindex="0">XAI methods applied to a BERT model reveal that Grad L2 Norm, Guided Backpropagation (L2), and Deconvolution (L2) offer the best performance, characterized by high Human Agreement, low Infidelity, reasonable average time, and strengths in Validitysoft metrics. In contrast, methods such as LIME (both Mean and L2) performs poorly due to low MAP, high infidelity, low Validitysoft, low Csoft, and high average time. Applying LIME in a repetitive setting could imply high computing times and further processing issues </p>
+                
+            
+        
+            <h2 id="section-body-14" tabindex="0">6. Conclusion </h2>
+            
+            
+            
+                
+                    <p tabindex="0">The exploration and application of counterfactual explanations within the realm of XAI and NLP have demonstrated significant potential in bridging the interpretability gap between complex AI models and human understanding. This paper presented SCENE (Soft Counterfactual Evaluation for Natural language Explainability), a novel approach that leverages LLMs to generate Soft Counterfactuals in a zero-shot manner, thereby providing an alternative method for evaluating XAI techniques. </p>
+                
+            
+                
+                    <p tabindex="0">By focusing on token-based substitutions and employing a zero-shot BertForMaskedLM model, SCENE effectively circumvents the challenges associated with highdimensional text data and the need for extensive fine-tuning. This streamlined approach not only ensures the generation of contextually appropriate and semantically meaningful Soft Counterfactuals but also maintains computational efficiency. </p>
+                
+            
+                
+                    <p tabindex="0">The introduction of the Validitysoft and Csoft metrics within SCENE provides a standardized framework for evaluating the effectiveness of XAI techniques in identifying significant tokens. These metrics, inspired by established concepts in causal inference, offer a nuanced understanding of the impact of token-level changes on model predictions, thus validating the reliability of the saliency explanations generated by different XAI methods. </p>
+                
+            
+                
+                    <p tabindex="0">Moreover, the empirical results from applying SCENE across various model architectures, including CNN, RNN, and BERT transformers, indicate that different XAI techniques exhibit unique strengths and limitations when applied to these models. For instance, Saliency and gradient-based methods provide quick and interpretable insights, while Deconvolution maintain high fidelity to the model's behavior. These insights are critical for practitioners aiming to select the most suitable XAI technique based on specific requirements such as interpretability, computational efficiency, and robustness to input perturbations. </p>
+                
+            
+                
+                    <p tabindex="0">In conclusion, SCENE represents an alternative in the evaluation of XAI techniques for NLP tasks. By addressing the limitations of existing methods and leveraging the capabilities of LLMs, SCENE provides a powerful tool for generating realistic counterfactuals and assessing the effectiveness of XAI methods. </p>
+                
+            
+        
+            <h2 id="section-body-15" tabindex="0">7. Future Work </h2>
+            
+            
+            
+                
+                    <p tabindex="0">Future work will focus on advancing SCENE by refining evaluation metrics to better capture the behavior of counterfactual outputs, especially in multi-class settings, addressing the unique challenges posed by complex label structures and interactions. Additionally, integrating SCENE with diverse NLP tasks such as named entity recognition, machine translation, and question answering will broaden its applicability. Enhanced counterfactual generation techniques, including exploring state-of-theart large language models (LLMs) and fine-tuning for specific domains, may further improve the quality and relevance of generated counterfactuals. By addressing these areas, we aim to enhance the robustness, flexibility, and impact of SCENE, contributing to the development of more interpretable, transparent, and accountable AI systems. </p>
+                
+            
+        
+            <h2 id="section-body-16" tabindex="0">SECTION </h2>
+            
+            
+            
+                
+                    <p tabindex="0">haoranzheng@uchicago.edu 2 All experimentation and code can be found at https://github.com/HaoranZhengRaul/XAI_SCENE.git </p>
+                
+            
+        
+            <h2 id="section-body-17" tabindex="0">SECTION </h2>
+            
+            
+            
+                
+                    
+                    
+                    <!--Do not display image (display content instead)-->
+                    
+                        <!--Table with textract html-->
+                        
+                            <div id="fig-17-1" class="paper__figure" tabindex="0">
+                                <table class="paper__figure">
+	<caption class="paper__figure-caption">Table 1: A Simplified Example of SCENE Generation of Soft Counterfactuals When V = 2</caption>
+	<tr>
+		<td class="paper__figure">Original Sentence</td>
+		<td class="paper__figure">I love this movie, the cast was great.</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Identify Significant tokens</td>
+		<td class="paper__figure">I love this movie, the cast was [great]</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Mask the Significant tokens</td>
+		<td class="paper__figure">I [MASK] this movie, the cast was [MASK].</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Soft Coun- terfactual 1</td>
+		<td class="paper__figure">I [like] this movie, the cast was [awesome].</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Soft Coun- terfactual 2</td>
+		<td class="paper__figure">I [hate] this movie, the cast was [awful]</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Soft Coun- terfactual 3</td>
+		<td class="paper__figure">I [dislike] this movie, the cast was [lacking].</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Soft Coun- terfactual 4</td>
+		<td class="paper__figure">I [enjoy] this movie, the cast was [mediocre]</td>
+	</tr>
+	<tr>
+		<td class="paper__figure"></td>
+		<td class="paper__figure"></td>
+	</tr>
+</table>
+
+                            </div>
+                        <!--Table with content-->
+                        
+                    <!--Display figures and tables as images-->
+                    
+                
+            
+                
+                    
+                    
+                    <!--Do not display image (display content instead)-->
+                    
+                        <!--Table with textract html-->
+                        
+                            <div id="fig-17-2" class="paper__figure" tabindex="0">
+                                <table class="paper__figure">
+	<caption class="paper__figure-caption">Table 2: Explainability Analysis for the CNN Architecture</caption>
+	<tr>
+		<th scope="col" class="paper__figure">XAI Method</th>
+		<th scope="col" class="paper__figure">Human Agree- ment</th>
+		<th scope="col" class="paper__figure">Infidelity I</th>
+		<th scope="col" class="paper__figure">Validity Soft</th>
+		<th scope="col" class="paper__figure">C Soft</th>
+		<th scope="col" class="paper__figure">Average Time 1</th>
+	</tr>
+	<tr>
+		<td class="paper__figure">Lime - mean</td>
+		<td class="paper__figure">0.267737</td>
+		<td class="paper__figure">0.000031</td>
+		<td class="paper__figure">0.000011</td>
+		<td class="paper__figure">0.014873</td>
+		<td class="paper__figure">17.303985</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Lime - L2</td>
+		<td class="paper__figure">0.270292</td>
+		<td class="paper__figure">0.000031</td>
+		<td class="paper__figure">0.000014</td>
+		<td class="paper__figure">0.016460</td>
+		<td class="paper__figure">17.303985</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">SHAP - mean</td>
+		<td class="paper__figure">0.276594</td>
+		<td class="paper__figure">0.000072</td>
+		<td class="paper__figure">0.000456</td>
+		<td class="paper__figure">0.435556</td>
+		<td class="paper__figure">0.004722</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">SHAP - L2</td>
+		<td class="paper__figure">0.281154</td>
+		<td class="paper__figure">0.000072</td>
+		<td class="paper__figure">0.000105</td>
+		<td class="paper__figure">0.109892</td>
+		<td class="paper__figure">0.004722</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Input X Gradient - mean</td>
+		<td class="paper__figure">0.280178</td>
+		<td class="paper__figure">0.000069</td>
+		<td class="paper__figure">0.000475</td>
+		<td class="paper__figure">0.485188</td>
+		<td class="paper__figure">0.002712</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Input X Gradient - L2</td>
+		<td class="paper__figure">0.283557</td>
+		<td class="paper__figure">0.000069</td>
+		<td class="paper__figure">0.000096</td>
+		<td class="paper__figure">0.083646</td>
+		<td class="paper__figure">0.002712</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Grad L2 Norm</td>
+		<td class="paper__figure">0.283840</td>
+		<td class="paper__figure">0.000000</td>
+		<td class="paper__figure">-0.000027</td>
+		<td class="paper__figure">0.061930</td>
+		<td class="paper__figure">0.003254</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Integrated Gradients - mean</td>
+		<td class="paper__figure">0.280203</td>
+		<td class="paper__figure">0.000065</td>
+		<td class="paper__figure">0.000474</td>
+		<td class="paper__figure">0.481461</td>
+		<td class="paper__figure">0.071171</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Integrated Gradients - - L2</td>
+		<td class="paper__figure">0.283486</td>
+		<td class="paper__figure">0.000065</td>
+		<td class="paper__figure">0.000099</td>
+		<td class="paper__figure">0.094937</td>
+		<td class="paper__figure">0.071171</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Saliency - mean</td>
+		<td class="paper__figure">0.283703</td>
+		<td class="paper__figure">0.000069</td>
+		<td class="paper__figure">0.000061</td>
+		<td class="paper__figure">0.064538</td>
+		<td class="paper__figure">0.002973</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Saliency - L2</td>
+		<td class="paper__figure">0.283840</td>
+		<td class="paper__figure">0.000069</td>
+		<td class="paper__figure">0.000063</td>
+		<td class="paper__figure">0.061930</td>
+		<td class="paper__figure">0.002973</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Guided Backpropagation - mean</td>
+		<td class="paper__figure">0.267827</td>
+		<td class="paper__figure">0,000000</td>
+		<td class="paper__figure">-0.000027</td>
+		<td class="paper__figure">-0.039826</td>
+		<td class="paper__figure">0.002672</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Guided Backpropagation - L2</td>
+		<td class="paper__figure">0.283840</td>
+		<td class="paper__figure">0.000000</td>
+		<td class="paper__figure">0.000063</td>
+		<td class="paper__figure">0.061930</td>
+		<td class="paper__figure">0.002672</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Guided GradCAM - mean</td>
+		<td class="paper__figure">0.270946</td>
+		<td class="paper__figure">0.000032</td>
+		<td class="paper__figure">0.000056</td>
+		<td class="paper__figure">0.064530</td>
+		<td class="paper__figure">0.005678</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Guided GradCAM - L2</td>
+		<td class="paper__figure">0.283157</td>
+		<td class="paper__figure">0.000032</td>
+		<td class="paper__figure">0.000065</td>
+		<td class="paper__figure">0.067863</td>
+		<td class="paper__figure">0.005678</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">DeepLIFT - mean</td>
+		<td class="paper__figure">0.280178</td>
+		<td class="paper__figure">0.000064</td>
+		<td class="paper__figure">0.000475</td>
+		<td class="paper__figure">0.485188</td>
+		<td class="paper__figure">0.004503</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">DeepLIFT - L2</td>
+		<td class="paper__figure">0.283557</td>
+		<td class="paper__figure">0.000064</td>
+		<td class="paper__figure">0.000096</td>
+		<td class="paper__figure">0.083646</td>
+		<td class="paper__figure">0.004503</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Deconvolution - mean</td>
+		<td class="paper__figure">0.267827</td>
+		<td class="paper__figure">0.000000</td>
+		<td class="paper__figure">-0.000027</td>
+		<td class="paper__figure">-0.039826</td>
+		<td class="paper__figure">0.002651</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Deconvolution - L2</td>
+		<td class="paper__figure">0.283840</td>
+		<td class="paper__figure">0.000000</td>
+		<td class="paper__figure">0.000063</td>
+		<td class="paper__figure">0.061930</td>
+		<td class="paper__figure">0.002651</td>
+	</tr>
+</table>
+
+                            </div>
+                        <!--Table with content-->
+                        
+                    <!--Display figures and tables as images-->
+                    
+                
+            
+                
+                    
+                    
+                    <!--Do not display image (display content instead)-->
+                    
+                        <!--Table with textract html-->
+                        
+                            <div id="fig-17-3" class="paper__figure" tabindex="0">
+                                <table class="paper__figure">
+	<caption class="paper__figure-caption">Table 3: Explainability Analysis for the RNN Architecture</caption>
+	<tr>
+		<th scope="col" class="paper__figure">XAI Method</th>
+		<th scope="col" class="paper__figure">Human Agree- ment</th>
+		<th scope="col" class="paper__figure">Infidelity I</th>
+		<th scope="col" class="paper__figure">Validity Soft 1</th>
+		<th scope="col" class="paper__figure">C Soft 1</th>
+		<th scope="col" class="paper__figure">Average Time 1</th>
+	</tr>
+	<tr>
+		<td class="paper__figure">Lime mean</td>
+		<td class="paper__figure">0.259160</td>
+		<td class="paper__figure">0.000281</td>
+		<td class="paper__figure">0.000013</td>
+		<td class="paper__figure">0.002648</td>
+		<td class="paper__figure">79.395420</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Lime L2</td>
+		<td class="paper__figure">0.259905</td>
+		<td class="paper__figure">0.000281</td>
+		<td class="paper__figure">0.000016</td>
+		<td class="paper__figure">0.007422</td>
+		<td class="paper__figure">79.395420</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">SHAP mean</td>
+		<td class="paper__figure">0.290211</td>
+		<td class="paper__figure">0.000321</td>
+		<td class="paper__figure">0.000076</td>
+		<td class="paper__figure">0.099034</td>
+		<td class="paper__figure">0.067996</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">SHAP L2</td>
+		<td class="paper__figure">0.377127</td>
+		<td class="paper__figure">0.000321</td>
+		<td class="paper__figure">0.000084</td>
+		<td class="paper__figure">0.146383</td>
+		<td class="paper__figure">0.067996</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Input X Gradient - mean</td>
+		<td class="paper__figure">0.294600</td>
+		<td class="paper__figure">0.000282</td>
+		<td class="paper__figure">0.000085</td>
+		<td class="paper__figure">0.119695</td>
+		<td class="paper__figure">0.015707</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Input X Gradient - L2</td>
+		<td class="paper__figure">0.383988</td>
+		<td class="paper__figure">0.000282</td>
+		<td class="paper__figure">0.000068</td>
+		<td class="paper__figure">0.123152</td>
+		<td class="paper__figure">0.015707</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Grad L2 Norm</td>
+		<td class="paper__figure">0.384262</td>
+		<td class="paper__figure">0.000000</td>
+		<td class="paper__figure">0.000074</td>
+		<td class="paper__figure">0.097952</td>
+		<td class="paper__figure">0.036744</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Integrated Gradients - mean</td>
+		<td class="paper__figure">0.315418</td>
+		<td class="paper__figure">0.000296</td>
+		<td class="paper__figure">0.000095</td>
+		<td class="paper__figure">0.143029</td>
+		<td class="paper__figure">0.477190</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Integrated Gradients - L2</td>
+		<td class="paper__figure">0.378088</td>
+		<td class="paper__figure">0.000296</td>
+		<td class="paper__figure">0.000066</td>
+		<td class="paper__figure">0.124319</td>
+		<td class="paper__figure">0.477190</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Saliency mean</td>
+		<td class="paper__figure">0.377780</td>
+		<td class="paper__figure">0.000576</td>
+		<td class="paper__figure">0.000076</td>
+		<td class="paper__figure">0.104001</td>
+		<td class="paper__figure">0.015678</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Saliency L2</td>
+		<td class="paper__figure">0.384262</td>
+		<td class="paper__figure">0.000576</td>
+		<td class="paper__figure">0.000074</td>
+		<td class="paper__figure">0.097952</td>
+		<td class="paper__figure">0.015678</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Guided Backpropagation - mean</td>
+		<td class="paper__figure">0.306182</td>
+		<td class="paper__figure">0.000000</td>
+		<td class="paper__figure">0.000039</td>
+		<td class="paper__figure">0.066461</td>
+		<td class="paper__figure">0.015696</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Guided Backpropagation - L2</td>
+		<td class="paper__figure">0.384262</td>
+		<td class="paper__figure">0.000000</td>
+		<td class="paper__figure">0.000074</td>
+		<td class="paper__figure">0.097952</td>
+		<td class="paper__figure">0.015696</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Guided GradCAM - mean</td>
+		<td class="paper__figure"></td>
+		<td class="paper__figure">.</td>
+		<td class="paper__figure">-</td>
+		<td class="paper__figure">-</td>
+		<td class="paper__figure"></td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Guided GradCAM - L2</td>
+		<td class="paper__figure"></td>
+		<td class="paper__figure"></td>
+		<td class="paper__figure"></td>
+		<td class="paper__figure">-</td>
+		<td class="paper__figure"></td>
+	</tr>
+	<tr>
+		<td class="paper__figure">DeepLIFT - mean</td>
+		<td class="paper__figure">0.294146</td>
+		<td class="paper__figure">0.000284</td>
+		<td class="paper__figure">0.000076</td>
+		<td class="paper__figure">0.124642</td>
+		<td class="paper__figure">0.031402</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">DeepLIFT L2</td>
+		<td class="paper__figure">0.384053</td>
+		<td class="paper__figure">0.000284</td>
+		<td class="paper__figure">0.000068</td>
+		<td class="paper__figure">0.123152</td>
+		<td class="paper__figure">0.031402</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Deconvolution mean</td>
+		<td class="paper__figure">0.306182</td>
+		<td class="paper__figure">0,000000</td>
+		<td class="paper__figure">0.000039</td>
+		<td class="paper__figure">0.066461</td>
+		<td class="paper__figure">0.015651</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Deconvolution L2</td>
+		<td class="paper__figure">0.384262</td>
+		<td class="paper__figure">0,000000</td>
+		<td class="paper__figure">0.000074</td>
+		<td class="paper__figure">0.097952</td>
+		<td class="paper__figure">0.015651</td>
+	</tr>
+</table>
+
+                            </div>
+                        <!--Table with content-->
+                        
+                    <!--Display figures and tables as images-->
+                    
+                
+            
+                
+                    
+                    
+                    <!--Do not display image (display content instead)-->
+                    
+                        <!--Table with textract html-->
+                        
+                            <div id="fig-17-4" class="paper__figure" tabindex="0">
+                                <table class="paper__figure">
+	<caption class="paper__figure-caption">Table 4: Explainability Analysis for the Transformer Architecture</caption>
+	<tr>
+		<th scope="col" class="paper__figure">XAI Method</th>
+		<th scope="col" class="paper__figure">Human Agree- ment 1</th>
+		<th scope="col" class="paper__figure">Infidelity 1</th>
+		<th scope="col" class="paper__figure">Validity Soft</th>
+		<th scope="col" class="paper__figure">C Soft</th>
+		<th scope="col" class="paper__figure">Average Time 1</th>
+	</tr>
+	<tr>
+		<td class="paper__figure">Lime - mean</td>
+		<td class="paper__figure">0.266223</td>
+		<td class="paper__figure">0.018785</td>
+		<td class="paper__figure">0.031650</td>
+		<td class="paper__figure">0.004013</td>
+		<td class="paper__figure">116.532945</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Lime - L2</td>
+		<td class="paper__figure">0.268752</td>
+		<td class="paper__figure">0.018785</td>
+		<td class="paper__figure">-0.035652</td>
+		<td class="paper__figure">-0.013925</td>
+		<td class="paper__figure">116.532945</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">SHAP - mean</td>
+		<td class="paper__figure">0.283459</td>
+		<td class="paper__figure">0.017712</td>
+		<td class="paper__figure">0.204560</td>
+		<td class="paper__figure">0.045396</td>
+		<td class="paper__figure">4.603704</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">SHAP - L2</td>
+		<td class="paper__figure">0.286695</td>
+		<td class="paper__figure">0.017712</td>
+		<td class="paper__figure">0.328891</td>
+		<td class="paper__figure">0.096335</td>
+		<td class="paper__figure">4.603704</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Input X Gradient - mean</td>
+		<td class="paper__figure">0.306472</td>
+		<td class="paper__figure">0.017102</td>
+		<td class="paper__figure">0.188209</td>
+		<td class="paper__figure">0.032034</td>
+		<td class="paper__figure">0.972698</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Input X Gradient - L2 -</td>
+		<td class="paper__figure">0.385673</td>
+		<td class="paper__figure">0.017102</td>
+		<td class="paper__figure">0.623118</td>
+		<td class="paper__figure">0.144318</td>
+		<td class="paper__figure">0.972698</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Grad L2 Norm</td>
+		<td class="paper__figure">0.395961</td>
+		<td class="paper__figure">0.004041</td>
+		<td class="paper__figure">0.685125</td>
+		<td class="paper__figure">0.133388</td>
+		<td class="paper__figure">6.338917</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Integrated Gradients - mean</td>
+		<td class="paper__figure">0.370959</td>
+		<td class="paper__figure">0.016783</td>
+		<td class="paper__figure">1.251692</td>
+		<td class="paper__figure">0.416456</td>
+		<td class="paper__figure">43.211839</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Integrated Gradients - L2</td>
+		<td class="paper__figure">0.356946</td>
+		<td class="paper__figure">0.016783</td>
+		<td class="paper__figure">0.497796</td>
+		<td class="paper__figure">0.094711</td>
+		<td class="paper__figure">43.211839</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Saliency - mean</td>
+		<td class="paper__figure">0.395766</td>
+		<td class="paper__figure">0.035320</td>
+		<td class="paper__figure">0.644862</td>
+		<td class="paper__figure">0.108248</td>
+		<td class="paper__figure">0.886486</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Saliency - L2</td>
+		<td class="paper__figure">0.395961</td>
+		<td class="paper__figure">0.035320</td>
+		<td class="paper__figure">0.685125</td>
+		<td class="paper__figure">0.133388</td>
+		<td class="paper__figure">0.886486</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Guided Backpropagation - mean</td>
+		<td class="paper__figure">0.304621</td>
+		<td class="paper__figure">0.004266</td>
+		<td class="paper__figure">0.234217</td>
+		<td class="paper__figure">0.084060</td>
+		<td class="paper__figure">0.980672</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Guided Backpropagation - L2</td>
+		<td class="paper__figure">0.395961</td>
+		<td class="paper__figure">0.004266</td>
+		<td class="paper__figure">0.685125</td>
+		<td class="paper__figure">0.133388</td>
+		<td class="paper__figure">0.980672</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Guided GradCAM - mean</td>
+		<td class="paper__figure">0.309104</td>
+		<td class="paper__figure">0.016006</td>
+		<td class="paper__figure">0.547888</td>
+		<td class="paper__figure">0.182488</td>
+		<td class="paper__figure">1.611886</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Guided GradCAM - L2</td>
+		<td class="paper__figure">0.388786</td>
+		<td class="paper__figure">0.016006</td>
+		<td class="paper__figure">0.623473</td>
+		<td class="paper__figure">0.171880</td>
+		<td class="paper__figure">1.611886</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">DeepLIFT - mean</td>
+		<td class="paper__figure">0.307792</td>
+		<td class="paper__figure">0.020099</td>
+		<td class="paper__figure">0.288237</td>
+		<td class="paper__figure">0.063594</td>
+		<td class="paper__figure">1.708244</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">DeepLIFT - L2</td>
+		<td class="paper__figure">0.386062</td>
+		<td class="paper__figure">0.020099</td>
+		<td class="paper__figure">0.721534</td>
+		<td class="paper__figure">0.239873</td>
+		<td class="paper__figure">1.708244</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Deconvolution - mean</td>
+		<td class="paper__figure">0.304621</td>
+		<td class="paper__figure">0.004205</td>
+		<td class="paper__figure">0.234217</td>
+		<td class="paper__figure">0.084060</td>
+		<td class="paper__figure">1.060891</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">Deconvolution - L2</td>
+		<td class="paper__figure">0.395961</td>
+		<td class="paper__figure">0.004205</td>
+		<td class="paper__figure">0.685125</td>
+		<td class="paper__figure">0.133388</td>
+		<td class="paper__figure">1.060891</td>
+	</tr>
+</table>
+
+                            </div>
+                        <!--Table with content-->
+                        
+                    <!--Display figures and tables as images-->
+                    
+                
+            
+        
+
+        <footer>
+            
+                <h2 id="paper-references" tabindex="0">References</h2>
+                <ul tabindex="0">
+                    
+                        <li id="BIBREF0">Pepa Atanasova. 2024. A diagnostic study of explainabil- ity techniques for text classification. In Accountable and Explainable Methods for Complex Reasoning over Text (pp. 155-187). Cham: Springer Nature Swit- zerland.</li>
+                    
+                        <li id="BIBREF1">Yonatan Belinkov and James Glass. 2019. Analysis methods in neural language processing: A sur- vey. Transactions of the Association for Computa- tional Linguistics, 7 (pp. 49-72).<br/><i><a href="#BIBREF1-3.2.1 Counterfactuals Generation-ref">3.2.1 Counterfactuals Generation</a></i></li>
+                    
+                        <li id="BIBREF10">Divyansh Kaushik, Eduard Hovy, and Zachary C. Lipton. 2019. Learning the difference that makes a difference with counterfactually-augmented data. arXiv preprint arXiv:1909.12434.<br/><i><a href="#BIBREF10-3.2.1 Counterfactuals Generation-ref">3.2.1 Counterfactuals Generation</a></i></li>
+                    
+                        <li id="BIBREF11">Scott M. Lundberg and Su-In Lee. 2017. A unified ap- proach to interpreting model predictions. Advances in neural information processing systems 30.</li>
+                    
+                        <li id="BIBREF12">Christoph Molnar. 2020. Interpretable Machine Learni- ng. Lulu.com.<br/><i><a href="#BIBREF12-1. Introduction-ref">1. Introduction</a></i></li>
+                    
+                        <li id="BIBREF13">Ramaravind K. Mothilal, Amit Sharma, and Chenhao Tan. 2020. Explaining machine learning classifiers through diverse counterfactual explanations. In Pro- ceedings of the 2020 conference on fairness, account- ability, and transparency (pp. 607-617).<br/><i><a href="#BIBREF13-3.2.2 Counterfactual Evaluation-ref">3.2.2 Counterfactual Evaluation</a></i></li>
+                    
+                        <li id="BIBREF14">Michael Munn and David Pitman. 2022. Explainable AI for Practitioners. O'Reilly Media, Inc.<br/><i><a href="#BIBREF14-Grad L2 Norm:-ref">Grad L2 Norm:</a></i></li>
+                    
+                        <li id="BIBREF15">Marco Tulio Ribeiro, Sameer Singh, and Carlos Gues- trin. 2016. "Why should I trust you?" Explaining the predictions of any classifier. In Proceedings of the 22nd ACM SIGKDD international conference on knowledge discovery and data mining (pp. 1135- 1144).</li>
+                    
+                        <li id="BIBREF16">Marco Tulio Ribeiro, Tongshuang Wu, Carlos Guestrin, and Sameer Singh. 2020. Beyond accuracy: Behav- ioral testing of NLP models with CheckList. In Pro- ceedings of the 58th Annual Meeting of the Association for Computational Linguistics (pp. 4902-4912).<br/><i><a href="#BIBREF16-3.2.1 Counterfactuals Generation-ref">3.2.1 Counterfactuals Generation</a></i></li>
+                    
+                        <li id="BIBREF17">Marcel Robeer, Floris Bex, and Ad Feelders. 2021. Gen erating realistic natural language counterfactuals. In Findings of the Association for Computational Lin- guistics: EMNLP 2021 (pp. 3611-3625).<br/><i><a href="#BIBREF17-1. Introduction-ref">1. Introduction</a></i></li>
+                    
+                        <li id="BIBREF18">Ramprasaath R. Selvaraju, Michael Cogswell, Abhishek Das, Ramakrishna Vedantam, Devi Parikh, and Dhruv Batra. 2017. Grad-cam: Visual explanations from deep networks via gradient-based localization. In Proceed- ings of the IEEE international conference on computer vision (pp. 618-626).</li>
+                    
+                        <li id="BIBREF19">Sara Serrano and Noah A. Smith. 2019. Is Attention In- terpretable? arXiv preprint arXiv:1906.03731.<br/><i><a href="#BIBREF19-3.1 Previous Works-ref">3.1 Previous Works</a></i></li>
+                    
+                        <li id="BIBREF2">Amrita Bhattacharjee, Raha Moraffah, Joshua Garland, and Huan Liu. 2024. "Zero-shot LLM-guided Coun- terfactual Generation for Text." arXiv preprint arXiv:2405.04793.<br/><i><a href="#BIBREF2-3.2.1 Counterfactuals Generation-ref">3.2.1 Counterfactuals Generation</a></i></li>
+                    
+                        <li id="BIBREF20">Avanti Shrikumar, Peyton Greenside, and Anshul Kundaje. 2017. Learning Important Features Through Propagating Activation Differences. In Proceedings of the 34th International Conference on Machine Learn- ing -Volume 70 (pp. 3145-3153). JMLR.org.<br/><i><a href="#BIBREF20-3.1 Previous Works-ref">3.1 Previous Works</a>, <a href="#BIBREF20-Grad L2 Norm:-ref">Grad L2 Norm:</a></i></li>
+                    
+                        <li id="BIBREF21">Karen Simonyan, Andrea Vedaldi, and Andrew Zisser- man. 2013. Deep Inside Convolutional Networks: Vis- ualising Image Classification Models and Saliency Maps. arXiv preprint arXiv:1312.6034.</li>
+                    
+                        <li id="BIBREF22">Jost Tobias Springenberg, Alexey Dosovitskiy, Thomas Brox, and Martin Riedmiller. 2014. Striving for Sim- plicity: The All Convolutional Net. arXiv preprint arXiv:1412.6806.</li>
+                    
+                        <li id="BIBREF23">Mukund Sundararajan, Ankur Taly, and Qiqi Yan. 2017. Axiomatic attribution for deep networks. In Interna- tional conference on machine learning (pp. 3319- 3328). PMLR.<br/><i><a href="#BIBREF23-3.1 Previous Works-ref">3.1 Previous Works</a></i></li>
+                    
+                        <li id="BIBREF24">Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kai- ser, and Illia Polosukhin. 2017. Attention is all you need. Advances in neural information processing sys- tems 30.<br/><i><a href="#BIBREF24-3.2.1 Counterfactuals Generation-ref">3.2.1 Counterfactuals Generation</a></i></li>
+                    
+                        <li id="BIBREF25">Sandra Wachter, Brent Mittelstadt, and Chris Russell. 2017. Counterfactual explanations without opening the black box: Automated decisions and the GDPR. Harv. JL and Tech. 31, 841.<br/><i><a href="#BIBREF25-1. Introduction-ref">1. Introduction</a>, <a href="#BIBREF25-3.2.1 Counterfactuals Generation-ref">3.2.1 Counterfactuals Generation</a></i></li>
+                    
+                        <li id="BIBREF26">Tongshuang Wu, Marco Tulio Ribeiro, Jeffrey Heer, and Daniel S. Weld. 2021. Polyjuice: Generating counter- factuals for explaining, evaluating, and improving models. arXiv preprint arXiv:2101.00288.<br/><i><a href="#BIBREF26-1. Introduction-ref">1. Introduction</a>, <a href="#BIBREF26-3.2.1 Counterfactuals Generation-ref">3.2.1 Counterfactuals Generation</a></i></li>
+                    
+                        <li id="BIBREF27">Chih-Kuan Yeh, Cheng-Yu Hsieh, Arun Sai Suggala, Da- vid I. Inouye, and Pradeep Ravikumar. 2019. On the (In) Fidelity and Sensitivity of Explanations. Ad- vances in Neural Information Processing Systems 32.<br/><i><a href="#BIBREF27-3.1 Previous Works-ref">3.1 Previous Works</a></i></li>
+                    
+                        <li id="BIBREF28">Omar Zaidan, Jason Eisner, and Christine Piatko. 2007. Using "Annotator Rationales" to Improve Machine Learning for Text Categorization. In Human language technologies 2007: The conference of the North American chapter of the association for computational linguistics; proceedings of the main conference (pp. 260-267).<br/><i><a href="#BIBREF28-2. Dataset Description And Task Overview-ref">2. Dataset Description And Task Overview</a></i></li>
+                    
+                        <li id="BIBREF29">Matthew D. Zeiler and Rob Fergus. 2014. Visualizing and Understanding Convolutional Networks. In Computer Vision-ECCV 2014: 13th European Conference, Zurich, Switzerland, September 6-12, 2014, Proceedings, Part I 13 (pp. 818-833). Springer International Publishing.</li>
+                    
+                        <li id="BIBREF3">Daniel Cer, Yinfei Yang, Sheng-yi Kong, Nan Hua, Nicole Limtiaco, Rhomni St John, Noah Constant, Mario Guajardo-Cespedes, Steve Yuan, Chris Tar, Brian Strope, Ray Kurzweil. 2018. Universal sen- tence encoder for English. In Proceedings of the 2018 conference on empirical methods in natural language processing: system demonstrations (pp. 169-174).<br/><i><a href="#BIBREF3-3.2.2 Counterfactual Evaluation-ref">3.2.2 Counterfactual Evaluation</a></i></li>
+                    
+                        <li id="BIBREF4">Jay DeYoung, Sarthak Jain, Nazneen Fatema Rajani, Eric Lehman, Caiming Xiong, Richard Socher, and Byron C. Wallace. 2019. ERASER: A benchmark to evaluate rationalized NLP models. arXiv preprint arXiv:1911.03429.<br/><i><a href="#BIBREF4-3.1 Previous Works-ref">3.1 Previous Works</a></i></li>
+                    
+                        <li id="BIBREF5">Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kris- tina Tuotanova. 2018. Bert: Pre-training of deep bidi- rectional transformers for language understanding. arXiv preprint arXiv:1810.04805.<br/><i><a href="#BIBREF5-3.2.1 Counterfactuals Generation-ref">3.2.1 Counterfactuals Generation</a></i></li>
+                    
+                        <li id="BIBREF6">Amir Feder, Katherine A. Keith, Emaad Manzoor, Reid Pryzant, Dhanya Sridhar, Zach Wood-Doughty, Jacob Eisenstein Justin Grimmer, Roi Reichart, Margaret E. Roberts, Brandon M. Stewart, Victor Veitch, Diyi Yang. 2022. Causal inference in natural language pro- cessing: Estimation, prediction, interpretation and be- yond. Transactions of the Association for Computa- tional Linguistics, 10 (pp. 1138-1158).<br/><i><a href="#BIBREF6-1. Introduction-ref">1. Introduction</a></i></li>
+                    
+                        <li id="BIBREF7">Shi Feng, Eric Wallace, Alvin Grissom II, Mohit Iyyer, Pedro Rodriguez, Jordan Boyd-Graber. 2018. Pathol- ogies of neural models make interpretations difficult. arXiv preprint arXiv:1804.07781.</li>
+                    
+                        <li id="BIBREF8">Yingqiang Ge, Shuchang Liu, Zelong Li, Shuyuan Xu, Shijie Geng, Yunqi Li, Juntao Tan, Fei Sun, Yongfeng Zhang. 2021. Counterfactual Evaluation for Explaina- ble AI. arXiv preprint arXiv:2109.01962.<br/><i><a href="#BIBREF8-3.1 Previous Works-ref">3.1 Previous Works</a>, <a href="#BIBREF8-3.2.2 Counterfactual Evaluation-ref">3.2.2 Counterfactual Evaluation</a></i></li>
+                    
+                        <li id="BIBREF9">Paul W. Holland. 1986. Statistics and causal inference. Journal of the American statistical Associa- tion, 81(396) (pp. 945-960).<br/><i><a href="#BIBREF9-1. Introduction-ref">1. Introduction</a></i></li>
+                    
+                </ul>
+            
+        </footer>
+    </div>
+</article>
+</main>
+
+
+        <footer class="app__footer">
+
+            <div class="app__signup-form">
+                <!--[if lte IE 8]>
+                   <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                <![endif]-->
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                <script>
+                    hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5910970",
+                        formId: "05456229-75ba-4c85-99c0-33e2cbe8d1df"
+                    });
+                </script>
+            </div>
+
+            <div class="content text-center">
+                &copy; <a href="https://allenai.org">The Allen Institute for Artificial Intelligence (AI2)</a> - All Rights Reserved<br>
+                <a href="https://allenai.org/privacy-policy.html">Privacy Policy</a>
+                | <a href="https://allenai.org/terms.html">Terms of Use</a>
+            </div>
+        </footer>
+        <script src="https://stats.allenai.org/init.min.js" data-app-name="a11y2" async></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="/static/a11y.js"></script>
+        
+        <script type="text/javascript">
+            window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+            heap.load("2424575119");
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,54 @@
+  *{
+    box-sizing: border-box;
+    /* for all elements, width and height calculated based on content inside element. 
+    If you add any padding or border to element, will be added to the final width of the element.*/
+  }
+  main{
+    padding: 10px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  html{
+    background-color: #b6deb6;
+    color: #264653;
+  }
+  header{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    align-items: center;
+  }
+  header a{
+    text-decoration: none;
+    color:inherit;
+    font-size: 1.4rem;
+  }
+  header a.logo{
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  header nav{
+    display:flex;
+    gap: 15px;
+    margin-right: 120px;
+  }
+  h1{
+    font-size: 1.2rem;
+  }
+  li{
+    list-style: none;
+    margin-bottom: 9px;
+  }
+  ul{
+    padding-inline-start: 85px;
+  }
+  a{
+    font-size: 1.15rem;
+    text-decoration-line: none;
+    color:#264653;
+  }
+
+
+
+  

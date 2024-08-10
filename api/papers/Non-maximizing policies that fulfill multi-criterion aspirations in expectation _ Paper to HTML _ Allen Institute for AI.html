@@ -1,0 +1,1122 @@
+<!DOCTYPE html><html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Non-maximizing policies that fulfill multi-criterion aspirations in expectation | Paper to HTML | Allen Institute for AI</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+        <link rel="stylesheet" href="/static/a11y.css">
+        <link rel="stylesheet" href="/static/style.css">
+        <link rel="icon" href="/static/favicon.ico">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@SemanticScholar">
+        <meta name="twitter:image" content="https://papertohtml.org/static/social.png">
+        <meta name="twitter:title" content="Non-maximizing policies that fulfill multi-criterion aspirations in expectation | Paper to HTML | Allen Institute for AI">
+        <meta name="twitter:description" content="Convert scientific papers to accessible HTML on demand. Paper to HTML is a free service of the non-profit AI2.">
+    </head>
+    <body>
+
+        
+
+<div class="sr-only">
+    <p>Go To:</p>
+    <a href="#paper-title">Paper Title</a>
+    <a href="#paper-authors">Paper Authors</a>
+    <a href="#paper-toc">Table Of Contents</a>
+    <a href="#paper-abstract">Abstract</a>
+    <a href="#paper-references">References</a>
+</div>
+
+<header class="app__header">
+    <div class="app__navigation">
+        <a href="/" class="button">Home</a>
+        <a href="https://allenai.org"><img src="https://cdn.jsdelivr.net/npm/@allenai/varnish@2.0.7/dist/ai2.svg" alt="Allen Institute for AI" class="logo"></a>
+    </div>
+
+    <div class="settings" aria-hidden="true">
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggler button" tabindex="-1".>Reading Aids</a>
+            <div class="popover">
+                <div class="options options--4">
+                    <a href="#" class="option js-aid on">None</a>
+                    <a href="#" class="option js-aid" data-aid="aid--dyslexia">Dyslexic Friendly</a>
+                    <a href="#" class="option js-aid" data-aid="aid--focused">Focus</a>
+                    <a href="#" class="option js-aid" data-aid="aid--xl">Extra Large</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggler button" tabindex="-1".>Display Settings</a>
+            <div class="popover">
+                <div class="options">
+                    <a href="#" class="option js-themer on">Light</a>
+                    <a href="#" class="option js-themer" data-theme="theme--reversed">Dark</a>
+                    <a href="#" class="option js-themer" data-theme="theme--apple2">Retro</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="app">
+
+<!-- <div>
+    <p><a href="/about">Learn more about this prototype</a></p>
+<div> -->
+
+<article class="paper">
+    <div class="paper__head">
+        
+        <div>
+            <a href="mailto:accessibility@semanticscholar.org?subject=[Paper To HTML] Problem with upload 72143e63413da059161c5fc3cb160c4d064d0105&body=Please describe the main issues you encountered (optional):%0D%0A%0D%0A%0D%0ATo help us debug, please consider attaching the PDF or other file you uploaded. Note that Paper to HTML is designed primarily to handle scientific papers; if you are uploading a different type of document, performance may be poor.%0D%0A%0D%0ADebug:%0D%0Ahttps://papertohtml.org/paper?id=72143e63413da059161c5fc3cb160c4d064d0105">
+                Report a problem with this paper
+            </a>
+        </div>
+        <p> </p>
+        <h1 class="paper__title" id="paper-title">Non-maximizing policies that fulfill multi-criterion aspirations in expectation</h1>
+        <!-- <form action="/download", method="GET">
+            <button type="submit" name="id" value=72143e63413da059161c5fc3cb160c4d064d0105> Download HTML </button>
+        </form> -->
+        <h2 class="sr-only" id="paper-authors">Authors</h2>
+        <ul class="paper__meta">
+             
+                <li class="paper__meta-item">Simon 
+                    
+                Dima</li> 
+            
+            
+            
+            
+            
+        </ul>
+
+        <a href="#" aria-hidden="true" class="js-toc-toggle toc-toggle">Table Of Contents</a>
+    </div>
+
+    <nav class="paper__nav">
+        <div class="paper__toc card">
+            <!-- TOC -->
+            <h2 id="paper-toc" class="toc__header">Table of Contents</h2>
+            <ul>
+                
+                    <li><a href="#paper-abstract">Abstract</a></li>
+                
+                
+                <li>
+                    <a href="#section-body-1">1. Introduction</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-2">2. Preliminaries</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-3">3. Fulfilling Aspirations</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-4">7:</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-5">4.1 Propagating Action-Aspirations To State-Aspirations</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-6">4.2 Choosing Actions And Action-Aspirations</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-7">D + 1)</a>
+                    
+                    
+                    <ul>
+                    
+                    
+                        
+                        <li>
+                            <a href="#fig-7-1">
+                                
+                                Figure 1...
+                                
+                                
+                            </a>
+                        </li>
+                    
+                    </ul>
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-8">Algorithm 2 Action Selection ("Shrinking" Variant)</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-9">That Makes It Fit In 18:</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-10">5. Determining Appropriate Reference Policies</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-11">6. Selection Of Candidate Actions</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-12">6.1 Performance-Related Criteria</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-13">6.2 Safety-Related Criteria</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-14">7.1 Special Cases</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-15">7.2 Relationship To Reinforcement Learning</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-16">7.3 Invariance Under Reparameterization</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-17">Supplement To: Non-Maximizing Policies That Fulfill Multi-Criterion Aspirations In Expectation</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-18">1.2 While Choosing Actions And Action-Aspirations</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-19">1.3 Advantages And Disadvantages Of Clipping</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-20">2. Alternate Version Of Action Selection/Local Policy Computation</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-21">3. Video Of An Example Run</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-22">4. Numerical Evidence For Reference Policy Selection Complexity</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-23">SECTION</a>
+                    
+                    
+                </li>
+                
+                <li><a href="#paper-references">References</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="paper__text">
+        <!--Only show abstract if exists-->
+        
+            <h2 id="paper-abstract" tabindex="0"> Abstract </h2>
+            <p tabindex="0"> In dynamic programming and reinforcement learning, the policy for the sequential decision making of an agent in a stochastic environment is usually determined by expressing the goal as a scalar reward function and seeking a policy that maximizes the expected total reward. However, many goals that humans care about naturally concern multiple aspects of the world, and it may not be obvious how to condense those into a single reward function. Furthermore, maximization suffers from specification gaming, where the obtained policy achieves a high expected total reward in an unintended way, often taking extreme or nonsensical actions. Here we consider finite acyclic Markov Decision Processes with multiple distinct evaluation metrics, which do not necessarily represent quantities that the user wants to be maximized. We assume the task of the agent is to ensure that the vector of expected totals of the evaluation metrics falls into some given convex set, called the aspiration set. Our algorithm guarantees that this task is fulfilled by using simplices to approximate feasibility sets and propagate aspirations forward while ensuring they remain feasible. It has complexity linear in the number of possible state-action-successor triples and polynomial in the number of evaluation metrics. Moreover, the explicitly non-maximizing nature of the chosen policy and goals yields additional degrees of freedom, which can be used to apply heuristic safety criteria to the choice of actions. We discuss several such safety criteria that aim to steer the agent towards more conservative behavior.</p>
+        
+
+        <!-- Body text -->
+        
+            <h2 id="section-body-1" tabindex="0">1. Introduction </h2>
+            
+            
+            
+                
+                    <p tabindex="0">In typical reinforcement learning (RL) and dynamic programming problems an agent is trained or programmed to solve tasks encoded by a single real-valued reward function that it shall maximize. However, many tasks are not easily expressed by such a function <a href="#BIBREF12"  id="BIBREF12-1. Introduction-ref">[12]</a> , human preferences are hard to learn and may not be easy to aggregate across stakeholders <a href="#BIBREF4"  id="BIBREF4-1. Introduction-ref">[5]</a> , and maximizing a misspecified objective may fall prey to reward hacking <a href="#BIBREF0"  id="BIBREF0-1. Introduction-ref">[1]</a> and Goodhart's law <a href="#BIBREF11"  id="BIBREF11-1. Introduction-ref">[11]</a> , leading to unintended side-effects and potentially harmful consequences. </p>
+                
+            
+                
+                    <p tabindex="0">In this work, we study a particular aspiration-based approach to agent design. We assume an existing task-specific world model in the form of a fully observed Markov Decision Process (MDP), where the task is not encoded by a reward function but instead a multi-criterion evaluation function and a bounded, convex subset of its range, called an aspiration set, that can be thought of as an "instruction" <a href="#BIBREF3"  id="BIBREF3-1. Introduction-ref">[4]</a> to the agent. Aspiration-type goals can also naturally arise from subtasks in complex environments even if the overall goal is to maximize some objective, when the complexity requires a hierarchical decision-making approach whose highest level selects subtasks that turn into aspiration sets for lower hierarchal levels. </p>
+                
+            
+                
+                    <p tabindex="0">In our version of aspiration-based agents, the goal is to make the expected value of the total with respect to this evaluation function fall within the aspiration set, and select from this set according to certain performance and safety criteria. They do so step-wise, exploiting recursion equations similar to the Bellman equation. Thus our approach is like multi-objective reinforcement learning (MORL), with a primary aspiration-based objective and at least one secondary objective incorporated via action-selection criteria <a href="#BIBREF16"  id="BIBREF16-1. Introduction-ref">[16]</a> . Unlike MORL, the components of the evaluation function (called evaluation metrics) are not objectives in the sense of targets for maximization. Rather, an aspiration formulated w.r.t. several evaluation metrics might correspond to a single objective (e.g., "make a cup of tea"). Also, at no point does an aspiration-based agent aggregate the evaluation metrics into a single value. Instead, any trade-offs are built into the aspiration set itself, similar to what <a href="#BIBREF5"  id="BIBREF5-1. Introduction-ref">[6]</a> call a "safety specification". For example, aspiring to buy a total of 10 oranges and/or apples for at most EUR 1 per item could be encoded with the aspiration set {(o, a, c) : o, a ≥ 0; c ≤ o + a = 10}. </p>
+                
+            
+                
+                    <p tabindex="0">A similar set-up to ours has been used in <a href="#BIBREF9"  id="BIBREF9-1. Introduction-ref">[9]</a> which has used reinforcement learning to find a policy whose expected discounted reward vector lies inside a convex set. Instead of a reinforcement learning perspective, we use a modelbased planning perspective and design an algorithm that explicitly calculates a policy for solving the task, based on a model of the environment. <a href="#BIBREF4"  id="BIBREF4-1. Introduction-ref">5</a> Also, the approach in <a href="#BIBREF9"  id="BIBREF9-1. Introduction-ref">[9]</a> is concerned with guaranteed bounds for the distance between received rewards and the convex constraints in terms of the number of iterations, whereas we focus on guaranteeing aspiration satisfaction in a fixed number of computational steps, providing a verifiable guarantee in the sense of <a href="#BIBREF5"  id="BIBREF5-1. Introduction-ref">[6]</a> . </p>
+                
+            
+                
+                    <p tabindex="0">Other agent designs that follow a non-maximization-goal-based approach include quantilizers, decision transformers and active inference. Quantilizers are agents that use random actions in the top n% of a "base distribution" over actions, sorted by expected return <a href="#BIBREF13"  id="BIBREF13-1. Introduction-ref">[13]</a> . The goal for decision transformers is to make the expected return equal a particular value R target <a href="#BIBREF2"  id="BIBREF2-1. Introduction-ref">[3]</a> . The goal for active inference agents is to produce a particular probability distribution of observa-tions <a href="#BIBREF14"  id="BIBREF14-1. Introduction-ref">[14]</a> . While the goal space for quantilizers and decision transformers, being based on a single real-valued function, is often too restricted for many applications, that of active inference agents (all probability distributions) appears too wide for the formal study of many aspects of aspiration-based decision-making. Our approach is of intermediary complexity. </p>
+                
+            
+                
+                    <p tabindex="0">An important consideration in this work, to ensure tractability in large environments, is also the computational complexity in the number of actions, states, and evaluation metrics. We will see that for our algorithm, the preparation of an episode has linear complexity in the number of possible state-action-successor transitions and (conjectured and numerically confirmed) linear average complexity in the number of evaluation metrics, and then the additional per-time-step complexity of the policy is linear in the number of actions, constant in the number of states, and polynomial in the number of evaluation metrics. </p>
+                
+            
+                
+                    <p tabindex="0">Our work also affects the emerging AI safety/alignment field, which views unintended consequences from maximization, e.g., reward hacking and Goodhart's law, as a major source of risk once agentic AI systems become very capable <a href="#BIBREF0"  id="BIBREF0-1. Introduction-ref">[1]</a> . </p>
+                
+            
+        
+            <h2 id="section-body-2" tabindex="0">2. Preliminaries </h2>
+            
+            
+            
+                
+                    <p tabindex="0">Environment. An environment E = (S, s 0 , S ⊤ , A, T ) is a finite Markov Decision Process without a reward function, consisting of a finite state space S, an initial state s 0 ∈ S, a nonempty subset S ⊤ ⊆ S of terminal states, a nonempty finite action space A, and a function T : (S \ S ⊤ ) × A → ∆(S \ {s 0 }) specifying transition probabilities: T (s, a)(s ′ ) is the probability that taking action a from state s leads to state s ′ . We assume that the environment is acyclic, i.e., that it is impossible to reach a given state again after leaving it. We fix some environment E and write s ′ ∼ s, a to denote that s ′ is distributed according to T (s, a). </p>
+                
+            
+                
+                    <p tabindex="0">Policy. A (memory-based) policy is given by some nonempty finite set M of memory states internal to the agent, an initial memory state m 0 ∈ M and a function π : M × (S \ S ⊤ ) → ∆(A × M) that maps each possible combination of memory state m ∈ M and (environment) state s ∈ S \ S ⊤ to a probability distribution over combinations of actions a ∈ A and successor memory states m ′ ∈ M. Let Π M be the set of all policies with memory space M. The special class of Markovian or memoryless policies is obtained when M is a singleton. Policies which are both Markovian and deterministic are called pure Markov policies, and amount to a function (S \ S ⊤ ) → A. We denote by Π 0 the set of Markovian policies and by Π p the set of all pure Markov policies. </p>
+                
+            
+                
+                    <p tabindex="0">Evaluation, Delta, Total. A (multi-criterion) evaluation function for the environment is a function f : </p>
+                
+            
+                
+                    <p tabindex="0">(S \ S ⊤ ) × A × (S \ {s 0 }) → R d where d ≥ 1. </p>
+                
+            
+                
+                    <p tabindex="0">The quantity f (s, a, s ′ ) is called the Delta received under transition (s, a) → s ′ . It represents by how much certain evaluation metrics change when the agent takes action a in state s and the successor state is s ′ . Let us fix f for the rest of the paper. The (received) Total of a trajectory h </p>
+                
+            
+                
+                    <p tabindex="0">= (m 0 , s 0 , a 1 , m 1 , s 1 , . . . , a T , m T , s T ) </p>
+                
+            
+                
+                    <p tabindex="0">is then the cumulative Delta received along the trajectory, </p>
+                
+            
+                
+                    <p tabindex="0">τ (h) = T t=1 f (s t−1 , a t , s t ). </p>
+                
+            
+                
+                    <p tabindex="0">(1) </p>
+                
+            
+                
+                    <p tabindex="0">Value functions. Given a policy π and an evaluation function f , the state value function V π : M × S → R d is defined as the expected Total accumulated in future steps while following policy π. In particular, V π (m 0 , s 0 ) is the expected Total of the whole trajectory: V π (m 0 , s 0 ) = E(τ ). Likewise, we define the action value function Q π : S × A × M → R d . These satisfy the Bellman equations </p>
+                
+            
+                
+                    <p tabindex="0"><tt>EQUATION (2): Not extracted; please refer to original document.</tt></p>
+                
+            
+                
+                    <p tabindex="0"><tt>EQUATION (3): Not extracted; please refer to original document.</tt></p>
+                
+            
+                
+                    <p tabindex="0">They can be calculated by backwards induction since the environment is finite and acyclic, with the base case V π (m, s) = 0 for terminal states s ∈ S ⊤ . For memoryless policies, we will elide the argument m since M is a singleton. The Delta and Total are analogous to reward and return in an MDP with a reward function, and the value functions V and Q are defined as usual, albeit with vector instead of scalar arithmetic. However, while we do assume that the evaluation metrics represent some aspects relevant to the task at hand, we do not assume that they represent a form of utility which it is always desirable to increase. Accordingly, the agent's goal will be specified by the user not as a maximization task, but rather as a set of linear constraints on the expected sums of the evaluation metrics, which we call an aspiration. </p>
+                
+            
+        
+            <h2 id="section-body-3" tabindex="0">3. Fulfilling Aspirations </h2>
+            
+            
+            
+                
+                    <p tabindex="0">Aspirations, feasibility. An (initial) aspiration is a convex polytope E 0 ⊂ R d , representing the values of the expected total Eτ which are considered acceptable. We say that a policy π fulfills the aspiration when it satisfies </p>
+                
+            
+                
+                    <p tabindex="0">V π (m 0 , s 0 ) ∈ E 0 . </p>
+                
+            
+                
+                    <p tabindex="0">To answer the question of whether it is possible to fulfill a given aspiration, we introduce feasibility sets. The state-feasibility set of s ∈ S is the set of possible values for the expected future Total from s, under any memory-based policy: </p>
+                
+            
+                
+                    <p tabindex="0">V(s) = {V π (m, s) | M finite set; m 0 , m ∈ M; π ∈ Π M }; </p>
+                
+            
+                
+                    <p tabindex="0">likewise, we define the action-feasibility set Q(s, a). It is straightforward to verify that V(s ∈ S ⊤ ) = {0}, and that the following recursive equations hold for s / ∈ S ⊤ : </p>
+                
+            
+                
+                    <p tabindex="0"><tt>EQUATION (5): Not extracted; please refer to original document.</tt></p>
+                
+            
+                
+                    <p tabindex="0">In this, we use set arithmetic: Draw action a from distribution p and do FulfillActionAspiration(s, a, Ea). 4: procedure FulfillActionAspiration(s ∈ S, a ∈ A, nonempty Ea ⊆ Q(s, a)) 5: </p>
+                
+            
+                
+                    <p tabindex="0">rX + r ′ X ′ = {rx + r ′ x ′ | x ∈ X , x ′ ∈ X ′ } for r, r ′ ∈ R and X , X ′ ⊂ R d . </p>
+                
+            
+                
+                    <p tabindex="0">Find </p>
+                
+            
+                
+                    <p tabindex="0">suitable E s ′ ⊆ V(s ′ ) for all s ′ ∈ S s.t. E s ′ ∼s,a (f (s, a, s ′ ) + E s ′ ) ⊆ Ea. 6: </p>
+                
+            
+                
+                    <p tabindex="0">Execute action a and observe successor state s ′ . </p>
+                
+            
+        
+            <h2 id="section-body-4" tabindex="0">7: </h2>
+            
+            
+            
+                
+                    <p tabindex="0">If s ′ is terminal, stop; else do FulfillStateAspiration(s ′ , E s ′ ). </p>
+                
+            
+                
+                    <p tabindex="0">alternates between being in a certain state s with a state-aspiration E ⊆ V(s), and being in a state s and having chosen, but not yet performed, an action a, with an action-aspiration E a ⊆ Q(s, a). Although this algorithm is written as two mutually recursive functions, it can be formally implemented by a memorybased policy that memorizes the current aspiration E or E a . The way the aspiration set E is propagated between steps is the key part. The two directions of aspiration propagation are slightly different: in state-aspiration to action-aspiration propagation, shown on line 2, the agent may choose the probability distribution (p) over actions, whereas in action-aspiration to stateaspiration propagation, shown on line 5, the next state is determined by the environment with fixed probabilities (T ). </p>
+                
+            
+                
+                    <p tabindex="0">The correctness of algorithm 1 follows from the requirements of lines 2 and 5; that these are possible to fulfill is a consequence of equations <a href="#BIBREF4"  id="BIBREF4-7:-ref">(5)</a> and <a href="#BIBREF3"  id="BIBREF3-7:-ref">(4)</a> . Feasibility of aspirations is maintained as an invariant. </p>
+                
+            
+                
+                    <p tabindex="0">To implement this scheme, we have to specify how to perform aspiration propagation. The procedure used to select action-aspirations E a and state-aspirations E s ′ should preferably allow some control over how the size of these sets changes over time. On one hand, preventing aspiration sets from shrinking too fast preserves a wider range of acceptable behaviors in later steps <a href="#BIBREF5"  id="BIBREF5-7:-ref">6</a> , but on the other hand, keeping the aspiration sets somewhat smaller than the feasibility sets also provides immediate freedom in the choice of the next action, as detailed in section 4.2. An additional challenge is posed by the complex shape of the feasibility sets, which we must handle in a tractable way. </p>
+                
+            
+                
+                    <p tabindex="0">Approximating feasibility sets by simplices. Let conv(X) denote the convex hull of any set X ⊆ R d . Given any tuple R of d + 1 memoryless reference policies π 1 , . . . , π d+1 ∈ Π 0 , we define reference simplices in evaluation-space as </p>
+                
+            
+                
+                    <p tabindex="0">V R (s) = conv{V π (s) | π ∈ R} and Q R (s, a) = conv{Q π (s, a) | π ∈ R}. </p>
+                
+            
+                
+                    <p tabindex="0">It is immediate that these are subsets of the convex feasibility sets V(s) resp. Q(s, a), and that </p>
+                
+            
+                
+                    <p tabindex="0"><tt>EQUATION (6): Not extracted; please refer to original document.</tt></p>
+                
+            
+                
+                    <p tabindex="0"><tt>EQUATION (7): Not extracted; please refer to original document.</tt></p>
+                
+            
+                
+                    <p tabindex="0">These imply that we can replace every occurrence of V and Q in algorithm 1 with V R resp. Q R , obtaining a correct algorithm to guarantee fulfillment of any initial aspiration E 0 provided it intersects the reference simplex V R (s 0 ). It turns out that the latter can be guaranteed by a proper choice of reference policies, and that we can always use pure Markov policies for this: </p>
+                
+            
+                
+                    <p tabindex="0">Lemma 1. For any state s, we have V(s) = conv{V π (s) | π ∈ Π p }. </p>
+                
+            
+                
+                    <p tabindex="0">Proof. Any memory-based policy admits a Markovian policy with the same occupancy measure and hence the same expected Total <a href="#BIBREF6"  id="BIBREF6-7:-ref">[7]</a> . </p>
+                
+            
+                
+                    <p tabindex="0">Hence V(s) = {V π (s) | π ∈ Π 0 }. A convex set is the convex hull of its vertices, so V(s) = conv{V π (s) | ∃y ∈ R d , π = arg max π ′ ∈Π 0 (y • V π ′ (s))}. </p>
+                
+            
+                
+                    <p tabindex="0">Finally, maximal policies may be taken to be deterministic, which concludes the argument. </p>
+                
+            
+                
+                    <p tabindex="0">⊓ ⊔ </p>
+                
+            
+                
+                    <p tabindex="0">As a consequence, for any aspiration set E intersecting the feasibility set V(s 0 ), there exists a tuple R of pure Markov reference policies such that V R (s 0 )∩E ̸ = ∅. Section 5 describes a heuristic algorithm for finding such reference policies. </p>
+                
+            
+                
+                    <p tabindex="0">We now turn to explaining a way to enact the aspiration-propagation steps needed in lines 2 and 5 of algorithm 1, based on shifting and shrinking. </p>
+                
+            
+        
+            <h2 id="section-body-5" tabindex="0">4.1 Propagating Action-Aspirations To State-Aspirations </h2>
+            
+            
+            
+                
+                    <p tabindex="0">To implement algorithm schema 1, we first focus on line 5 in procedure Ful-fillActionAspiration, which is the easier part. Given a state-action pair s, a and an action-aspiration set E a ⊆ Q R (s, a), we must construct nonempty state-aspiration sets </p>
+                
+            
+                
+                    <p tabindex="0">E s ′ ⊆ V R (s ′ ) for all possible successor states s ′ , such that E s ′ ∼s,a (f (s, a, s ′ ) + E s ′ ) ⊆ E a . </p>
+                
+            
+                
+                    <p tabindex="0">We assume that all reference simplices are nondegenerate, i.e. have full dimension d. This is almost surely the case if there are sufficiently many actions and these have enough possible consequences. </p>
+                
+            
+                
+                    <p tabindex="0">Tracing maps. Under this assumption, we define tracing maps ρ s,a,s ′ from the reference simplex Q R (s, a) to V R (s ′ ). Since domain and codomain are simplices, we can choose ρ s,a,s ′ to be the unique affine linear map that maps vertices to vertices, ρ s,a,s ′ (Q πi (s, a)) = V πi (s ′ ). For any point e ∈ Q R (s, a), it follows from equation 2that E s ′ ∼s,a (f (s, a, s ′ ) + ρ s,a,s ′ (e)) = e. Accordingly, to propagate aspirations of the form E a = {e}, it is sufficient to just set </p>
+                
+            
+                
+                    <p tabindex="0">E s ′ = {ρ s,a,s ′ (e)}. How- ever, for general subsets E a ⊆ Q R (s, a), the set E s ′ ∼s,a (f (s, a, s ′ ) + ρ s,a,s ′ (E a )) </p>
+                
+            
+                
+                    <p tabindex="0">is in general strictly larger than E a , and hence we map E a in a different way. </p>
+                
+            
+                
+                    <p tabindex="0">For this, choose an arbitrary "anchor" point e ∈ E a ; here we let e be the average of the vertices, C(E a ), but any other standard type of center would also work (e.g. analytic center, center of mass/centroid, Chebyshev center). Now, let X s ′ = E − e + ρ s,a,s ′ (e) be shifted copies of the action-aspiration. We would like to use the X s ′ as state-aspirations, and indeed they have the property that </p>
+                
+            
+                
+                    <p tabindex="0"><tt>EQUATION (8): Not extracted; please refer to original document.</tt></p>
+                
+            
+                
+                    <p tabindex="0">= e − e + E s ′ ∼s,a (E a ) = E a as E a is convex. </p>
+                
+            
+                
+                    <p tabindex="0">This is almost what we want, but it might be that X s ′ is not a subset of V R (s ′ ). To rectify this, we opt for a shrinking approach, setting  </p>
+                
+            
+                
+                    <p tabindex="0">E s ′ = r s ′ •(E a − </p>
+                
+            
+                
+                    <p tabindex="0">d+(dk v ) 1.5 ]L), </p>
+                
+            
+                
+                    <p tabindex="0">where L is the precision parameter defined in <a href="#BIBREF15"  id="BIBREF15-4.1 Propagating Action-Aspirations To State-Aspirations-ref">[15]</a> . If E a is a simplex, this is O(d 3 L).  </p>
+                
+            
+                
+                    <p tabindex="0">(k c , d) + d ω + Lf (dk v , 1) + d(k c + k v )) ≤ O(L(k c + d) 1.5 d + d ω + L(dk v ) 1.5 ) ≤ O(L(k 1.5 c d + (dk v ) 1.5 )). ⊓ ⊔ </p>
+                
+            
+        
+            <h2 id="section-body-6" tabindex="0">4.2 Choosing Actions And Action-Aspirations </h2>
+            
+            
+            
+                
+                    <p tabindex="0">This is the core of our construction. In state s with state-aspiration E, the policy probabilistically selects an action a and action-aspiration E a as follows: </p>
+                
+            
+                
+                    <p tabindex="0">(i) For each of the d + 1 vertices V πi (s) of the state's reference simplex V R (s), find a directional action set A i ⊆ A containing those actions whose reference simplices Q R (s, a) "lie between" E and the vertex V πi (s). (ii) From the full action set A 0 = A and from each directional action set A i (i = 1 . . . d+1) independently, use some arbitrary, potentially probabilistic procedure to select one element, giving candidate actions a 0 , . . . , a d+1 . (iii) For each candidate a i , compute an action-aspiration E ai by shifting and shrinking the state-aspiration E into the reference simplex Q R (s, a i ). (iv) Compute a probability distribution p ∈ ∆({0, . . . , d + 1}) that makes E i∼p E ai ⊆ E and has as large a p 0 as possible. (v) Finally execute candidate action a i with probability p i (i = 0 . . . </p>
+                
+            
+        
+            <h2 id="section-body-7" tabindex="0">D + 1) </h2>
+            
+            
+            
+                
+                    <p tabindex="0">and memorize its action-aspiration E ai . </p>
+                
+            
+                
+                    
+                    
+                    <!--Do not display image (display content instead)-->
+                    
+                        <!--placeholder image-->
+                        
+                            <!--figure with alt-text-->
+                            
+                                <figure id="fig-7-1" class="paper__figure" tabindex="0">
+                                    <img src="data:image/png;base64,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" alt="" style="width:100%">
+                                    <figcaption class="paper__figure-caption">Fig. 1. Construction of action-aspirations Ea from state-aspiration E and reference simplices VR(s) and QR(s, a) by shifting and clipping. See main text for details.</figcaption>
+                                </figure>
+                            
+                        
+                    
+                
+            
+                
+                    <p tabindex="0">We now describe steps (i)-(iv) in detail. Algorithm 2 has the corresponding pseudocode, and <a href="#FIGREF2"  id="FIGREF2-D + 1)-ref">Figure 1</a> illustrates the involved geometric operations. </p>
+                
+            
+                
+                    <p tabindex="0">(i) Directional action sets. Compute the average of the vertices of E, x = C(E), and the "shape" E ′ = E − x. For i = 0, put A i = A. For i > 0, let X i be the segment from x to the vertex V πi (s) and check for each action a ∈ A whether its reference simplex Q R (s, a) intersects X i , using linear programming. Let A i be the set of those a, which is nonempty since π i (s) ∈ A i by definition of V πi (s). </p>
+                
+            
+        
+            <h2 id="section-body-8" tabindex="0">Algorithm 2 Action Selection ("Shrinking" Variant) </h2>
+            
+            
+            
+                
+                    <p tabindex="0">Require: a) ; state s; state-aspiration E; shrinking schedule rmax(s). 1: x ← C(Es); E ′ ← E − x ▷ center, shape 2: </p>
+                
+            
+                
+                    <p tabindex="0">reference simplex vertices V π i (s), Q π i (s, </p>
+                
+            
+                
+                    <p tabindex="0">for i = 0, . . . , d + 1 do 3: </p>
+                
+            
+                
+                    <p tabindex="0">Ai ← DirectionalActionSet(i) 4: </p>
+                
+            
+                
+                    <p tabindex="0">ai ← SampleCandidateAction(Ai) ▷ any (probabilistic) choice from Ai 5: if </p>
+                
+            
+                
+                    <p tabindex="0">Ea i ← ShrinkAspiration(ai, i) ▷ </p>
+                
+            
+                
+                    <p tabindex="0">i = 0, return A 11: Xi ← conv{x, V π i (s)} ▷ segment from m to ith vertex 12: return {a ∈ A | Q R (s, a) ∩ Xi ̸ = ∅} ▷ actions with feasible points on Xi 13: procedure ShrinkAspiration(ai, i) 14: v ← V π i (s) if i > 0, else C(Q R (s, ai)) ▷ vertex or center of target 15: y ← v − x ▷ shifting direction 16: r ← max{r ∈ [0, rmax(s)] | ∃ℓ ≥ 0, ℓy + x + rE ′ ⊆ Q R (s, a)} ▷ size of largest shifted and shrunk copy of E that fits into Q R (s, a) 17: ℓ ← min{ℓ ≥ 0 | ℓy + x + rE ′ ⊆ Q R (s, a)} ▷ shortest dist. </p>
+                
+            
+        
+            <h2 id="section-body-9" tabindex="0">That Makes It Fit In 18: </h2>
+            
+            
+            
+                
+                    <p tabindex="0">return ℓy + x + rE ′ ▷ shift and shrink (ii) Candidate actions. For each i = 0 . . . d + 1, use an arbitrary, possibly probabilistic procedure to select a candidate action a i ∈ A i . Since A 0 = A, any possible action might be among the candidate actions. This freedom can be used to improve the policy in terms of the evaluation metrics, e.g., by choosing actions that are expected to lead to a rather low variance of the received Total. It can also be used to incorporate additional action-selection criteria that are unrelated to these evaluation metrics, to increase overall safety, e.g., by preferring actions that avoid unnecessary side-effects. We'll discuss this in Section 6. </p>
+                
+            
+                
+                    <p tabindex="0">(iii) Action-aspirations. Given direction i and action a i , we now aim to select a large subset E ai ⊆ Q R (s, a i ) that fits into a shifted version z i +E ′ . We determine a direction y towards which to shift E s : if i = 0, towards the average of the vertices, C(Q R (s, a i )), otherwise towards the reference vertex V πi (s). This is lines 14 and 15 of Alg. 2. As before, we use shrinking: find the largest shrinking factor r ∈ [0, r max (s)] for which there is a shifting distance ℓ ≥ 0 so that ℓy + rE ′ ⊆ Q R (s, a i ), using a linear program with two variables r, ℓ, and then find the smallest such ℓ for that r using another linear program. The "shrinking schedule" r max (s) ∈ [0, 1] might be used to enforce some amount of shrinking to increase the freedom for choosing the action mixture, which is the next step. </p>
+                
+            
+                
+                    <p tabindex="0">(iv) Suitable mixture of candidate actions. We next find probabilities p 0 , . . . , p d+1 for the candidate actions so that the corresponding mixture of aspirations E ai is a subset of </p>
+                
+            
+                
+                    <p tabindex="0">V1(s) = Q1(s,π1(s)) Q R (s,π1(s)) V R (s) E Q R (s,π2(s)) Q R (s,π3(s)) Q R (s,a3) E a3 V2(s) = Q2(s,π2(s)) V3(s) = Q3(s,π3(s)) x Q R (s,a0) E a0 E a1 E a2 X 1 X 2 X 3 </p>
+                
+            
+                
+                    <p tabindex="0">E s , d+1 i=0 p i E ai ⊆ E s . </p>
+                
+            
+                
+                    <p tabindex="0">We show below that this equation has a solution. Because we want the action a 0 that was chosen freely from the whole action set A to be as likely as possible, we maximize its probability p 0 . This is done in line 6 of Algorithm 2 using linear programming. Note that the smaller the sets E a , the looser the set inclusion constraint and thus the larger p 0 . We can influence the latter via the shrinking schedule r max (s), for example by putting r max (s) = (1 − 1/T (s)) 1/d where T (s) is the remaining number of time steps at state s, which would reduce the amount of freedom (in terms of the volume of the aspiration set) linearly and end in a point aspiration for terminal states. Proof </p>
+                
+            
+                
+                    <p tabindex="0"><tt>EQUATION (10): Not extracted; please refer to original document.</tt></p>
+                
+            
+                
+                    <p tabindex="0">Proposition 2. Given all values V πi (s) and Q πi (s, a) and both the k c ≥ d + 1 many constraints and k v ≥ d + 1 many vertices defining E, this part of the construction (Algorithm 2) has time complexity O([k 1.  </p>
+                
+            
+                
+                    <p tabindex="0">5 v d 2.5 |A| + (k v k c ) 1.5 d]L). If E is a simplex, this is O(d 4 |A|L). </p>
+                
+            
+        
+            <h2 id="section-body-10" tabindex="0">5. Determining Appropriate Reference Policies </h2>
+            
+            
+            
+                
+                    <p tabindex="0">First, find some feasible aspiration point x ∈ E 0 ∩ V(s 0 ) (e.g., using binary search). We now aim to find policies whose values are likely to contain x in their convex hull, by using backwards induction and greedily minimizing the angle between the vector Eτ − x and a suitable direction in evaluation space. More precisely: Pick an arbitrary direction (unit vector) y 1 ∈ R d , e.g., uniformly at random. Then, for k = 1, 2, . . . until stopping: </p>
+                
+            
+                
+                    <p tabindex="0">1. Let π k be the pure Markovian policy π defined by backwards induction as </p>
+                
+            
+                
+                    <p tabindex="0"><tt>EQUATION (11): Not extracted; please refer to original document.</tt></p>
+                
+            
+                
+                    <p tabindex="0">Let v k = V π k (s 0 ) be the resulting candidate vertex for our reference simplex. If k ≥ d + 1, run a primal-sparse linear program solver <a href="#BIBREF18"  id="BIBREF18-5. Determining Appropriate Reference Policies-ref">[18]</a> to determine if x ∈ conv{v 1 , . . . , v k }. If so, the solver will return a basic feasible solution, i.e. d + 1 many vertices that contain x in their convex hull. Let the policies corresponding to the vertices that are part of the basic feasible solution be our reference policies and stop. Otherwise, continue to step 2 below: 2. Let e k = (x − v k )/||x − v k || 2 be the unit vector in the direction from v k to x. 3. Let y k+1 = k i=1 e i /k be the average of all those directions. Assuming that x ∈ V(s 0 ) and because of the hyperplane separation theorem, choosing directions like this ensures that the algorithm doesn't loop with v l+1 = v l for some l. Also, note that to check </p>
+                
+            
+                
+                    <p tabindex="0">x ∈ conv{v 1 , . . . , v k , v k+1 } it is sufficient to check v k+1 − x ∈ cone{x − v 1 , • • • , x − v </p>
+                
+            
+                
+                    <p tabindex="0">k }, the cone generated by the negative of the vertices centred at x. So hunting for a policy whose value lies approximately in the direction y k+1 from x gives us a good chance of finding a vertex in the aforementioned cone. </p>
+                
+            
+                
+                    <p tabindex="0">We were not able to prove any complexity bounds for this part, but performed numerical experiments with random binary tree-shaped environments of various time horizons, with only two actions (making the directions v k −x deviate rather much from y and thus presenting a kind of worst-case scenario) and two possible successor states per step, and uniformly random transition probabilities and Deltas ∈ [0, 1] d . These suggest that the expected number of iterations of the above is O(d), which we thus conjecture to be also the case for other sufficiently well-behaved random environments. Indeed, even if the policies π k were chosen uniformly at random (rather than targeted like here) and the corresponding points V π k (s 0 ) were distributed uniformly in all directions around x (which is a plausible uninformative prior assumption), then one can show easily (using <a href="#BIBREF17"  id="BIBREF17-5. Determining Appropriate Reference Policies-ref">[17]</a> ) that the expected number of iterations would be exactly 2d + 1. 7 </p>
+                
+            
+                
+                    <p tabindex="0">7 According to <a href="#BIBREF17"  id="BIBREF17-5. Determining Appropriate Reference Policies-ref">[17]</a> , the probability that we need exactly k </p>
+                
+            
+                
+                    <p tabindex="0">≥ d + 1 iterations is f (k − 1) − f (k) with f (k) = 2 1−k d−1 ℓ=0 k−1 ℓ . Hence Ek = ∞ k=d+1 k(f (k − 1) − f (k)) = (d+1)f (d)+ ∞ k=d+1 f (k). </p>
+                
+            
+                
+                    <p tabindex="0">It is then reasonably simple to prove by induction that ∞ k=d+1 f (k) = d, and hence Ek = 2d + 1. </p>
+                
+            
+        
+            <h2 id="section-body-11" tabindex="0">6. Selection Of Candidate Actions </h2>
+            
+            
+            
+                
+                    <p tabindex="0">As we have seen in section 4.2 (ii), when choosing actions, we still have many remaining degrees of freedom. Thus, we can use additional criteria to choose actions while still fulfilling the aspirations. We discuss a few candidate criteria here which are related either to gaining information, improving performance, or reducing potential safety-related impacts of implementing the policy. For many of the criteria, there are myopic versions, which only rely on quantities that are already available at each step in the algorithms presented so far, or farsighted versions which depend on the continuation policy and thus have to be specifically computed recursively via Bellman-style equations. </p>
+                
+            
+                
+                    <p tabindex="0">Information-related criteria. If the used world model is imperfect, one might want the agent to aim to gain knowledge by exploration, e.g. by considering some measure of expected information gain such as the evidence lower bound. </p>
+                
+            
+        
+            <h2 id="section-body-12" tabindex="0">6.1 Performance-Related Criteria </h2>
+            
+            
+            
+                
+                    <p tabindex="0">For now, the task of the agent in this paper has been given by specifying aspiration sets for the expected total of the evaluation function. It is natural to consider extensions of this approach to further properties of the trajectory distribution, e.g. by specifying that the variance of the total should be small. </p>
+                
+            
+                
+                    <p tabindex="0">A simple, myopic approach to reducing variance is preferring actions and action-aspirations that are somehow close to the state aspiration E, e.g. by choosing action-aspirations where the Hausdorff distance d H (E a , E) is small. A more principled, farsighted approach would be choosing actions and action-aspirations such that the variance of the resulting total is small. Based on equation 2, the variance can be computed from the total raw second moment M π as </p>
+                
+            
+                
+                    <p tabindex="0"><tt>EQUATION (12): Not extracted; please refer to original document.</tt></p>
+                
+            
+                
+                    <p tabindex="0"><tt>EQUATION (13): Not extracted; please refer to original document.</tt></p>
+                
+            
+                
+                    <p tabindex="0">Note that computing this farsighted metric requires knowing the continuation policy π, for which algorithm 2 does not suffice in its current form as it only samples actions. It is however easy to convert it to an algorithm for computing the whole local policy π(s, E), which is described in the Supplement. </p>
+                
+            
+        
+            <h2 id="section-body-13" tabindex="0">6.2 Safety-Related Criteria </h2>
+            
+            
+            
+                
+                    <p tabindex="0">As mentioned in the introduction, unintended consequences of optimization can be a source of safety problems, thus we suggest to not use any of the criteria introduced in this section as maximization/minimization goals to completely determine the chosen actions; instead, they can be combined into a loss for a softmin action selection policy π i (a ∈ A i ) ∝ exp − β j α j g j (a) , where g j (a) are the individual criteria. Indeed, in analogy to quantilizers, choosing among adequate actions at random can by itself be considered a useful safety measure, as a random action is very unlikely to be special in a harmful way. </p>
+                
+            
+                
+                    <p tabindex="0">Disordering potential. Our first safety criterion is related to the idea of "fail safety", and (somewhat more loosely) to "power seeking". More precisely, it aims to prevent the agent from moving the system into a state from which it could make the environment's state trajectory become very unpredictable (bring the environment into "disorder") because of an internal failure, or if it wanted to. We define the disordering potential at a state to be the Shannon entropy H π (s t ) of the stochastic state trajectory S >t = (S t+1 , S t+2 , . . . ) that would arise from the policy π which maximizes that entropy: </p>
+                
+            
+                
+                    <p tabindex="0"><tt>EQUATION (14): Not extracted; please refer to original document.</tt></p>
+                
+            
+                
+                    <p tabindex="0">It is straightforward to compute this quantity using the Bellman-type equations </p>
+                
+            
+                
+                    <p tabindex="0"><tt>EQUATION (15): Not extracted; please refer to original document.</tt></p>
+                
+            
+                
+                    <p tabindex="0"><tt>EQUATION (16): Not extracted; please refer to original document.</tt></p>
+                
+            
+                
+                    <p tabindex="0">To find the maximally disordering policy π, we assume π(s ′ ) and thus H π (s ′ ) is already known for all potential successors s ′ of s. Then H π (s, a) is also known for all a and to find p a = π(s)(a) we need to maximize f (p) = a p a (H π (s, a) − log p a ) such that a p a = 1. Using Lagrange multipliers, we find that for all a, </p>
+                
+            
+                
+                    <p tabindex="0">∂ pa f (p) = H π (s, a)−log p a −1 = λ for some constant λ, hence p a ∝ exp(H π (s, a)) </p>
+                
+            
+                
+                    <p tabindex="0">is a softmax policy w.r.t. future expected Shannon entropy. Therefore </p>
+                
+            
+                
+                    <p tabindex="0"><tt>EQUATION (17): Not extracted; please refer to original document.</tt></p>
+                
+            
+                
+                    <p tabindex="0">H π (s) = log Z = log a exp (H π (s, a) ). </p>
+                
+            
+                
+                    <p tabindex="0">Deviation from default policy. If we have access to a default policy π 0 (e.g. a policy that was learned by observing humans or other agents performing similar tasks), we might want to choose actions in a way that is similar to this default policy. An easy way to measure this is by using the Kullback-Leibler divergence from the default policy π 0 to the agent's policy π. Given that we do not know the local policy π(s) yet when we decide how to choose the action in the state s, we use an estimatep a (e.g.p a = 1/(2 + d)) instead to compute the expected total Kullback-Leibler divergence like </p>
+                
+            
+                
+                    <p tabindex="0"><tt>EQUATION (20): Not extracted; please refer to original document.</tt></p>
+                
+            
+                
+                    <p tabindex="0">where g : (s, a, E a , s ′ ) → E s ′ implements action-to-state aspiration propagation. </p>
+                
+            
+                
+                    <p tabindex="0">7 Discussion and conclusion </p>
+                
+            
+        
+            <h2 id="section-body-14" tabindex="0">7.1 Special Cases </h2>
+            
+            
+            
+                
+                    <p tabindex="0">A single evaluation metric. It is natural to ask what our algorithm reduces to in the single-criterion case d = 1. The reference simplices can then simply be taken to be the intervals </p>
+                
+            
+                
+                    <p tabindex="0">V R (s) = [V πmin (s), V πmax (s)] and Q R (s, a) = [Q πmin (s, a), Q πmax (s, a)] </p>
+                
+            
+                
+                    <p tabindex="0">, where π min , π max are the minimizing and maximizing policies for the single evaluation metric. Aspiration sets are also intervals, and action-aspirations E a are constructed by shifting the state-aspiration E upwards or downwards into Q R (s, a) and shrinking it to that interval if necessary. To maximize p a0 , the linear program for p will assign zero probability to that "directional" action a 1 or a 2 whose E a lies in the same direction from E as E a0 does. In other words, the agent will mix between the "freely" chosen action a 0 and a suitable amount of a "counteracting" action a 1 or a 2 in the other direction. </p>
+                
+            
+                
+                    <p tabindex="0">Relationship to satisficing. A subcase of the d = 1 case is when the upper bound of the initial state-aspiration interval coincides with the maximal possible value, E 0 = [e, V πmax (s 0 )], i.e., when the goal is to achieve an expected Total of at least e. The agent then starts out as a form of "satisficer" <a href="#BIBREF10"  id="BIBREF10-7.1 Special Cases-ref">[10]</a> . However, due to the shrinking of aspirations over time, aspiration sets of later states s ′ might no longer be of the same form but might end at values strictly lower than </p>
+                
+            
+                
+                    <p tabindex="0">V πmax (s ′ ) if the interval [V πmin (s ′ ), V πmax (s ′ )] is wider than the interval [Q πmin (s, a), Q πmax (s, a)] </p>
+                
+            
+                
+                    <p tabindex="0">. In other words, even an initial satisficer can turn into a "proper" aspiration-based agent in our algorithm that avoids maximization in more situations than a satisficer would. In particular, also the form of satisficing known as "quantilization" <a href="#BIBREF13"  id="BIBREF13-7.1 Special Cases-ref">[13]</a> , where all feasible expected Totals above some threshold get positive probability, is not a special case of our algorithm. One can however change the algorithm to quantilization behaviour by constructing successor state aspirations differently, by simply applying the tracing map to the interval, E s ′ = ρ s,a,s ′ [E a ] (which is not feasible for d > 1). </p>
+                
+            
+                
+                    <p tabindex="0">Probabilities of desired or undesired events. Another special case is when d > 1 but the d evaluation metrics are simply indicator functions for certain events. E.g., assume all Deltas are zero except when reaching a terminal state s ′ ∈ S ⊤ , in which case f i (s, a, s ′ ) = 1(s ′ ∈ E i ) for some subset of desirable or undesirable states E i ⊆ S ⊤ . If the first k ≤ d many events are desirable in the sense that we want each probability Pr(E i ) to be ≥ α for some α < 1, and the other d−k many events are undesirable in the sense that we want each probability Pr(E j ) to be ≤ β for some β > 0, then we can encode this goal as the initial aspiration set </p>
+                
+            
+                
+                    <p tabindex="0">E 0 = [α, 1] k ×[0, β] d−k . </p>
+                
+            
+                
+                    <p tabindex="0">Note that the different events need not be independent or mutually exclusive, as long as the aspiration is feasible. Aspirations of this type might be especially natural in combination with methods of inductive reasoning and belief revision that are also based on this type of encoding <a href="#BIBREF8"  id="BIBREF8-7.1 Special Cases-ref">[8]</a> . This could eventually be useful for a "provably safe" approach to AI <a href="#BIBREF5"  id="BIBREF5-7.1 Special Cases-ref">[6]</a> . </p>
+                
+            
+        
+            <h2 id="section-body-15" tabindex="0">7.2 Relationship To Reinforcement Learning </h2>
+            
+            
+            
+                
+                    <p tabindex="0">Even though we formulated our approach in a planning framework where the environment's transition probabilities are known and simple enough to admit dynamic programming, it is clear from Eq. (11) that the required reference policies π and corresponding reference vertices V π (s), Q π (s, a) can in principle also be approximated by reinforcement learning techniques such as (deep) expected SARSA in more complex environments or environments that are given only as samplers without access to transition probabilities. For the single-criterion case, preliminary results from numerical experiments suggest that this is indeed a viable approach. <a href="#BIBREF8"  id="BIBREF8-7.2 Relationship To Reinforcement Learning-ref">8</a> Future work should explore this further and also consider using approximate dynamic programming methods (e.g., <a href="#BIBREF1"  id="BIBREF1-7.2 Relationship To Reinforcement Learning-ref">[2]</a> ). </p>
+                
+            
+                
+                    <p tabindex="0">If the expected number of learning passes needed to find the necessary reference policies is indeed O(d) as conjectured (see end of Section 5) 9 , our approach might turn out to have much lower average complexity than the alternative reinforcement learning approach to convex aspirations from <a href="#BIBREF9"  id="BIBREF9-7.2 Relationship To Reinforcement Learning-ref">[9]</a> , which appears to require up to O(ϵ −2 ) many learning passes to achieve an error of less than ϵ. </p>
+                
+            
+        
+            <h2 id="section-body-16" tabindex="0">7.3 Invariance Under Reparameterization </h2>
+            
+            
+            
+                
+                    <p tabindex="0">For many applications there will be several possible parameterizations of the ddimensional evaluation space into d different evaluation metrics, so the question arises which parts of our approach are invariant under which types of reparameterizations of evaluation space. It is easy to see that all parts are invariant under affine transformations, except for the algorithm for finding reference policies which is only invariant under orthogonal transformations since it makes use of angles, and except for certain safety criteria such as total variance. In section 4.1 of the main text, we define shifted copies X s ′ of the actionaspiration E, which would be appropriate candidates for subsequent state-aspirations if not for the fact that they are not necessarily subsets of V R (s ′ ). In the main text, we resolve this by shrinking X s ′ until it fits. </p>
+                
+            
+        
+            <h2 id="section-body-17" tabindex="0">Supplement To: Non-Maximizing Policies That Fulfill Multi-Criterion Aspirations In Expectation </h2>
+            
+            
+            
+                
+                    <p tabindex="0">An alternative approach is clipping, where we calculate the sets X s ′ and simply set E s ′ = X s ′ ∩ V R (s ′ ). </p>
+                
+            
+        
+            <h2 id="section-body-18" tabindex="0">1.2 While Choosing Actions And Action-Aspirations </h2>
+            
+            
+            
+                
+                    <p tabindex="0">In section 4.2.(iii) of the main text, we shift the aspiration set in a certain direction y and shrink it until it fits into the action feasibility reference simplices </p>
+                
+            
+                
+                    <p tabindex="0">Q R (s, a i ). </p>
+                
+            
+                
+                    <p tabindex="0">Clipping is also an alternative here, as illustrated in figure 1. To use clipping instead of shrinking, algorithm 2 of the main text can be modified by replacing the procedure ShrinkAspiration with the procedure ClipAspiration defined here: </p>
+                
+            
+                
+                    <p tabindex="0">Algorithm 1 Clipping variation for algorithm 2 of main text. </p>
+                
+            
+                
+                    <p tabindex="0">1: procedure ClipAspiration(ai, i) 2: v ← V π i (s) if i > 0, else C(Q R (s, ai)) ▷ vertex or center of target 3: y ← v − x ▷ shifting direction 4: </p>
+                
+            
+                
+                    <p tabindex="0">r ← max{r ≥ 0 : x − ry ∈ E} ▷ distance from boundary point b of E to x 5: </p>
+                
+            
+                
+                    <p tabindex="0">ℓ ← min{ℓ ≥ 0 : x + ℓy ∈ Q R (s, ai)} ▷ distance from x to reference simplex 6: The direction y is determined as in the shrinking variant. Next, we determine by linear programming the outermost point b ∈ E lying on the ray from x in the direction −y. E is shifted in direction y, stopping either when the shifted boundary point b (and thus generally a large part of E) enters the reference simplex Q R (s, a i ) , or when the shifted center x exits Q R (s, a i ). The appropriate shifting distance can be computed using linear programming. This is done in lines 5 to 7 of Algorithm 1. Finally, the shifted copy of E is clipped to Q R (s, a i ) by uniting their H-representations to get E ai , i.e., consider the set of all hyperplanes on which a facet of either E or Q R (s, a i ) lies. Then the vertices of E ai are computed from the resulting H-representation. The sets E ai are nonempty because the ray from x in direction y intersects Q R (s, a i ).  </p>
+                
+            
+                
+                    <p tabindex="0">ℓ ′ ← max{ℓ ′ ≥ 0 : x + ℓ ′ y ∈ Q R (s, </p>
+                
+            
+                
+                    <p tabindex="0">V1(s) = Q1(s,π1(s)) Q R (s,π1(s)) V R (s) E Q R (s,π2(s)) Q R (s,π3(s)) Q R (s,a3) V2(s) = Q2(s,π2(s)) V3(s) = Q3(s,π3(s)) x Q R (s,a0) X 1 X 2 X 3 b E a0 E a3 </p>
+                
+            
+        
+            <h2 id="section-body-19" tabindex="0">1.3 Advantages And Disadvantages Of Clipping </h2>
+            
+            
+            
+                
+                    <p tabindex="0">Clipping instead of shrinking has the advantage that it produces strictly larger propagated aspiration sets, which might be desirable as discussed in section 3 of the main text. </p>
+                
+            
+                
+                    <p tabindex="0">However, clipping changes the shape of aspiration sets, adding up to d + 1 defining hyperplanes at each step, and requiring recomputation of the set of vertices which may become combinatorially large. Therefore, we expect the complexity of the clipping variant to be worse than shrinking, though we have not studied it formally. </p>
+                
+            
+        
+            <h2 id="section-body-20" tabindex="0">2. Alternate Version Of Action Selection/Local Policy Computation </h2>
+            
+            
+            
+                
+                    <p tabindex="0">Some action selection criteria which we may wish to use are "farsighted" and require knowing the future behavior of the policy as well. Algorithm 2 of the main text does not provide this information, as it samples candidate actions a i first before determining the probabilities with which to mix them. The algorithm 2 presented here is an adaptation which does provide the full local policy before sampling from it to choose the action taken. It does so by replacing the sampling in lines 4 and 7 of the original algorithm by a computation of the respective probabilities. Instead of solving the linear program in line 6 of main-text algorithm 2 for each of the at most |A| d+2 many candidate action combinations (a 0 , . . . , a d+1 ), line 7 uses a single linear program invocation manipulating the average action-aspirations for each direction, E ai∼πi E ai . This ensures complexity remains linear in |A|. A solution to this linear program exists since E ai∼πi E ai ⊆ E s + E ai∼πi z ai and E ai∼πi z ai is a positive multiple of V πi (s) − x; the proof of Lemma 2 of the main text is readily adapted. Finally, the loop in lines 8 to 11 is necessary as one same action may lie in two distinct directional action sets A i ̸ = A j . </p>
+                
+            
+                
+                    <p tabindex="0">Algorithm 2 Local policy computation ("clip" and "shrink" variants) </p>
+                
+            
+                
+                    <p tabindex="0">Require: Reference simplex vertices V π i (s), Q π i (s, a); state s; state-aspiration Es. 1: </p>
+                
+            
+                
+                    <p tabindex="0">x ← C(Es), E ′ ← Es − x ▷ center, shape 2: for i = 0, . . . , d + 1 do 3: </p>
+                
+            
+                
+                    <p tabindex="0">Ai ← DirectionalActionSet(i) 4: </p>
+                
+            
+                
+                    <p tabindex="0">πi ← CandidateActionDistribution(Ai) ▷ any probability distribution on Ai 5: </p>
+                
+            
+                
+                    <p tabindex="0">for ai ∈ Ai do 6: </p>
+                
+            
+                
+                    <p tabindex="0">Ea i ← ClipAspiration(ai, i) or ShrinkAspiration(ai, i) ▷ action-aspiration 7: solve linear program p0 = max!, d+1 i=0 piEa i ∼π i Ea i ⊆ Es for p ∈ ∆({0, . . . , d + 1}) 8: initialize π ≡ 0 9: for i = 0, . . . , d + 1 do ▷ collect probabilities across directions 10: </p>
+                
+            
+                
+                    <p tabindex="0">for ai ∈ Ai do 11: π(ai, Ea i ) ← π(ai, Ea i ) + piπi(ai) return π ▷ local policy </p>
+                
+            
+        
+            <h2 id="section-body-21" tabindex="0">3. Video Of An Example Run </h2>
+            
+            
+            
+                
+                    <p tabindex="0">In the video accessible at the anonymous download link https://mega.nz/file/gUgTzZqB#Co21aSoKQAo7PjeR9_kzxzquHdjlNav0qjp9wKX3NRU, </p>
+                
+            
+                
+                    <p tabindex="0">we illustrate the propagation of aspirations from states to actions in one episode of a simple gridworld environment. </p>
+                
+            
+                
+                    <p tabindex="0">In that environment, the agent starts at the central position (3,3) in a 5-by-5 rectangular grid, can move up, down, left, right, or pass in each of 10 time steps, and gets a Delta f (s, a, s ′ ) = g(s ′ ) that only depends on its next position s ′ on the grid. The values g(s ′ ) are iid 2-d standard normal random values. </p>
+                
+            
+                
+                    <p tabindex="0">In each time-step, the black dashed triangle is the current state's reference simplex V R (s), the blue triangles are the five candidate actions' reference simplices Q R (s, a), the red square is the state-aspiration E, the dotted lines connect its center, the red dot, with the vertices of V R (s) or with the centers of the sets Q R (s, a) , and the green squares are the resulting action-aspirations E a . </p>
+                
+            
+                
+                    <p tabindex="0">The coordinate system is "moving along" with the received Delta, so that aspirations of consecutive steps can be compared more easily. In other words, the received Delta R t = t−1 t ′ =0 f (s t , a t , s t+1 ) is added to all vertices so that, e.g., the vertices of the back dashed triangle are shown at positions R t + V πi (s t ) rather than V πi (s t ). </p>
+                
+            
+                
+                    <p tabindex="0">This run uses the linear volume shrinking schedule r max (s) = 1−1/T (s) 1/d . As one can see, the state-aspirations indeed shrink smoothly towards a final point aspiration, which spends the initial amount of "freedom" rather evenly across states. This way, the agent manages to avoid drift in this case, so that the eventual point aspiration is still inside the initial aspiration set. </p>
+                
+            
+        
+            <h2 id="section-body-22" tabindex="0">4. Numerical Evidence For Reference Policy Selection Complexity </h2>
+            
+            
+            
+                
+                    <p tabindex="0">In order to study the number of trials needed to find the d + 1 directions that define suitable reference policies for the definition of reference simplicies, we performed numerical experiments with binary-tree-shaped environments of the following type. Each environment has 10 time steps, each state has two actions, each action can lead to two different successor states, leading to 4 10 many terminal states. Deltas f (s, a, s ′ ) are iid uniform variates in [0, 1] d . The initial aspiration is (5, . . . , 5). </p>
+                
+            
+                
+                    <p tabindex="0">For each d ∈ {1, . . . , 8}, we perform 1000 independent simulations and find that the average number k of trials until E 0 ∈ conv{v 1 , . . . , v k } is below 2d + 1 for all tested d. </p>
+                
+            
+        
+            <h2 id="section-body-23" tabindex="0">SECTION </h2>
+            
+            
+            
+                
+                    <p tabindex="0">Nevertheless, our algorithm can also be straightforwardly adapted to learning. </p>
+                
+            
+                
+                    <p tabindex="0">However, algorithm 1 remains correct even if the aspiration sets shrink to singletons. </p>
+                
+            
+                
+                    <p tabindex="0">Note however that some safety-related action selection criteria, especially those based on information-theoretic concepts, require access to transition probabilities which would then have to be learned in addition to the reference simplices.9 Farsighted action selection criteria would require an additional learning pass to also learn the actual policy and the resulting action evaluations. </p>
+                
+            
+        
+
+        <footer>
+            
+                <h2 id="paper-references" tabindex="0">References</h2>
+                <ul tabindex="0">
+                    
+                        <li id="BIBREF0">Amodei, D., Olah, C., Steinhardt, J., Christiano, P., Schulman, J., Mané, D.: Con- crete problems in AI safety. arXiv preprint arXiv:1606.06565 (2016)<br/><i><a href="#BIBREF0-1. Introduction-ref">1. Introduction</a></i></li>
+                    
+                        <li id="BIBREF1">Bonet, B., Geffner, H.: Solving POMDPs: RTDP-Bel vs. point-based algorithms. In: IJCAI. pp. 1641-1646. Pasadena CA (2009)<br/><i><a href="#BIBREF1-7.2 Relationship To Reinforcement Learning-ref">7.2 Relationship To Reinforcement Learning</a></i></li>
+                    
+                        <li id="BIBREF10">Simon, H.A.: Rational choice and the structure of the environment. Psychological review 63(2), 129 (1956)<br/><i><a href="#BIBREF10-7.1 Special Cases-ref">7.1 Special Cases</a></i></li>
+                    
+                        <li id="BIBREF11">Skalse, J.M.V., Farrugia-Roberts, M., Russell, S., Abate, A., Gleave, A.: Invariance in policy optimisation and partial identifiability in reward learning. In: Interna- tional Conference on Machine Learning. pp. 32033-32058. PMLR (2023)<br/><i><a href="#BIBREF11-1. Introduction-ref">1. Introduction</a></i></li>
+                    
+                        <li id="BIBREF12">Subramani, R., Williams, M., et al.: On the expressivity of objective-specification formalisms in reinforcement learning. arXiv preprint arXiv:2310.11840 (2023)<br/><i><a href="#BIBREF12-1. Introduction-ref">1. Introduction</a></i></li>
+                    
+                        <li id="BIBREF13">Taylor, J.: Quantilizers: A safer alternative to maximizers for limited optimization (2015), <a href="https://intelligence.org/files/QuantilizersSaferAlternative.pdf" target="_blank">https://intelligence.org/files/QuantilizersSaferAlternative.pdf</a><br/><i><a href="#BIBREF13-1. Introduction-ref">1. Introduction</a>, <a href="#BIBREF13-7.1 Special Cases-ref">7.1 Special Cases</a></i></li>
+                    
+                        <li id="BIBREF14">Tschantz, A., et al.: Reinforcement learning through active inference (2020)<br/><i><a href="#BIBREF14-1. Introduction-ref">1. Introduction</a></i></li>
+                    
+                        <li id="BIBREF15">Vaidya, P.: Speeding-up linear programming using fast matrix multiplication. In: 30th Annual Symposium on Foundations of Computer Science. pp. 332-337 (1989)<br/><i><a href="#BIBREF15-4.1 Propagating Action-Aspirations To State-Aspirations-ref">4.1 Propagating Action-Aspirations To State-Aspirations</a></i></li>
+                    
+                        <li id="BIBREF16">Vamplew, P., Foale, C., Dazeley, R., Bignold, A.: Potential-based multiobjective reinforcement learning approaches to low-impact agents for AI safety. Engineering Applications of Artificial Intelligence 100, 104186 (2021)<br/><i><a href="#BIBREF16-1. Introduction-ref">1. Introduction</a></i></li>
+                    
+                        <li id="BIBREF17">Wendel, J.G.: A problem in geometric probability. Mathematica Scandinavica 11(1), 109-111 (1962)<br/><i><a href="#BIBREF17-5. Determining Appropriate Reference Policies-ref">5. Determining Appropriate Reference Policies</a></i></li>
+                    
+                        <li id="BIBREF18">Yen, I.E.H., Zhong, K., Hsieh, C.J., Ravikumar, P.K., Dhillon, I.S.: Sparse linear programming via primal and dual augmented coordinate descent. Advances in Neural Information Processing Systems 28 (2015)<br/><i><a href="#BIBREF18-5. Determining Appropriate Reference Policies-ref">5. Determining Appropriate Reference Policies</a></i></li>
+                    
+                        <li id="BIBREF2">Chen, L., Lu, K., Rajeswaran, A., Lee, K., Grover, A., Laskin, M., Abbeel, P., et al.: Decision transformer: Reinforcement learning via sequence modeling (2021)<br/><i><a href="#BIBREF2-1. Introduction-ref">1. Introduction</a></i></li>
+                    
+                        <li id="BIBREF3">Clymer, J., et al.: Generalization analogies (GENIES): A testbed for generalizing AI oversight to hard-to-measure domains. arXiv preprint arXiv:2311.07723 (2023)<br/><i><a href="#BIBREF3-1. Introduction-ref">1. Introduction</a>, <a href="#BIBREF3-7:-ref">7:</a></i></li>
+                    
+                        <li id="BIBREF4">Conitzer, V., Freedman, R., Heitzig, J., Holliday, W.H., Jacobs, B.M., Lambert, N., Mossé, M., Pacuit, E., Russell, S., et al.: Social choice for AI alignment: Dealing with diverse human feedback. arXiv preprint arXiv:2404.10271 (2024)<br/><i><a href="#BIBREF4-1. Introduction-ref">1. Introduction</a>, <a href="#BIBREF4-7:-ref">7:</a></i></li>
+                    
+                        <li id="BIBREF5">Dalrymple, D., Skalse, J., Bengio, Y., Russell, S., Tegmark, M., Seshia, S., Omohun- dro, S., Szegedy, C., et al.: Towards guaranteed safe AI: A framework for ensuring robust and reliable AI systems. arXiv preprint arXiv:2405.06624 (2024)<br/><i><a href="#BIBREF5-1. Introduction-ref">1. Introduction</a>, <a href="#BIBREF5-7:-ref">7:</a>, <a href="#BIBREF5-7.1 Special Cases-ref">7.1 Special Cases</a></i></li>
+                    
+                        <li id="BIBREF6">Feinberg, E.A., Sonin, I.: Notes on equivalent stationary policies in Markov decision processes with total rewards. Math. Methods Oper. Res. 44(2), 205-221 (1996).<br/><i><a href="#BIBREF6-7:-ref">7:</a></i></li>
+                    
+                        <li id="BIBREF8">Kern-Isberner, G., Spohn, W.: Inductive reasoning, conditionals, and belief dy- namics. Journal of Applied Logics 2631(1), 89 (2024)<br/><i><a href="#BIBREF8-7.1 Special Cases-ref">7.1 Special Cases</a>, <a href="#BIBREF8-7.2 Relationship To Reinforcement Learning-ref">7.2 Relationship To Reinforcement Learning</a></i></li>
+                    
+                        <li id="BIBREF9">Miryoosefi, S., Brantley, K., Daumé, H., Dudík, M., Schapire, R.E.: Reinforce- ment learning with convex constraints. In: Proceedings of the 33rd International Conference on Neural Information Processing Systems (2019)<br/><i><a href="#BIBREF9-1. Introduction-ref">1. Introduction</a>, <a href="#BIBREF9-7.2 Relationship To Reinforcement Learning-ref">7.2 Relationship To Reinforcement Learning</a></i></li>
+                    
+                </ul>
+            
+        </footer>
+    </div>
+</article>
+</main>
+
+
+        <footer class="app__footer">
+
+            <div class="app__signup-form">
+                <!--[if lte IE 8]>
+                   <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                <![endif]-->
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                <script>
+                    hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5910970",
+                        formId: "05456229-75ba-4c85-99c0-33e2cbe8d1df"
+                    });
+                </script>
+            </div>
+
+            <div class="content text-center">
+                &copy; <a href="https://allenai.org">The Allen Institute for Artificial Intelligence (AI2)</a> - All Rights Reserved<br>
+                <a href="https://allenai.org/privacy-policy.html">Privacy Policy</a>
+                | <a href="https://allenai.org/terms.html">Terms of Use</a>
+            </div>
+        </footer>
+        <script src="https://stats.allenai.org/init.min.js" data-app-name="a11y2" async></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="/static/a11y.js"></script>
+        
+        <script type="text/javascript">
+            window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+            heap.load("2424575119");
+        </script>
+        
+    </body>
+</html>
