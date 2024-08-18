@@ -17,7 +17,7 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  line-height: 1.5
+  line-height: 1.85
 }
 
 ol[class], ul[class] {
@@ -228,8 +228,8 @@ label {
 }
 
 html {
-  background-color: #b6deb6;
-  color: #264653;
+  background-color: #ffffff;
+  color: #09090B;
   font-size: 55%;
   font-family: Roboto, sans-serif
 }
@@ -239,7 +239,7 @@ body {
 }
 
 a {
-  color: #1857b6;
+  color: #6E6E77;
   transition: color .25s ease-out
 }
 
@@ -268,7 +268,7 @@ a:hover {
 }
 
 .card {
-  background: #fff
+  background: #FBFBFB
 }
 
 .sr-only {
@@ -281,7 +281,7 @@ a:hover {
 }
 
 .app {
-  background-color: #f5f6f7;
+  /* background-color: #f5f6f7; */
   min-height: 90vh
 }
 
@@ -374,13 +374,13 @@ a:hover {
   grid-template-columns: 1fr 1fr
 }
 
-.app {
+/* .app {
   padding: 100px 16px 0 16px
-}
+} */
 
 .paper {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 880px;
   width: 100%
 }
 
@@ -395,7 +395,8 @@ a:hover {
 
 .paper__head .paper__meta {
   display: flex;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  color: #6E6E77
 }
 
 .paper__head .paper__meta .paper__meta-item {
@@ -403,8 +404,13 @@ a:hover {
 }
 
 .paper__head .paper__meta .paper__meta-item:after {
-  content: " • "
+  /* content: " • " */
+  content: ", "
 }
+
+/* .paper__head .paper__meta .paper__meta-item:nth-last-child(2):after {
+  content: ""
+} */
 
 .paper__head .paper__meta .paper__meta-item:last-child:after {
   content: ""
@@ -453,7 +459,7 @@ a:hover {
   left: 0;
   width: 100%;
   z-index: 100;
-  height: 90vh;
+  height: 100vh;
   border-radius: 24px 24px 0 0;
   overflow: auto;
   transition: top .3s ease-out, opacity .3s ease-out;
@@ -463,7 +469,7 @@ a:hover {
 .paper__toc .toc__header {
   border-bottom: 1px solid #d9dadb;
   padding: 24px;
-  font-family: "Noto Serif", serif;
+  /* font-family: "Noto Serif", serif; */
   font-size: 2.4rem;
   margin: 0
 }
@@ -479,7 +485,8 @@ a:hover {
 }
 
 .paper__toc a {
-  display: block
+  display: block;
+  /* scroll-behavior: smooth */
 }
 
 .paper__figure {
@@ -530,20 +537,20 @@ a:hover {
 }
 
 .paper__title {
-  font-family: "Noto Serif", serif;
+  /* font-family: "Noto Serif", serif; */
   font-size: 4.8rem;
   line-height: 5.4rem
 }
 
 .paper__text {
-  font-family: "Noto Serif", serif;
+  /* font-family: "Noto Serif", serif; */
   font-size: 2rem;
   line-height: 3.2rem
 }
 
 .paper h2, .paper h3, .paper h4, .paper h5, .paper h6 {
   margin: 3.6rem 0 1.2rem 0;
-  color: #11223d
+  /* color: #11223d */
 }
 
 .paper h2:first-of-type {
@@ -775,7 +782,7 @@ html.aid--focused .app__footer:hover, html.aid--focused .app__header:hover, html
   }
 
   .app {
-    padding: 20px 16px 120px 16px
+    padding: 20px 30px 25px 30px
   }
 
   .app__header {
@@ -787,12 +794,12 @@ html.aid--focused .app__footer:hover, html.aid--focused .app__header:hover, html
   }
 
   .paper {
-    column-gap: 36px;
+    /* column-gap: 36px; */
     display: grid;
     grid-template-columns: 1fr;
     align-items: start;
     justify-items: start;
-    grid-template-columns: 1fr 580px 1fr
+    /* grid-template-columns: 1fr 580px 1fr */
   }
 
   .toc-toggle {
@@ -802,18 +809,18 @@ html.aid--focused .app__footer:hover, html.aid--focused .app__header:hover, html
   .paper__nav {
     align-self: start;
     position: sticky;
-    top: 86px;
+    top: 0px;              /* 86px */
     width: auto;
-    height: auto;
+    height: auto;           /* ? */
     background: 0 0;
     z-index: 1
   }
 
   .paper__toc {
-    border-top: 4px solid #1857b6;
-    max-height: calc(100vh - 110px);
+    border-top: 4px solid #09090B;
+    /* max-height: calc(100vh - 110px); */
     position: relative;
-    height: auto;
+    /* height: auto;          */
     border-radius: 0;
     top: 0;
     opacity: 1;
@@ -842,7 +849,8 @@ html.aid--focused .app__footer:hover, html.aid--focused .app__header:hover, html
 
 @media screen and (min-width:1200px) {
   html {
-    font-size: 60%
+    font-size: 60%;
+    scroll-behavior:smooth;
   }
 }
 

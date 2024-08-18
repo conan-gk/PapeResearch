@@ -33,6 +33,12 @@ router.get('/:id', async (req, res) => {
             // Load HTML content into Cheerio
             const $ = cheerio.load(htmlContent);
 
+            // Extract the Table of Contents (ToC)
+            const toc = $('nav.paper__nav').html();
+
+            // Remove the ToC from the HTML content
+            $('nav.paper__nav').remove();
+
             // Remove the header
             $('header.app__header').remove();
 
@@ -48,13 +54,17 @@ router.get('/:id', async (req, res) => {
             // Remove the signup form
             $('div.app__signup-form').remove();
 
-            // Adjust URLs in href attributes
+            // Adjust URLs in href attributes for static directory
             const updatedContent = $.html().replace(
                 /href="\/static\/([^"]+)"/g,
                 'href="http://localhost:3001/static/$1"'
             );
 
-            res.send(updatedContent);
+            // Respond with both the updated HTML content and the ToC as JSON
+            res.json({
+                paperContent: updatedContent,
+                tableOfContents: toc
+            });
         });
 
     } catch (err) {
@@ -62,6 +72,7 @@ router.get('/:id', async (req, res) => {
         res.status(500).json({ message: 'unable to serve html for path' });
     }
 });
+
 
 
 //pre-html content modification route

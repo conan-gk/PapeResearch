@@ -1,0 +1,90 @@
+/* General Layout */
+.wrapper {                            
+    display: flex;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Sidebar (Table of Contents) */
+.sidebar {
+    height: 100vh; /* Full height */
+    position: sticky;
+    top: 0;
+    overflow: auto;
+    transition: width 0.3s ease;
+    border-right-color: #e5e7eb;
+    border-right-style: solid;
+    border-right-width: 1px;
+}
+
+.sidebar.collapsed {
+    width: 40px; /* Collapsed width */
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+/* Toggle button styling */
+/* .toggle-button {
+    background-color: #34495e;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+} */
+
+/* .toggle-button:hover {
+    background-color: #2c3e50;
+} */
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Main content */
+.paper-content {
+    background-color: #fff;
+    border-top: #e5e7eb;
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Figure Panel */
+.figpanel {
+    width: 25%;
+    /* height: 200vh;  */
+    /* padding: 15px; */
+    display: flex;
+    flex-direction: column; /* Content is stacked vertically in container */
+    background-color: #FBFBFB;
+    border: #e5e7eb;
+    border-style: solid;
+    border-width: 1px;
+    height: 100vh; /* Full height */
+    position: sticky;
+    top: 0;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Sidepanel (AI Chatbot) */
+.sidepanel {
+    width: 300px; /* Expanded width */
+    height: 100vh; /* Full height */
+    position: sticky;
+    top: 0;
+    overflow: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #FBFBFB;
+    border-left: 1px solid #e5e7eb;
+    transition: width 0.3s ease;
+}
+
+.sidepanel.collapsed {
+    width: 40px; /* Collapsed width */
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}

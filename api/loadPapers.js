@@ -15,7 +15,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/mern-test', {
 }).catch(console.error);
 
 
-
+// For loading content from htmls into DB (title, authors, year, journal, file)
 async function loadPapers() {
     const papersDirectory = path.join(__dirname, '../api/papers');      // sets papersDirectory to api/papers directory.
 

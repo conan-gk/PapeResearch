@@ -3,30 +3,39 @@
     /* for all elements, width and height calculated based on content inside element. 
     If you add any padding or border to element, will be added to the final width of the element.*/
   }
-  main{
+  /* main{
     padding: 10px;
     max-width: 960px;
     margin: 0 auto;
-  }
+  } */
   html{
-    background-color: #b6deb6;
-    color: #264653;
+    background-color: #ffffff;
+    color: #09090B;
   }
   header{
     display:flex;
     justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 35px;
     align-items: center;
+    padding: 10px;
+    max-width: 1260px;
+    margin: 26px auto;
+    /* border-bottom: #e5e7eb;
+    border-bottom-style: solid;
+    border-bottom-width: 1px; */
+    /* top: 0;
+    position: sticky; */
   }
   header a{
     text-decoration: none;
     color:inherit;
     font-size: 1.4rem;
+    color: #09090B;
   }
   header a.logo{
     font-weight: bold;
     font-size: 1.5rem;
+    display: flex;
+    align-items: center;
   }
   header nav{
     display:flex;
@@ -44,9 +53,20 @@
     padding-inline-start: 85px;
   }
   a{
+    font-size: 1.6rem;
+    text-decoration-line: none;
+    color:#6E6E77;
+  }
+  .papers-list a{
     font-size: 1.15rem;
     text-decoration-line: none;
-    color:#264653;
+    color:#6E6E77;
+  }
+  .papers-list{
+    /* padding: 10px; */
+    padding-top: 30px;
+    max-width: 960px;
+    margin: 0 auto;
   }
 
 
