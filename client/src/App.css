@@ -30,6 +30,7 @@
     color:inherit;
     font-size: 1.4rem;
     color: #09090B;
+    font-weight: 500;
   }
   header a.logo{
     font-weight: bold;
@@ -40,7 +41,7 @@
   header nav{
     display:flex;
     gap: 15px;
-    margin-right: 120px;
+    margin-right: 310px;
   }
   h1{
     font-size: 1.2rem;

@@ -18,24 +18,27 @@ function Paper() {
   }, [id]);
 
   return (
-    <div className="wrapper">
+    <div className="wrapper"> {/* Container for Paper page */}
 
       {/* Sidebar for Table of Contents */}
       <div className={`sidebar ${isSidebarCollapsed ? 'collapsed' : ''}`}>
-        {/* <button className="toggle-button" onClick={() => setIsSidebarCollapsed(!isSidebarCollapsed)}>
-          {isSidebarCollapsed ? '>' : '<'} 
-        </button> */}
 
+        {/* Toggle Button */}
+        <button 
+          className="toggle-button" 
+          onClick={() => setIsSidebarCollapsed(!isSidebarCollapsed)}
+        >
+          {isSidebarCollapsed ? '>>' : '<<'}
+        </button>
+
+        {/* If sidebar expanded, render ToC */}
         {!isSidebarCollapsed && (
           <div className="toc-content"> {/* Render ToC here */}
             <div dangerouslySetInnerHTML={{ __html: tableOfContents }} /> {/* ToC content */}
           </div>
         )}
-
         
       </div>
-
-
 
       {/* Main Paper Content */}
       <div className="paper-content">
@@ -43,16 +46,23 @@ function Paper() {
       </div>
 
       {/* Placeholder for Figures Panel */}
-      <div className="figpanel">
-        <h3>Panel for Figures</h3>
-        <p>Figures will be displayed here!</p>
+      <div class="figpanel">
+        <div class="panel_header">
+                <b>Related Figures</b><br/>
+                Click to pin
+        </div>
+        <div id="colRelated" class="column">
+        </div>
       </div>
 
-      {/* Placeholder for Sidepanel */}
+
+
+      {/* Placeholder for Chatbot Sidepanel/drawer */}
       <div className="sidepanel">
         <h3>AI Chatbot</h3>
         <p>I will answer your questions!</p>
       </div>
+      
     </div>
   );
 }

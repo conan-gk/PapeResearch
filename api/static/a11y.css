@@ -829,7 +829,8 @@ html.aid--focused .app__footer:hover, html.aid--focused .app__header:hover, html
 
   .paper__toc .toc__header {
     padding: 12px 24px;
-    font-size: 1.8rem
+    font-size: 1.8rem;
+    margin-left: 8px
   }
 
   .paper__toc ul {
