@@ -6,7 +6,6 @@ const path = require('path');
 const fs = require('fs');
 const cheerio = require('cheerio');
 
-
 // Route to get all papers, sorted alphabetically by title
 router.get('/', async (req, res) => {
     try {
@@ -19,7 +18,6 @@ router.get('/', async (req, res) => {
     }
 });
 
-
 // Route to get a specific paper by ID and serve the HTML file, dynamically modify the HTML content
 router.get('/:id', async (req, res) => {
     try {
@@ -29,6 +27,10 @@ router.get('/:id', async (req, res) => {
         // Read the HTML file content
         const filePath = path.join(__dirname, '../papers', paper.htmlFilePath);
         fs.readFile(filePath, 'utf8', (err, htmlContent) => {
+            if (err) {
+                console.error("Error reading HTML file:", err);
+                return res.status(500).json({ message: 'Unable to read HTML file' });
+            }
 
             // Load HTML content into Cheerio
             const $ = cheerio.load(htmlContent);
@@ -54,40 +56,43 @@ router.get('/:id', async (req, res) => {
             // Remove the signup form
             $('div.app__signup-form').remove();
 
+            // Extract all figures
+            const figures = [];
+            $('figure').each((i, elem) => {
+                const figureId = $(elem).attr('id');
+                const imgSrc = $(elem).find('img').attr('src');
+                const imgAlt = $(elem).find('img').attr('alt');
+                const figCaption = $(elem).find('figcaption').text();
+
+                // Log the extracted image details
+                console.log('Extracted Figure:', { figureId, imgSrc, imgAlt, figCaption });
+
+                figures.push({
+                    id: figureId,
+                    imgSrc: imgSrc,
+                    imgAlt: imgAlt,
+                    caption: figCaption
+                });
+            });
+
             // Adjust URLs in href attributes for static directory
             const updatedContent = $.html().replace(
                 /href="\/static\/([^"]+)"/g,
                 'href="http://localhost:3001/static/$1"'
             );
 
-            // Respond with both the updated HTML content and the ToC as JSON
+            // Respond with both the updated HTML content, ToC, and figures as JSON
             res.json({
                 paperContent: updatedContent,
-                tableOfContents: toc
+                tableOfContents: toc,
+                figures: figures // Include the extracted figures
             });
         });
 
     } catch (err) {
-        // error, route doesn't get accessed properly
-        res.status(500).json({ message: 'unable to serve html for path' });
+        console.error("Error fetching paper:", err);
+        res.status(500).json({ message: 'Unable to serve HTML for path' });
     }
 });
-
-
-
-//pre-html content modification route
-// // Route to get a specific paper by ID and serve the HTML file
-// router.get('/:id', async (req, res) => {
-//     try {
-//         console.log("route accessed");
-//         const paper = await Paper.findById(req.params.id);
-//         console.log(paper.htmlFilePath);
-//         res.sendFile(path.join(__dirname, '../papers', paper.htmlFilePath));
-//     } catch (err) {
-//         // error, route doesn't get accessed properly
-//         res.status(500).json({ message: 'unable to serve html for path' });
-//     }
-// });
-
 
 module.exports = router;

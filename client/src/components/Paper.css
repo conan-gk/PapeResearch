@@ -27,13 +27,13 @@
     background-color: #000102db;
     color: white;
     border: none;
-    /* padding: 0.5rem; */
+    padding: 0.5rem;
     cursor: pointer;
     display: block;
     /* margin-bottom: 1rem; */
     transition: all 0.3s ease;
     position: absolute;
-    height: 62px;
+    height: 61px;
     z-index: 999;
     font-family: cursive;
 } 
@@ -55,10 +55,13 @@
 /* ---------------------------------------------------------------------------------- */
 
 /* Figure Panel */
-.figpanel {
-    width: 25%;
+.figure-panel {
+    width: 45%;
     /* height: 200vh;  */
     /* padding: 15px; */
+    overflow: auto;
+    scrollbar-color: #e5e7ebbd #fff0;
+    scrollbar-width: thin;
     display: flex;
     flex-direction: column; /* Content is stacked vertically in container */
     background-color: #FBFBFB;

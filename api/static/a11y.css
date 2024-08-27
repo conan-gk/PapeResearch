@@ -462,6 +462,8 @@ a:hover {
   height: 100vh;
   border-radius: 24px 24px 0 0;
   overflow: auto;
+  scrollbar-color: #e5e7ebbd #fff0;
+  scrollbar-width: thin;
   transition: top .3s ease-out, opacity .3s ease-out;
   font-size: 1.8rem
 }
@@ -476,7 +478,7 @@ a:hover {
 
 .paper__toc ul {
   list-style: none;
-  padding: 24px;
+  padding: 24px 24px 24px 24px;
   margin: 0
 }
 
