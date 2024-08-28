@@ -1,7 +1,5 @@
-import { useContext, useEffect } from "react";
 import {Link} from "react-router-dom";
 import { ReactComponent as Icon } from './assets/icons/book.svg'; // Import your SVG icon
-// import { UserContext } from "./UserContext";
 
 export default function Header() {
 

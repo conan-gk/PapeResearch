@@ -73,6 +73,12 @@ router.get('/:id', async (req, res) => {
                     imgAlt: imgAlt,
                     caption: figCaption
                 });
+
+                // Wrap the image in a div and hide it initially
+                $(elem).find('img').wrap('<div class="hidden-image" style="display: none;"></div>');
+
+                // Make the caption clickable by adding a data attribute for the figure ID
+                $(elem).find('figcaption').attr('data-figure-id', figureId).addClass('clickable-caption');
             });
 
             // Adjust URLs in href attributes for static directory

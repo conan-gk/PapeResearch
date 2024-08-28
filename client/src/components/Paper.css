@@ -1,12 +1,14 @@
 /* General Layout */
 .wrapper {                            
     display: flex;
+    width: 100%;
 }
 
 /* ---------------------------------------------------------------------------------- */
 
 /* Sidebar (Table of Contents) */
 .sidebar {
+    width: 21%;
     height: 100vh; /* Full height */
     position: sticky;
     top: 0;
@@ -46,17 +48,25 @@
 
 /* Main content */
 .paper-content {
+    flex: 1 1 55%;
     background-color: #fff;
     border-top: #e5e7eb;
     border-top-style: solid;
     border-top-width: 1px;
 }
 
+.clickable-caption {
+    cursor: pointer; /* Change the cursor to a pointer when hovering */
+    color: rgb(74, 31, 190); 
+    /* text-decoration: underline;  */
+}
+
+
 /* ---------------------------------------------------------------------------------- */
 
 /* Figure Panel */
 .figure-panel {
-    width: 45%;
+    flex: 0 0 27%;
     /* height: 200vh;  */
     /* padding: 15px; */
     overflow: auto;
@@ -73,10 +83,70 @@
     top: 0;
 }
 
+.figure-panel p {
+    font-size: 1.3rem;
+}
 
-.column {
-    /* float: left; */
-    /* width: 33%; */
+.figure-container {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #eeeeee;
+    border-radius: 10px;
+}
+
+.figure-container p {
+    font-size: 1.1rem;
+    line-height: 1.1;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.column_header {
+    background-color: #d1defd ;
+    text-align: center;
+}
+
+.column h1 {
+    font-size: 100%;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* Pinning */
+
+.figure-container {
+    position: relative;
+}
+
+.pin-icon {
+    width: 25px;
+    height: 25px;
+    font-size: 14pt;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    transform: rotate(45deg);
+    /* background-color: lightgreen; */
+    /* border-radius: 50%;
+    border: 1px solid black; */
+    text-align: center;
+    vertical-align: middle;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+/* .pin-icon:hover {
+    background-color: yellow;
+} */
+
+.pin-icon i {
+    transition: transform 0.2s ease-in-out;
+}
+
+
+/* .column {
     overflow-y: auto;
     height: 100%;
     padding: 20px;
@@ -84,7 +154,7 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-}
+} */
 
 
 
