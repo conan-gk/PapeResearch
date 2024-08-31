@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-// Model is how your database structure should be created
+// Model: how database structure should be created
 
 // Schema for papers
 const PaperSchema = new Schema({

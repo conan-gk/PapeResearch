@@ -1,9 +1,10 @@
-const express = require('express');             // to handle api
-const mongoose = require('mongoose');           // to handle database
+const express = require('express');             
+const mongoose = require('mongoose');         
 const cors = require('cors');
 
-const app = express();                          // setup express app
+const app = express();                   
 const papersRouter = require('./routes/papers');
+const chatRouter = require('./routes/chat');
 const path = require('path');
 
 
@@ -15,13 +16,15 @@ mongoose.connect("mongodb://127.0.0.1:27017/mern-test", {           // Database 
     .catch(console.error);
 
 
-// Serve static files
+// Serve static files for default papertohtml styles
 app.use('/static', express.static(path.join(__dirname, 'static')));
 
-
-app.use(express.json());                        // allow us to use content type: 'application/json' inside our API
-app.use(cors());                                // stop any cross origin errors we gets
+app.use(cors({
+    origin: 'http://localhost:3000', 
+    methods: ['GET', 'POST'],
+  }));
+app.use(express.json({ limit: '1mb' }));                                             
 app.use('/api/papers', papersRouter);
-
+app.use('/api/chat', chatRouter);
 
 app.listen(3001, () => console.log("Server started on port 3001"));

@@ -1,0 +1,47 @@
+# Node.js dependencies
+node_modules/
+*.log
+
+# Environment variables
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Compiled files
+*.out
+*.exe
+*.dll
+*.pyc
+*.class
+
+# Temporary files and folders
+tmp/
+temp/
+*.tmp
+
+# IDE specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Build files
+dist/
+build/
+coverage/
+
+# Ignore generated documentation
+docs/
+
+# Ignore specific sensitive files
+.secret/
+credentials.json

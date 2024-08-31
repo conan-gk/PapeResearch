@@ -13,7 +13,7 @@ function PapersList() {
         fetch('http://localhost:3001/api/papers')
             .then(res => res.json())
             .then(data => {
-                console.log("Fetched papers:", data); // Log the fetched data
+                console.log("Fetched papers:", data);
                 setPapers(data);
             });
     }, []);

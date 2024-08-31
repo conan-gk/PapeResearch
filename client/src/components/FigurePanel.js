@@ -5,20 +5,20 @@ import pinnedIcon from '../assets/icons/push-pin_3419424.png';
 function FigurePanel({ figures, visibleFigureIds }) {
     const [pinnedFigures, setPinnedFigures] = useState([]); // State to keep track of pinned figures
 
-    // Handle pin/unpin functionality
+
     const togglePin = (figureId) => {
         setPinnedFigures(prevPinned => {
             if (prevPinned.includes(figureId)) {
                 // If figure is already pinned, remove it from pinned list
                 return prevPinned.filter(id => id !== figureId);
             } else {
-                // If figure is not pinned, add it to the end of the pinned list
+                // If figure is not pinned, add to end of pinned list
                 return [...prevPinned, figureId];
             }
         });
     };
 
-    // Filter the figures that are currently visible
+    // Filter figures that are currently visible
     const visibleFigures = figures.filter(figure => visibleFigureIds.includes(figure.id));
 
     // Combine pinned figures and visible figures (excluding already pinned ones)
@@ -42,11 +42,11 @@ function FigurePanel({ figures, visibleFigureIds }) {
                             <img 
                                 src={pinnedFigures.includes(figure.id) ? pinnedIcon : pinIcon}  // Conditionally render based on pin state
                                 alt="Pin Icon" 
-                                style={{ width: '22px', height: '22px', transform: 'rotate(-45deg)' }}  // Adjust width and height as needed
+                                style={{ width: '22px', height: '22px', transform: 'rotate(-45deg)' }}
                             />
                         </div>
 
-                        {/* Image and Caption */}
+                        {/* Figre rendered in panel */}
                         <img 
                             src={figure.imgSrc} 
                             alt={figure.imgAlt}

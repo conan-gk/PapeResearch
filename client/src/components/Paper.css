@@ -1,4 +1,4 @@
-/* General Layout */
+/* Wrapper for Paper content, Toc and Figure panel */
 .wrapper {                            
     display: flex;
     width: 100%;
@@ -9,7 +9,7 @@
 /* Sidebar (Table of Contents) */
 .sidebar {
     width: 21%;
-    height: 100vh; /* Full height */
+    height: 100vh;
     position: sticky;
     top: 0;
     overflow: auto;
@@ -21,7 +21,7 @@
 }
 
 .sidebar.collapsed {
-    width: 24px; /* Collapsed width */
+    width: 24px;
 }
 
 /* Toggle button styling */
@@ -32,7 +32,6 @@
     padding: 0.5rem;
     cursor: pointer;
     display: block;
-    /* margin-bottom: 1rem; */
     transition: all 0.3s ease;
     position: absolute;
     height: 61px;
@@ -56,9 +55,8 @@
 }
 
 .clickable-caption {
-    cursor: pointer; /* Change the cursor to a pointer when hovering */
+    cursor: pointer;
     color: rgb(74, 31, 190); 
-    /* text-decoration: underline;  */
 }
 
 
@@ -67,18 +65,16 @@
 /* Figure Panel */
 .figure-panel {
     flex: 0 0 27%;
-    /* height: 200vh;  */
-    /* padding: 15px; */
     overflow: auto;
     scrollbar-color: #e5e7ebbd #fff0;
     scrollbar-width: thin;
     display: flex;
-    flex-direction: column; /* Content is stacked vertically in container */
+    flex-direction: column;
     background-color: #FBFBFB;
     border: #e5e7eb;
     border-style: solid;
     border-width: 1px;
-    height: 100vh; /* Full height */
+    height: 100vh;
     position: sticky;
     top: 0;
 }
@@ -128,73 +124,12 @@
     top: -5px;
     right: -5px;
     transform: rotate(45deg);
-    /* background-color: lightgreen; */
-    /* border-radius: 50%;
-    border: 1px solid black; */
     text-align: center;
     vertical-align: middle;
     line-height: 25px;
     cursor: pointer;
 }
 
-/* .pin-icon:hover {
-    background-color: yellow;
-} */
-
 .pin-icon i {
     transition: transform 0.2s ease-in-out;
-}
-
-
-/* .column {
-    overflow-y: auto;
-    height: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ---------------------------------------------------------------------------------- */
-
-/* Sidepanel (AI Chatbot) */
-.sidepanel {
-    width: 300px; /* Expanded width */
-    height: 100vh; /* Full height */
-    position: sticky;
-    top: 0;
-    overflow: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    background-color: #FBFBFB;
-    border-left: 1px solid #e5e7eb;
-    transition: width 0.3s ease;
-}
-
-.sidepanel.collapsed {
-    width: 40px; /* Collapsed width */
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
 }

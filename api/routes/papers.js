@@ -1,4 +1,3 @@
-// routes/papers.js
 const express = require('express');
 const router = express.Router();
 const Paper = require('../models/Paper');
@@ -6,11 +5,13 @@ const path = require('path');
 const fs = require('fs');
 const cheerio = require('cheerio');
 
+// Routes used to fetch 1) list of papers 2) paper content, on the frontend
+
 // Route to get all papers, sorted alphabetically by title
 router.get('/', async (req, res) => {
     try {
         const papers = await Paper.find().sort({ title: 1 });
-        console.log("Fetched papers:", papers);  // See what is being fetched
+        console.log("Fetched papers:", papers);  // Check what is being fetched
         res.json(papers);
     } catch (err) {
         console.error("Error fetching papers:", err);
@@ -18,7 +19,7 @@ router.get('/', async (req, res) => {
     }
 });
 
-// Route to get a specific paper by ID and serve the HTML file, dynamically modify the HTML content
+// Route to get a specific paper by ID and modify the HTML content for HTML file to be served
 router.get('/:id', async (req, res) => {
     try {
         console.log("route accessed");
@@ -35,28 +36,16 @@ router.get('/:id', async (req, res) => {
             // Load HTML content into Cheerio
             const $ = cheerio.load(htmlContent);
 
-            // Extract the Table of Contents (ToC)
-            const toc = $('nav.paper__nav').html();
+            const toc = $('nav.paper__nav').html(); // Extract Table of Contents
+            $('nav.paper__nav').remove();           // Remove ToC
 
-            // Remove the ToC from the HTML content
-            $('nav.paper__nav').remove();
+            $('header.app__header').remove();                                           // Remove header
+            $('.content.text-center').remove();                                         // Remove footer
+            $('li.paper__meta-item a[href*="semanticscholar.org"]').parent().remove();  // Remove "View in Semantic Scholar" link
+            $('a[href^="mailto:accessibility@semanticscholar.org"]').parent().remove(); // Remove "Report a problem with this paper" link
+            $('div.app__signup-form').remove();                                         // Remove the signup form
 
-            // Remove the header
-            $('header.app__header').remove();
-
-            // Remove the footer or specific content
-            $('.content.text-center').remove();
-
-            // Remove "View in Semantic Scholar" link
-            $('li.paper__meta-item a[href*="semanticscholar.org"]').parent().remove();
-
-            // Remove "Report a problem with this paper" link
-            $('a[href^="mailto:accessibility@semanticscholar.org"]').parent().remove();
-
-            // Remove the signup form
-            $('div.app__signup-form').remove();
-
-            // Extract all figures
+            // Extract all figures: used for Figure Panel logic
             const figures = [];
             $('figure').each((i, elem) => {
                 const figureId = $(elem).attr('id');
@@ -64,8 +53,7 @@ router.get('/:id', async (req, res) => {
                 const imgAlt = $(elem).find('img').attr('alt');
                 const figCaption = $(elem).find('figcaption').text();
 
-                // Log the extracted image details
-                console.log('Extracted Figure:', { figureId, imgSrc, imgAlt, figCaption });
+                console.log('Extracted Figure:', { figureId, imgSrc, imgAlt, figCaption }); // Log the extracted image details
 
                 figures.push({
                     id: figureId,
@@ -76,22 +64,21 @@ router.get('/:id', async (req, res) => {
 
                 // Wrap the image in a div and hide it initially
                 $(elem).find('img').wrap('<div class="hidden-image" style="display: none;"></div>');
-
-                // Make the caption clickable by adding a data attribute for the figure ID
+                // Make figure captions clickable & add a data attribute for the figure ID
                 $(elem).find('figcaption').attr('data-figure-id', figureId).addClass('clickable-caption');
             });
 
-            // Adjust URLs in href attributes for static directory
+            // Adjust URLs for static directory
             const updatedContent = $.html().replace(
                 /href="\/static\/([^"]+)"/g,
                 'href="http://localhost:3001/static/$1"'
             );
 
-            // Respond with both the updated HTML content, ToC, and figures as JSON
+            // Respond with the updated HTML content, ToC, and figures as JSON
             res.json({
                 paperContent: updatedContent,
                 tableOfContents: toc,
-                figures: figures // Include the extracted figures
+                figures: figures
             });
         });
 

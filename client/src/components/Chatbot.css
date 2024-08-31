@@ -1,7 +1,7 @@
-/* Base styles for the container */
-.chat-popup {
-    position: relative;
-  }
+
+  .chat-popup {
+      position: relative;
+    }
   
   /* Chat icon styling */
   .chat-icon {
@@ -23,7 +23,7 @@
   /* Chat window styling */
   .chat-window {
     position: fixed;
-    bottom: 80px; /* Positioned above the chat icon */
+    bottom: 75px; /* Positioned above the chat icon */
     right: 20px;
     width: 300px;
     height: 400px;
@@ -91,13 +91,13 @@
   }
   
   /* Chat messages styling */
-.chat-message {
-    padding: 8px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    max-width: 80%;
-    background-color: #23282c;
-    color: #ffffff;
+  .chat-message {
+      padding: 8px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      max-width: 80%;
+      background-color: #23282c;
+      color: #ffffff;
   }
   
   .chat-message.user {

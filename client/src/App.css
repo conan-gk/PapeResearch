@@ -17,31 +17,26 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    max-width: 1260px;
+    max-width: 1280px;
     margin: 26px auto;
-    /* border-bottom: #e5e7eb;
-    border-bottom-style: solid;
-    border-bottom-width: 1px; */
-    /* top: 0;
-    position: sticky; */
   }
   header a{
     text-decoration: none;
     color:inherit;
-    font-size: 1.4rem;
+    font-size: 124% !important;
     color: #09090B;
     font-weight: 500;
   }
   header a.logo{
     font-weight: bold;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     display: flex;
     align-items: center;
   }
   header nav{
     display:flex;
     gap: 15px;
-    margin-right: 310px;
+    margin-right: 180px;
   }
   h1{
     font-size: 1.2rem;

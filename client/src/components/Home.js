@@ -6,11 +6,6 @@ function Home() {
         <div className="home">
 
 
-            {/* <h1>Welcome to the Scientific Papers App</h1> */}
-
-
-
-        
         </div>
     );
 }
