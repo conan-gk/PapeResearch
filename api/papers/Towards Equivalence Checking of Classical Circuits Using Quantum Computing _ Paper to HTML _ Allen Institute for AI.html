@@ -1,0 +1,1064 @@
+<!DOCTYPE html><html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Towards Equivalence Checking of Classical Circuits Using Quantum Computing | Paper to HTML | Allen Institute for AI</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+        <link rel="stylesheet" href="/static/a11y.css">
+        <link rel="stylesheet" href="/static/style.css">
+        <link rel="icon" href="/static/favicon.ico">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@SemanticScholar">
+        <meta name="twitter:image" content="https://papertohtml.org/static/social.png">
+        <meta name="twitter:title" content="Towards Equivalence Checking of Classical Circuits Using Quantum Computing | Paper to HTML | Allen Institute for AI">
+        <meta name="twitter:description" content="Convert scientific papers to accessible HTML on demand. Paper to HTML is a free service of the non-profit AI2.">
+    </head>
+    <body>
+
+        
+
+<div class="sr-only">
+    <p>Go To:</p>
+    <a href="#paper-title">Paper Title</a>
+    <a href="#paper-authors">Paper Authors</a>
+    <a href="#paper-toc">Table Of Contents</a>
+    <a href="#paper-abstract">Abstract</a>
+    <a href="#paper-references">References</a>
+</div>
+
+<header class="app__header">
+    <div class="app__navigation">
+        <a href="/" class="button">Home</a>
+        <a href="https://allenai.org"><img src="https://cdn.jsdelivr.net/npm/@allenai/varnish@2.0.7/dist/ai2.svg" alt="Allen Institute for AI" class="logo"></a>
+    </div>
+
+    <div class="settings" aria-hidden="true">
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggler button" tabindex="-1".>Reading Aids</a>
+            <div class="popover">
+                <div class="options options--4">
+                    <a href="#" class="option js-aid on">None</a>
+                    <a href="#" class="option js-aid" data-aid="aid--dyslexia">Dyslexic Friendly</a>
+                    <a href="#" class="option js-aid" data-aid="aid--focused">Focus</a>
+                    <a href="#" class="option js-aid" data-aid="aid--xl">Extra Large</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggler button" tabindex="-1".>Display Settings</a>
+            <div class="popover">
+                <div class="options">
+                    <a href="#" class="option js-themer on">Light</a>
+                    <a href="#" class="option js-themer" data-theme="theme--reversed">Dark</a>
+                    <a href="#" class="option js-themer" data-theme="theme--apple2">Retro</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="app">
+
+<!-- <div>
+    <p><a href="/about">Learn more about this prototype</a></p>
+<div> -->
+
+<article class="paper">
+    <div class="paper__head">
+        
+        <div>
+            <a href="mailto:accessibility@semanticscholar.org?subject=[Paper To HTML] Problem with upload 5cdf476b8243576785d2513afb8c9d524a6a7d54&body=Please describe the main issues you encountered (optional):%0D%0A%0D%0A%0D%0ATo help us debug, please consider attaching the PDF or other file you uploaded. Note that Paper to HTML is designed primarily to handle scientific papers; if you are uploading a different type of document, performance may be poor.%0D%0A%0D%0ADebug:%0D%0Ahttps://papertohtml.org/paper?id=5cdf476b8243576785d2513afb8c9d524a6a7d54">
+                Report a problem with this paper
+            </a>
+        </div>
+        <p> </p>
+        <h1 class="paper__title" id="paper-title">Towards Equivalence Checking of Classical Circuits Using Quantum Computing</h1>
+        <!-- <form action="/download", method="GET">
+            <button type="submit" name="id" value=5cdf476b8243576785d2513afb8c9d524a6a7d54> Download HTML </button>
+        </form> -->
+        <h2 class="sr-only" id="paper-authors">Authors</h2>
+        <ul class="paper__meta">
+             
+                <li class="paper__meta-item">Nils 
+                    
+                Quetschlich</li> 
+             
+                <li class="paper__meta-item">Tobias 
+                    
+                         
+                            V
+                        
+                    
+                Forster</li> 
+             
+                <li class="paper__meta-item">Adrian 
+                    
+                Osterwind</li> 
+             
+                <li class="paper__meta-item">Domenik 
+                    
+                Helms</li> 
+             
+                <li class="paper__meta-item">Robert 
+                    
+                Wille</li> 
+            
+            
+            
+            
+            
+        </ul>
+
+        <a href="#" aria-hidden="true" class="js-toc-toggle toc-toggle">Table Of Contents</a>
+    </div>
+
+    <nav class="paper__nav">
+        <div class="paper__toc card">
+            <!-- TOC -->
+            <h2 id="paper-toc" class="toc__header">Table of Contents</h2>
+            <ul>
+                
+                    <li><a href="#paper-abstract">Abstract</a></li>
+                
+                
+                <li>
+                    <a href="#section-body-1">I. Introduction</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-2">Ii. Background</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-3">A. Grover'S Algorithm</a>
+                    
+                    
+                    <ul>
+                    
+                    
+                        
+                        <li>
+                            <a href="#fig-3-1">
+                                
+                                Figure 1...
+                                
+                                
+                            </a>
+                        </li>
+                    
+                    </ul>
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-4">B. Probability Of Measuring Target States</a>
+                    
+                    
+                    <ul>
+                    
+                    
+                        
+                        <li>
+                            <a href="#fig-4-1">
+                                
+                                Figure 2...
+                                
+                                
+                            </a>
+                        </li>
+                    
+                    </ul>
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-5">Iii. Equivalence Checking Using Quantum Computing</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-6">A. Classical Equivalence Checking</a>
+                    
+                    
+                    <ul>
+                    
+                    
+                        
+                        <li>
+                            <a href="#fig-6-1">
+                                
+                                Figure 3...
+                                
+                                
+                            </a>
+                        </li>
+                    
+                    </ul>
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-7">B. Using Grover'S Algorithm For Equivalence Checking</a>
+                    
+                    
+                    <ul>
+                    
+                    
+                        
+                        <li>
+                            <a href="#fig-7-1">
+                                
+                                Figure 4...
+                                
+                                
+                            </a>
+                        </li>
+                    
+                    </ul>
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-8">Iv. Handling The Unknown Number Of Grover Iterations</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-9">A. Concept</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-10">B. Implementation</a>
+                    
+                    
+                    <ul>
+                    
+                    
+                        
+                        <li>
+                            <a href="#fig-10-1">
+                                
+                                Figure 5...
+                                
+                                
+                            </a>
+                        </li>
+                    
+                    </ul>
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-11">V. Experimental Evaluation</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-12">A. Results</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-13">B. Resulting Working Concept</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-14">Vi. Conclusion</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-15">SECTION</a>
+                    
+                    
+                </li>
+                
+                <li>
+                    <a href="#section-body-16">SECTION</a>
+                    
+                    
+                    <ul>
+                    
+                    
+                        
+                        <li>
+                            <a href="#fig-16-1">
+                                
+                                Table 1...
+                                
+                                
+                            </a>
+                        </li>
+                    
+                    </ul>
+                    
+                </li>
+                
+                <li><a href="#paper-references">References</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="paper__text">
+        <!--Only show abstract if exists-->
+        
+            <h2 id="paper-abstract" tabindex="0"> Abstract </h2>
+            <p tabindex="0"> Quantum computers and quantum algorithms have made great strides in the last few years and promise improvements over classical computing for specific tasks. Although the current hardware is not yet ready to make real impacts at the time of writing, this will change over the coming years. To be ready for this, it is important to share knowledge of quantum computing in application domains where it is not yet represented. One such application is the verification of classical circuits, specifically, equivalence checking. Although this problem has been investigated over decades in an effort to overcome the verification gap, how it can potentially be solved using quantum computing has hardly been investigated yet. In this work, we address this question by considering a presumably straightforward approach: Using Grover&#39;s algorithm. However, we also show that, although this might be an obvious choice, there are several pitfalls to avoid in order to get meaningful results. This leads to the proposal of a working concept of a quantum computing methodology for equivalent checking providing the foundation for corresponding solutions in the (near) future.</p>
+        
+
+        <!-- Body text -->
+        
+            <h2 id="section-body-1" tabindex="0">I. Introduction </h2>
+            
+            
+            
+                
+                    <p tabindex="0">Since the introduction of the first transistor, the semiconductor industry has made exponential improvements for decades. Accordingly, the resulting circuits and systems substantially increased in complexity-constantly making it harder to properly verify their correctness. Equivalence checking, i.e., verifying whether two circuits realize the same functionality or not, is a typical task in this context. But despite the fact that, in the meantime, numerous approaches addressing this task have been proposed (see, e.g., <a href="#BIBREF0"  id="BIBREF0-I. Introduction-ref">[1]</a> - <a href="#BIBREF7"  id="BIBREF7-I. Introduction-ref">[8]</a> ), all approaches still suffer from the steadily increasing complexity and the resulting verification gap (i.e., the fact that the designs grow faster than the ability to efficiently verify them). </p>
+                
+            
+                
+                    <p tabindex="0">Consequently, the verification community should consider all available alternative directions and explore whether they may provide additional support to eventually close or at least narrow this gap. Quantum computing <a href="#BIBREF8"  id="BIBREF8-I. Introduction-ref">[9]</a> could provide such an alternative. Although still in its infancy, recent achievements have already sparked interest in many application domains, such as finance <a href="#BIBREF9"  id="BIBREF9-I. Introduction-ref">[10]</a> , chemistry <a href="#BIBREF10"  id="BIBREF10-I. Introduction-ref">[11]</a> , machine learning <a href="#BIBREF11"  id="BIBREF11-I. Introduction-ref">[12]</a> , and optimization <a href="#BIBREF12"  id="BIBREF12-I. Introduction-ref">[13]</a> . Even if the resulting solutions are often not practical yet and still restricted by the limited hardware capabilities, these considerations already indicated the potential for quantum advantages in the (near) feature. This raises the question whether similar quantum advantages can be achieved for equivalence checking as well. </p>
+                
+            
+                
+                    <p tabindex="0">In this work, we are aiming to provide a first step towards answering this question. While we are not claiming yet that quantum computing certainly will provide an advantage for equivalence checking, we propose a conceptual basis to tackle this task with this new computational concept. To this end, we are considering Grover's algorithm <a href="#BIBREF13"  id="BIBREF13-I. Introduction-ref">[14]</a> -a quantum solution for which quantum advantage already has been verified on a conceptual level. We show that this seems to be an obvious choice for equivalence checking as well, but also illustrate some pitfalls that might lead to an improper application of Grover and, hence, the generation of meaningless results. Afterwards, we discuss how these pitfalls can be addressedresulting in a concept and workflow for equivalence checking using quantum computing. </p>
+                
+            
+                
+                    <p tabindex="0">Experimental evaluations confirm the applicability of the proposed approach and show that, even despite the probability nature of quantum computing, still helpful conclusions can be drawn from the obtained results-providing verification engineers with a "starting point" to an alternative computing technology that may help them to solve the equivalence checking problem. </p>
+                
+            
+                
+                    <p tabindex="0">The remainder of this work is structured as follows. In Section II, we discuss the basics of Grover's algorithm. Section III presents a straightforward approach to equivalence checking using quantum computing and shows its pitfalls, which can easily lead to meaningless results. How these can be addressed and how a workflow can be derived accordingly is then covered in Section IV. The resulting workflow is then evaluated and discussed in Section V before Section VI concludes this work. </p>
+                
+            
+        
+            <h2 id="section-body-2" tabindex="0">Ii. Background </h2>
+            
+            
+            
+                
+                    <p tabindex="0">To keep this work self-contained, this section briefly reviews one of the most prominent quantum computing algorithms: the Grover's algorithm. </p>
+                
+            
+        
+            <h2 id="section-body-3" tabindex="0">A. Grover'S Algorithm </h2>
+            
+            
+            
+                
+                    <p tabindex="0">Grover's algorithm <a href="#BIBREF13"  id="BIBREF13-A. Grover'S Algorithm-ref">[14]</a> provides a quadratic speed-up for several problems compared to classical algorithms. This algorithm was originally motivated by the problem of finding desired elementsx in an unordered database, but it can be applied to further search problems as well, e.g., to determine the desired basis states out of all 2 n possibilities for n qubits. Formally, the problem is defined by having a function f : B n −→ B and finding anx ∈ B n such that f (x) = 1. </p>
+                
+            
+                
+                    <p tabindex="0">arXiv:2408.14539v1 [quant-ph] 26 Aug 2024 θ |S⟩ |S⟩ |ψ 0 ⟩ O |ψ 0 ⟩ DO |ψ 0 ⟩ (a) S-Basis. </p>
+                
+            
+                
+                    
+                    
+                    <!--Do not display image (display content instead)-->
+                    
+                        <!--placeholder image-->
+                        
+                            <!--figure with alt-text-->
+                            
+                                <figure id="fig-3-1" class="paper__figure" tabindex="0">
+                                    <img src="data:image/png;base64,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" alt="" style="width:100%">
+                                    <figcaption class="paper__figure-caption">Fig. 1: State vector evolution in the S-Basis with the corresponding state amplitudes.</figcaption>
+                                </figure>
+                            
+                        
+                    
+                
+            
+                
+                    <p tabindex="0">(b) Amplitudes. The algorithm itself consists of three steps (state preparation, oracle operator, and diffusion operator) which are reviewed in the following. To make the algorithm more accessible, the original input and the results of each step are visualized on a plane shown in <a href="#FIGREF0"  id="FIGREF0-A. Grover'S Algorithm-ref">Fig. 1a</a> that is spanned between the superposition of all desired states |S⟩ and all the other remaining states |S⟩ that are orthogonal to each other. In the following, we will refer to this as the S-Basis. The respective amplitudes of the states are shown in <a href="#FIGREF0"  id="FIGREF0-A. Grover'S Algorithm-ref">Fig. 1b</a> in matching colors. </p>
+                
+            
+                
+                    <p tabindex="0">Example 1. Let us assume a database over 2 bits and, hence, four possible inputs 00, 01, 10, 11, where wlog.x = 01 represents the desired state. Thus, |S⟩ = [0 1 0 0] T and |S⟩ = 1/ √ 3[1 0 1 1] T form the coordinate system (as shown in <a href="#FIGREF0"  id="FIGREF0-A. Grover'S Algorithm-ref">Fig. 1a</a> ). Obviously, these states are not known beforehand, but are used to visualize the results of the algorithm. </p>
+                
+            
+                
+                    <p tabindex="0">Step 1 (State Preparation): Initially, all qubits are put in a superposition such that the amplitudes of all basis states are equally distributed. This can be easily done by starting with a basis state |00⟩ and applying H operations to all qubits. </p>
+                
+            
+                
+                    <p tabindex="0">Example 2. The result of the first step is shown by the pink vector in <a href="#FIGREF0"  id="FIGREF0-A. Grover'S Algorithm-ref">Fig. 1a</a> and the respectively colored amplitude in <a href="#FIGREF0"  id="FIGREF0-A. Grover'S Algorithm-ref">Fig. 1b</a> . This state is expressed in terms of the S-Basis by </p>
+                
+            
+                
+                    <p tabindex="0">|ψ 0 ⟩ = H 2 |0⟩ = 1 2 |S⟩ + √ 3 2 |S⟩ = 1 2 [1 1 1 1] T . </p>
+                
+            
+                
+                    <p tabindex="0">Step 2 (Oracle Operator): This step is the most important one and encodes the actual problem, i.e., it is also the only step that is problem-dependent. To this end, the function f (representing the problem) is implemented as an oracle O which marks the amplitudes for all basis states representing the desired input allocationsx with a negative phase, while keeping all other amplitudes (representing inputs x ̸ =x) unchanged. That is, the application of the oracle effectively mirrors the initial state |ψ 0 ⟩ around |S⟩. Therefore, it can be written as O = I −2 |S⟩ ⟨S| with I being the identity operator. Generating quantum circuits that realize such oracles has been actively researched for years and many so-called reversible logic synthesis tools have been proposed for this purpose, such as <a href="#BIBREF14"  id="BIBREF14-A. Grover'S Algorithm-ref">[15]</a> - <a href="#BIBREF19"  id="BIBREF19-A. Grover'S Algorithm-ref">[20]</a> . </p>
+                
+            
+                
+                    <p tabindex="0">Example 3. Recall that wlog.,x = 01 represents the desired input. Then, the result of the second step (i.e., the result of applying the oracle O to the state obtained in Example 2) is shown by the pink vector in <a href="#FIGREF0"  id="FIGREF0-A. Grover'S Algorithm-ref">Fig. 1a</a> and its respective amplitude in <a href="#FIGREF0"  id="FIGREF0-A. Grover'S Algorithm-ref">Fig. 1b</a> . This state is expressed in terms of the </p>
+                
+            
+                
+                    <p tabindex="0">S-Basis by |ψ 1 ⟩ = − 1 2 |S⟩+ √ 3 </p>
+                
+            
+                
+                    <p tabindex="0">2 |S⟩. It can be clearly seen that this state now explicitly marks the basis state representing the desired inputx, i.e., the corresponding amplitude of the state 01 is negative, while all other amplitudes (representing basis states x ̸ =x) remain unchanged. Now, one may assume that the problem is solved, since the resulting state clearly marks the desired input. But the state cannot be directly observed and must be measured. However, a measurement of this state still yields all basis states with the same probability (in the case of the example, both | 1 2 | 2 and | − 1 2 | 2 yield 0.25, i.e., all basis states are still measured with the same probability). Therefore, a third and last step is necessary. </p>
+                
+            
+                
+                    <p tabindex="0">Step 3 (Diffusion Operator): This step conducts a so-called amplitude amplification, i.e., it aims to isolate the desired states by increasing the amplitudes (and, hence, the probability of measurement) of the basis states marked by a negative phase, while decreasing the amplitudes (and, hence, the probability of measurement) of all other basis states. This is done by applying D = 2 |ψ 0 ⟩ ⟨ψ 0 |−I, where |ψ 0 ⟩ is the initial state. Applying this operator effectively mirrors the state O |ψ 0 ⟩ around |ψ 0 ⟩. Example 4. Applying the diffusion operator to the result of the second step shown in Example 3 rotates the corresponding vector by 4θ = 4 arcsin 1 4 = 2π 3 . This eventually yields the final result, which is shown by the yellow vector and amplitude in <a href="#FIGREF0"  id="FIGREF0-A. Grover'S Algorithm-ref">Fig. 1</a> . One can clearly see, that measuring this state now yields the desired basis statex with a substantially higher probability (in fact, here even with 100% probability, since |1| 2 = 1) while all other basis states are measured with a substantially lower probability (in fact, here even with 0% probability, since |0| 2 = 0). Considering that the actual function f was only evaluated once (when applying the oracle) and not 2 n times, this constitutes a promising advantage over classical approaches. </p>
+                
+            
+                
+                    <p tabindex="0">In order to make that work, it is imperative that particularly Steps 2 and 3 are properly applied. They form a so-called Grover iteration and may need to be applied more than once to actually get the best probabilities. </p>
+                
+            
+                
+                    <p tabindex="0">However, the optimal number of iterations actually depends on the number of desired states and the number of total states. Selecting a non-ideal number of iterations could negatively affect the desired probabilities and, in the worst case, lead to random measurement results. Furthermore, note that the application of these steps does not always guarantee a 100% probability of finding the desired element despite an optimal number of iterations. </p>
+                
+            
+        
+            <h2 id="section-body-4" tabindex="0">B. Probability Of Measuring Target States </h2>
+            
+            
+            
+                
+                    <p tabindex="0">The probability of measuring the desired states (and, hence, their distinctiveness from the remaining states) after a certain number of Grover iterations depends on the angle between |ψ 0 ⟩ and |S⟩ and, therefore, on the number of desired states c and total states N . This angle θ is given by Since every Grover iteration mirrors the current state vector first around |S⟩ and, then, around |ψ 0 ⟩, the angle θ first evolves to −θ and, then, to 3θ. The resulting vector contains a component parallel to |S⟩ of sin ((2g + 1)θ) after g iterations. Since the probability of measuring a state is the square of its amplitude, the probability of measuring one of the desired states, which are the basis states contained in |S⟩, after g iterations is given by </p>
+                
+            
+                
+                    <p tabindex="0">θ = arcsin ( c N ). </p>
+                
+            
+                
+                    <p tabindex="0">P = sin 2 ((2g + 1)θ) = sin 2 ((2g + 1) arcsin ( c/N )). </p>
+                
+            
+                
+                    <p tabindex="0">Hereby, the probability of measuring any basis state within one of both two groups of states-the desired or remaining ones-is always evenly distributed. However, not every probability of measuring desired elements is achievable because the number of Grover iterations is an integer. </p>
+                
+            
+                
+                    <p tabindex="0">Furthermore, if P goes to zero, every state except the desired ones will be measured, which also allows a distinction of both groups. </p>
+                
+            
+                
+                    
+                    
+                    <!--Do not display image (display content instead)-->
+                    
+                        <!--placeholder image-->
+                        
+                            <!--figure with alt-text-->
+                            
+                                <figure id="fig-4-1" class="paper__figure" tabindex="0">
+                                    <img src="data:image/png;base64,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" alt="" style="width:100%">
+                                    <figcaption class="paper__figure-caption">Fig. 2: Probability of measuring a desired state in dependence of the number of iterations when 1 respectively 15 out of 64 basis states represent desired states.</figcaption>
+                                </figure>
+                            
+                        
+                    
+                
+            
+                
+                    <p tabindex="0">Example 5. The probability of measuring a desired state is denoted in <a href="#FIGREF1"  id="FIGREF1-B. Probability Of Measuring Target States-ref">Fig. 2</a> for two examples with different numbers of desired states. In the case of 1 desired state, the sinus function has a much lower frequency compared to the 15 desired states case-highlighting the importance of choosing a suitable number of Grover iterations. This becomes even clearer when considering the probabilities for the g = 5 Grover iterations: While for the 1 desired state case the probability is almost 100%, it is close to 50% in the other case. </p>
+                
+            
+        
+            <h2 id="section-body-5" tabindex="0">Iii. Equivalence Checking Using Quantum Computing </h2>
+            
+            
+            
+                
+                    <p tabindex="0">This section briefly reviews classical equivalence checking and motivates how this task could be tackled using quantum computing. </p>
+                
+            
+        
+            <h2 id="section-body-6" tabindex="0">A. Classical Equivalence Checking </h2>
+            
+            
+            
+                
+                    <p tabindex="0">Designing classical circuits and systems is a tedious process that requires multiple levels of abstraction, as well as several non-trivial steps to implement a given functionality in silicon. Starting from a mathematical definition, the specification is synthesized using the actually available hardware gates and potentially optimized until it is finally realized on a physical computer chip. Through all those steps, it is of utmost importance to ensure that the initial specification is always met and the functionality is never altered-using equivalence checking. </p>
+                
+            
+                
+                    
+                    
+                    <!--Do not display image (display content instead)-->
+                    
+                        <!--placeholder image-->
+                        
+                            <!--figure with alt-text-->
+                            
+                                <figure id="fig-6-1" class="paper__figure" tabindex="0">
+                                    <img src="data:image/png;base64,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" alt="" style="width:100%">
+                                    <figcaption class="paper__figure-caption">Fig. 3: Miter configuration with two non-equivalent circuits.</figcaption>
+                                </figure>
+                            
+                        
+                    
+                
+            
+                
+                    <p tabindex="0">The problem of equivalence checking is simple to formulate: Given two circuits designed to realize the same target, it shall x 0 Fig. 3 : Miter configuration with two non-equivalent circuits. </p>
+                
+            
+                
+                    <p tabindex="0">x 1 x 2 x 3 x 4 x 0 x 1 x 2 x 3 x 4 Circuit A Circuit B Miter </p>
+                
+            
+                
+                    <p tabindex="0">be proven whether they realize the same functionality or not. In the latter case, the non-equivalence shall be witnessed by a counter example, i.e., an input pattern which, when applied to both circuits, yields different output values. Over the past decades, numerous approaches have been proposed to tackle that problem <a href="#BIBREF0"  id="BIBREF0-A. Classical Equivalence Checking-ref">[1]</a> - <a href="#BIBREF7"  id="BIBREF7-A. Classical Equivalence Checking-ref">[8]</a> -methods based on Binary Decision Diagrams (BDDs, <a href="#BIBREF2"  id="BIBREF2-A. Classical Equivalence Checking-ref">[3]</a> ) or Boolean satisfiability (SAT, <a href="#BIBREF3"  id="BIBREF3-A. Classical Equivalence Checking-ref">[4]</a> , <a href="#BIBREF6"  id="BIBREF6-A. Classical Equivalence Checking-ref">[7]</a> ) are two prominent examples. Furthermore, also "unusual" approaches are frequently evaluated (see, e.g., <a href="#BIBREF20"  id="BIBREF20-A. Classical Equivalence Checking-ref">[21]</a> , <a href="#BIBREF21"  id="BIBREF21-A. Classical Equivalence Checking-ref">[22]</a> ). </p>
+                
+            
+                
+                    <p tabindex="0">In this work, we consider the problem through the miter structure as described in <a href="#BIBREF7"  id="BIBREF7-A. Classical Equivalence Checking-ref">[8]</a> . Here, two circuits to be checked are applied with the same primary inputs. Then, for each pair of to-be-equal output bits, an exclusive-OR (XOR) gate is applied-evaluating to 1 if the two outputs generate different values (which only happens in the case of non-equivalence). By OR-ing the outputs of all these XOR gates, eventually an indicator results that shows whether both circuits are equivalent. Then, the goal is to determine an input assignment so that this indicator evaluates to 1 (providing a counter example that shows non-equivalence) or to prove that no such assignment exists (proving equivalence). </p>
+                
+            
+                
+                    <p tabindex="0">Example 6. Fig. 3 shows two circuits A and B, each with five inputs and two outputs. Although they are obviously different since they comprise different gates-Circuit A comprises an XOR gate, while Circuit B comprises an OR gate-it is unclear whether they nevertheless realize the same functionality. For that, the miter structure is applied and the two output bits of both circuits are connected with two XOR and one OR gate. Then, to check for equivalence, an input assignment must be determined so that the indicator evaluates to 1 (or to prove that such assignment does not exist). Here, this is the case, e.g., for the input assignment 11111. </p>
+                
+            
+        
+            <h2 id="section-body-7" tabindex="0">B. Using Grover'S Algorithm For Equivalence Checking </h2>
+            
+            
+            
+                
+                    
+                    
+                    <!--Do not display image (display content instead)-->
+                    
+                        <!--placeholder image-->
+                        
+                            <!--figure with alt-text-->
+                            
+                                <figure id="fig-7-1" class="paper__figure" tabindex="0">
+                                    <img src="data:image/png;base64,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" alt="" style="width:100%">
+                                    <figcaption class="paper__figure-caption">Fig. 4: Probability distributions of 32 states for different numbers of iterations with the four counter examples ”11011”, ”11101”, ”11110”, and ”11111”.</figcaption>
+                                </figure>
+                            
+                        
+                    
+                
+            
+                
+                    <p tabindex="0">At first glance, the equivalence checking problem reviewed above seems very similar to the database search problem reviewed in Section II. In both cases, a function f exists (a database or the miter-formulation) for which anx shall be determined so that f evaluates to f (x) = 1. Accordingly, using Grover's algorithm for this problem could be considered a good first approach. To this end, only the oracle (representing the actual problem; thus far: database search, now: equivalence checking) needs to be replaced. This can be done using a reversible circuit synthesis method (e.g., as proposed in <a href="#BIBREF14"  id="BIBREF14-B. Using Grover'S Algorithm For Equivalence Checking-ref">[15]</a> - <a href="#BIBREF19"  id="BIBREF19-B. Using Grover'S Algorithm For Equivalence Checking-ref">[20]</a> ). Fig. 4 : Probability distributions of 32 states for different numbers of iterations with the four counter examples "11011", "11101", "11110", and "11111". </p>
+                
+            
+                
+                    <p tabindex="0">If "properly" executed, a Grover approach should generate a quantum state in which all desired basis states representing counter examples have a much larger amplitude (and, hence, probability of getting measured) than the remaining states. Since a separation of these groups into as distinct as possible subsets is desired, a "proper" number of Grover iterations should be chosen. However, determining an optimal number of iterations requires information on the number of elements that one is looking for. Since it is part of the actual problem to find out if and how many such elements exist, this information is not accessible. </p>
+                
+            
+                
+                    <p tabindex="0">Therefore, both the equivalence and the non-equivalence cases can be boiled down to choosing a suitable number of Groover iterations and postprocessing the resulting measurements. For the former, every number of iterations leads to the same superposition outcome and, therefore, a procedure must be defined to distinguish the desired outcome from cases in which there are actual counter examples, but an unfortunate number of Grover iterations has mistakenly led to a superposition. For the latter, the number of Grover iterations leading to the most distinguishable separation of the counter examples from the remaining states must be determined. </p>
+                
+            
+        
+            <h2 id="section-body-8" tabindex="0">Iv. Handling The Unknown Number Of Grover Iterations </h2>
+            
+            
+            
+                
+                    <p tabindex="0">This section describes the proposed approach on how to apply Grover's algorithm to the equivalence checking problem without knowing the number of counter examples. To this end, we first cover conceptually how the proposed approach can detect non-equivalence and equivalence. Afterwards, we provide a description of a possible implementation of this concept. </p>
+                
+            
+        
+            <h2 id="section-body-9" tabindex="0">A. Concept </h2>
+            
+            
+            
+                
+                    <p tabindex="0">In the case of non-equivalence, Grover's algorithm isolates the basis states that represent counter examples from the remaining ones by obtaining different probabilities for the two groups of being measured. </p>
+                
+            
+                
+                    <p tabindex="0">For that, a suitable number of Grover iterations must be chosen and, for that, almost every number of iterations is sufficient to isolate the basis states of counter examples from the ones of the remaining states. Although different numbers lead to different probabilities of measuring the counter examples' basis states, they are clearly distinguishable for any number of iterations-except for two corner cases, which are described later. Hereby, it is irrelevant which of the two groups of basis states has a larger probability of being measured, since by simulating the circuits with one of the basis states as input, the group containing the counter examples can be determined. Nevertheless, it is desired to derive a number of Grover iterations that allows us to achieve the most distinct isolation of the basis states of counter examples from the remaining ones. </p>
+                
+            
+                
+                    <p tabindex="0">In the case of equivalence, it is different, since any number of Grover iterations will result in an equal superposition of all basis states. However, since any number of iterations should lead to a difference in the probabilities of basis states in the case of non-equivalence, the argumentation can be turned around: If none of the evaluated numbers of Grover iterations has led to a distinction between basis states, it can be deduced that the considered equivalence checking instance is actually equivalent. </p>
+                
+            
+                
+                    <p tabindex="0">Example 7. Fig. 4 illustrates this approach for the case shown in Fig. 3 with four counter examples out of 32 basis states. Applying either one or three Grover iterations isolates the desired states sufficiently enough to distinguish them from the remaining ones (indicated by the dashed line in Fig. 4) . However, the isolation is significantly more distinct for one iteration compared to three. If both circuits were equivalent, the distributions would have led to an equal superposition regardless of the number of iterations as illustrated in purple. </p>
+                
+            
+                
+                    <p tabindex="0">Nevertheless, for some combinations of the number of counter examples c and the total number of states N , the two groups of basis states cannot be separated-leading to the two previously mentioned corner cases in which no isolation of the basis states of the counter examples from the ones of the remaining states is possible. </p>
+                
+            
+                
+                    <p tabindex="0">First, if c N = 0.5, the angle θ of the state vector in <a href="#FIGREF0"  id="FIGREF0-A. Concept-ref">Fig. 1a</a> alternates between 45°and 135°. For both angles, an equal superposition of all basis states is obtained. Second, if the sum of probabilities of measuring the basis states representing counter examples is equal to c N (due to an unfortunately chosen number of iterations), a superposition is generated as well. </p>
+                
+            
+        
+            <h2 id="section-body-10" tabindex="0">B. Implementation </h2>
+            
+            
+            
+                
+                    <p tabindex="0">Direct access and evaluation of the probabilities of the basis states as described above only works conceptually or when simulators such as <a href="#BIBREF22"  id="BIBREF22-B. Implementation-ref">[23]</a> - <a href="#BIBREF27"  id="BIBREF27-B. Implementation-ref">[28]</a> are used to determine the corresponding amplitudes of a state. </p>
+                
+            
+                
+                    <p tabindex="0">When executing on a real device, only the measurement outcome is accessible instead of the actual probabilities of the measurement outcome. To approximate those probabilities as closely as possible, a given quantum circuit is usually executed several times-the so-called shots. </p>
+                
+            
+                
+                    <p tabindex="0">Due to this approximation, the proposed approach must be extended. Although, on a conceptual level any number of Grover iterations could be used since all numbers lead to a difference between the two categories of basis statesunfortunate numbers lead to a less distinct one. If the difference is now too small, the approximation effect could compromise the result when its induced inaccuracy is larger. </p>
+                
+            
+                
+                    <p tabindex="0">Example 8. When evaluating the same equivalence checking instance as in Example 7 with 256 shots instead of directly accessing the basis state probabilities, exemplary results for one and three Grover iterations are shown in <a href="#FIGREF3"  id="FIGREF3-B. Implementation-ref">Fig. 5</a> . In contrast to before, the result after three applied iterations is not as distinct to evaluate, as the counter example state "11110" was measured only four times more often than "00001". Applying one Grover iteration yields a clearer separation of the basis states representing counter examples from the remaining ones (which is, again, indicated by the dashed line in Fig. 4 ). </p>
+                
+            
+                
+                    
+                    
+                    <!--Do not display image (display content instead)-->
+                    
+                        <!--placeholder image-->
+                        
+                            <!--figure with alt-text-->
+                            
+                                <figure id="fig-10-1" class="paper__figure" tabindex="0">
+                                    <img src="data:image/png;base64,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" alt="" style="width:100%">
+                                    <figcaption class="paper__figure-caption">Fig. 5: Distribution of number of measurements when executed with 256 shots.</figcaption>
+                                </figure>
+                            
+                        
+                    
+                
+            
+                
+                    <p tabindex="0">Therefore, a number of Grover iterations leading to an isolation of the counter examples' basis states from the remaining ones as distinct as possible is required. For this purpose, an approach based on <a href="#BIBREF28"  id="BIBREF28-B. Implementation-ref">[29]</a> is designed that tests different numbers of iterations until the isolation of a group of basis states is reached. It starts with the number of Grover iterations for the case of one counter example and verifies if the measurements of two groups of basis states are sufficiently distinct. </p>
+                
+            
+                
+                    <p tabindex="0">To decide this, the basis states are sorted with respect to how often they are measured from largest to smallest. Starting with the most frequently measured basis state, it is compared to the subsequent state. To determine whether their difference is large enough to mark the division between the two groups of states, an adjustable parameter ϕ is used to define a threshold, which is reached if </p>
+                
+            
+                
+                    <p tabindex="0">1 − m i+1 m i > ϕ </p>
+                
+            
+                
+                    <p tabindex="0">with m i being the number of measurements of the basis state with index i. This procedure (which is shown in Algorithm 1) is repeated until either the equation validates to true-dividing all basis states into the two groups representing counter examples and the remaining states-or all measured states (or at most N 2 states) have been iterated. The latter case could indicate two things: Either all measured states are counter examples or the combination of the used ϕ value and Grover iteration number was not suitable. This can be differentiated by comparing the number of measured states |m|. If |m| ≤ N/2, all measured states are counter examples, because one of the two separated groups of states must be smaller or equal to N/2, but the threshold was not exceeded. Therefore, the probability of measuring one group of basis states was so large that no other states were measured. If |m| > N/2 is greater, the number of Grover iterations is reduced by one. If one group of states is found to be sufficiently distinct, the circuits must be simulated with one of the basis states as input to determine which of the two groups represents the counter examples. If none of the tested numbers of Grover iterations yields a sufficient distinction between two groups of basis states, the circuits are assumed to be equivalent, as no counter examples could be found. g ← g − 1 13: end while 14: return equivalence This approach enables the solving of equivalence checking problems with quantum computing for arbitrary instances-if equivalent or not and with how many counter examples for the latter. </p>
+                
+            
+                
+                    <p tabindex="0">for i = 1, 2, . . . , N 2 do 7: if 1 − mi+1 mi > ϕ or i == |m| </p>
+                
+            
+        
+            <h2 id="section-body-11" tabindex="0">V. Experimental Evaluation </h2>
+            
+            
+            
+                
+                    <p tabindex="0">The approach described in Section IV-B has been evaluated with equivalence checking instances from 6 to 9 bits comprising a different number of counter examples c. To this end, Algorithm 1 has been implemented in Python on top of Qiskit 0.42.0 1 . For the quantum circuit execution itself, a simulator has been used, and each problem instance is run 10 times (each executed with 8 • N shots and N being the total number of possible states) to accommodate the probabilistic nature of this quantum computing approach. In this section, we present the obtained results and, afterwards, discuss the correspondingly obtained insights towards a working concept of a quantum computing methodology for equivalence checking. </p>
+                
+            
+        
+            <h2 id="section-body-12" tabindex="0">A. Results </h2>
+            
+            
+            
+                
+                    <p tabindex="0">As described above, the objective is to reach a state in which either of the two groups of basis states have a sufficiently distinct probability (in case the circuits are non-equivalent) or all basis states have the same probability (in case the circuits are equivalent). Although conceptually any difference between the amplitudes of two basis states indicates that one is a counter example and the other one is not, this difference is blurred by the number of shots that approximate the underlying basis states' amplitudes. Therefore, in the proposed approach, a threshold parameter ϕ is used to define how distinct the measurement outcomes of two basis states must be to be sufficiently distinct (cf. Section IV-B). Obviously, the value of ϕ has a substantial impact on the applicability of the proposed approach. Consequently, we exhaustively evaluated its influence. To this end, all instances (including equivalent circuits as well as circuits with different numbers of counter examples) have been checked with the proposed approachusing values for ϕ from 0.1 to 0.9. The results are summarized in <a href="#TABREF1"  id="TABREF1-A. Results-ref">Table I</a> . Here, the columns indicate the number of inputs, the number of counter examples (0 indicates that the circuits are equivalent), as well as the different values of ϕ. The table entries "-" indicate that the circuits have been classified falsely (classifying non-equivalent circuits as equivalent or vice versa), while the numbers indicate a correct classification and express the necessary accumulated number of Grover iterations (thus, lower values are desirable). </p>
+                
+            
+                
+                    <p tabindex="0">The results clearly show the influence of the threshold parameter ϕ: While for a small value of ϕ = 0.1 only a few instances could be verified, this changes with an increasing value. For ϕ between 0.3 and 0.7, all problem instances were correctly verified. However, there is a turning point: When ϕ becomes too large, the non-equivalent instances are falsely classified since the threshold cannot properly distinguish the probabilities of basis states that represent counter examples from the remaining ones anymore. In addition to that, a larger value for ϕ potentially also leads to a larger number of required Grover iterations. </p>
+                
+            
+                
+                    <p tabindex="0">Hence, ϕ offers a trade-off between the reliability of the results and the required number of Grover iterations. In general, ϕ should be as small as possible but large enough to detect actual differences in the measurement outcomes. With this knowledge, we can now formulate a working concept of how equivalence checking problems can potentially be solved using quantum computing in the future. </p>
+                
+            
+        
+            <h2 id="section-body-13" tabindex="0">B. Resulting Working Concept </h2>
+            
+            
+            
+                
+                    <p tabindex="0">Based on all the discussions from above, a potential future workflow for equivalence checking using quantum computing would basically be composed of two main steps. </p>
+                
+            
+                
+                    <p tabindex="0">First, the corresponding equivalence checking instance needs to be translated into a quantum computing formalism. That is, the problem needs to be encoded and, then, inserted as an oracle into Grover's algorithm. To this end, existing tools for reversible circuit synthesis (such as, e.g., <a href="#BIBREF14"  id="BIBREF14-B. Resulting Working Concept-ref">[15]</a> - <a href="#BIBREF19"  id="BIBREF19-B. Resulting Working Concept-ref">[20]</a> ) can be utilized. Although the paradigms are substantially different, from a verification engineer's perspective, this is quite similar to the conventional equivalence checking flow (where the problem instance also needs to be, e.g., represented as decision diagram <a href="#BIBREF2"  id="BIBREF2-B. Resulting Working Concept-ref">[3]</a> ) or encoded as SAT instance <a href="#BIBREF3"  id="BIBREF3-B. Resulting Working Concept-ref">[4]</a> , <a href="#BIBREF6"  id="BIBREF6-B. Resulting Working Concept-ref">[7]</a> . </p>
+                
+            
+                
+                    <p tabindex="0">Afterwards, the resulting quantum circuit has to be executed following Algorithm 1 and the obtained results have to be interpreted. Due to the probabilistic nature of quantum computing, this is very different now, since, e.g., a number of measurements is used to approximate the underlying quantum state. In the evaluations summarized above, 8 • N shots were sufficient for this. </p>
+                
+            
+                
+                    <p tabindex="0">However, as discussed, using a proper ϕ greatly affects the probability of determining the correct result. The value should be as small as possible because larger values result in more Grover iterations and, thus, computational effort. The above evaluations indicate that ϕ = 0.3 is promising. In conclusion, finding no counter examples with this setting is a strong indication that both circuits are equivalent. Otherwise (if both circuits are not equivalent), the proposed approach delivers counter examples with a high probability, which then can simply be confirmed by simulating the circuits with the corresponding inputs. </p>
+                
+            
+                
+                    <p tabindex="0">To further improve the proposed realization, the number of shots used can be increased. This results in a measurement outcome distribution that better mimics the underlying quantum states-allowing for a smaller ϕ value that causes less computational effort since fewer Grover iterations are executed. </p>
+                
+            
+                
+                    <p tabindex="0">Overall, the approach provides the verification engineer with a working concept to carry out equivalence checking with quantum computing. However, its performance is influenced by two factors: the number of used shots and the value of the parameter ϕ. While explicitly evaluating these influences and deriving associated probabilities for the correctness of the determined result-either empirically or theoreticallyremains for future work, the resulting concept provides a promising alternative to potentially tackle the verification gap in the future using quantum computing. </p>
+                
+            
+        
+            <h2 id="section-body-14" tabindex="0">Vi. Conclusion </h2>
+            
+            
+            
+                
+                    <p tabindex="0">Equivalence checking of classical circuits is an important task in the semiconductor industry. Although various solutions have been proposed in recent decades to address the steadily increasing complexity, there still exists a verification gap, since the circuit design grows faster than the ability to efficiently verify it. In this work, a different approach based on quantum computers has been explored. To this end, the equivalence checking problem has been formulated using the miter structure and encoded as an oracle to be suitable for Grover's algorithm as a first straightforward approach. But this leads to pitfalls like the improper number of Grover iterations. The proposed approach provides a solution to this problem by iteratively evaluating different numbers of Grover iterations until a sufficiently distinct separation between possible counter examples and remaining states is determined. Experimental evaluations confirmed the applicability of the approach: For all evaluation problem instances, the correct solutioneither equivalence or non-equivalence with the corresponding counter examples-could be determined. By this, this work provides a working concept that was able to classify all considered problem instances correctly. Future work includes a more thorough empirical and/or theoretical evaluation-particular on the effect of the number of shots and the parameter ϕ. </p>
+                
+            
+        
+            <h2 id="section-body-15" tabindex="0">SECTION </h2>
+            
+            
+            
+                
+                    <p tabindex="0">The proposed method has been integrated into the MQT ProblemSolver that is part of the Munich Quantum Toolkit (MQT;[30]) and publicly available at https://github.com/cda-tum/mqt-problemsolver. </p>
+                
+            
+        
+            <h2 id="section-body-16" tabindex="0">SECTION </h2>
+            
+            
+            
+                
+                    
+                    
+                    <!--Do not display image (display content instead)-->
+                    
+                        <!--Table with textract html-->
+                        
+                            <div id="fig-16-1" class="paper__figure" tabindex="0">
+                                <table class="paper__figure">
+	<caption class="paper__figure-caption">TABLE I: Obtained results.</caption>
+	<tr>
+		<th scope="col" class="paper__figure">Input Bits</th>
+		<th scope="col" class="paper__figure">Counter Examples</th>
+		<th scope="col" class="paper__figure">0.1</th>
+		<th scope="col" class="paper__figure">0.3</th>
+		<th scope="col" class="paper__figure">0.5</th>
+		<th scope="col" class="paper__figure">0.7</th>
+		<th scope="col" class="paper__figure">0.9</th>
+	</tr>
+	<tr>
+		<td class="paper__figure">6</td>
+		<td class="paper__figure">0</td>
+		<td class="paper__figure">-</td>
+		<td class="paper__figure">15</td>
+		<td class="paper__figure">15</td>
+		<td class="paper__figure">15</td>
+		<td class="paper__figure">15</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">6</td>
+		<td class="paper__figure">1</td>
+		<td class="paper__figure">5</td>
+		<td class="paper__figure">5</td>
+		<td class="paper__figure">5</td>
+		<td class="paper__figure">5</td>
+		<td class="paper__figure">5</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">6</td>
+		<td class="paper__figure">3</td>
+		<td class="paper__figure">-</td>
+		<td class="paper__figure">5</td>
+		<td class="paper__figure">5</td>
+		<td class="paper__figure">5</td>
+		<td class="paper__figure">9</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">6</td>
+		<td class="paper__figure">6</td>
+		<td class="paper__figure">-</td>
+		<td class="paper__figure">12</td>
+		<td class="paper__figure">12</td>
+		<td class="paper__figure">12</td>
+		<td class="paper__figure">14</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">6</td>
+		<td class="paper__figure">13</td>
+		<td class="paper__figure">-</td>
+		<td class="paper__figure">5</td>
+		<td class="paper__figure">5</td>
+		<td class="paper__figure">5</td>
+		<td class="paper__figure">-</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">7</td>
+		<td class="paper__figure">0</td>
+		<td class="paper__figure">-</td>
+		<td class="paper__figure">36</td>
+		<td class="paper__figure">36</td>
+		<td class="paper__figure">36</td>
+		<td class="paper__figure">36</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">7</td>
+		<td class="paper__figure">1</td>
+		<td class="paper__figure">8</td>
+		<td class="paper__figure">8</td>
+		<td class="paper__figure">8</td>
+		<td class="paper__figure">8</td>
+		<td class="paper__figure">8</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">7</td>
+		<td class="paper__figure">6</td>
+		<td class="paper__figure">-</td>
+		<td class="paper__figure">8</td>
+		<td class="paper__figure">8</td>
+		<td class="paper__figure">17</td>
+		<td class="paper__figure">30</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">7</td>
+		<td class="paper__figure">13</td>
+		<td class="paper__figure">-</td>
+		<td class="paper__figure">8</td>
+		<td class="paper__figure">9</td>
+		<td class="paper__figure">15</td>
+		<td class="paper__figure">15</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">7</td>
+		<td class="paper__figure">26</td>
+		<td class="paper__figure">-</td>
+		<td class="paper__figure">8</td>
+		<td class="paper__figure">8</td>
+		<td class="paper__figure">8</td>
+		<td class="paper__figure">8</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">8</td>
+		<td class="paper__figure">0</td>
+		<td class="paper__figure">-</td>
+		<td class="paper__figure">78</td>
+		<td class="paper__figure">78</td>
+		<td class="paper__figure">78</td>
+		<td class="paper__figure">78</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">8</td>
+		<td class="paper__figure">3</td>
+		<td class="paper__figure">-</td>
+		<td class="paper__figure">12</td>
+		<td class="paper__figure">12</td>
+		<td class="paper__figure">12</td>
+		<td class="paper__figure">23</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">8</td>
+		<td class="paper__figure">13</td>
+		<td class="paper__figure">-</td>
+		<td class="paper__figure">12</td>
+		<td class="paper__figure">12</td>
+		<td class="paper__figure">22</td>
+		<td class="paper__figure">23</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">8</td>
+		<td class="paper__figure">26</td>
+		<td class="paper__figure">-</td>
+		<td class="paper__figure">12</td>
+		<td class="paper__figure">12</td>
+		<td class="paper__figure">12</td>
+		<td class="paper__figure">12</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">8</td>
+		<td class="paper__figure">51</td>
+		<td class="paper__figure">-</td>
+		<td class="paper__figure">12</td>
+		<td class="paper__figure">20</td>
+		<td class="paper__figure">23</td>
+		<td class="paper__figure">50</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">9</td>
+		<td class="paper__figure">0</td>
+		<td class="paper__figure">-</td>
+		<td class="paper__figure">153</td>
+		<td class="paper__figure">153</td>
+		<td class="paper__figure">153</td>
+		<td class="paper__figure">153</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">9</td>
+		<td class="paper__figure">5</td>
+		<td class="paper__figure">-</td>
+		<td class="paper__figure">17</td>
+		<td class="paper__figure">17</td>
+		<td class="paper__figure">17</td>
+		<td class="paper__figure">80</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">9</td>
+		<td class="paper__figure">26</td>
+		<td class="paper__figure">-</td>
+		<td class="paper__figure">17</td>
+		<td class="paper__figure">17</td>
+		<td class="paper__figure">17</td>
+		<td class="paper__figure">17</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">9</td>
+		<td class="paper__figure">51</td>
+		<td class="paper__figure">-</td>
+		<td class="paper__figure">17</td>
+		<td class="paper__figure">17</td>
+		<td class="paper__figure">17</td>
+		<td class="paper__figure">17</td>
+	</tr>
+	<tr>
+		<td class="paper__figure">9</td>
+		<td class="paper__figure">102</td>
+		<td class="paper__figure">-</td>
+		<td class="paper__figure">48</td>
+		<td class="paper__figure">48</td>
+		<td class="paper__figure">48</td>
+		<td class="paper__figure">-</td>
+	</tr>
+</table>
+
+                            </div>
+                        <!--Table with content-->
+                        
+                    <!--Display figures and tables as images-->
+                    
+                
+            
+        
+
+        <footer>
+            
+                <h2 id="paper-references" tabindex="0">References</h2>
+                <ul tabindex="0">
+                    
+                        <li id="BIBREF0">A. Kuehlmann, V. Paruthi, F. Krohm, and M. Ganai, "Robust Boolean reasoning for equivalence checking and functional property verification," IEEE Trans. on CAD of Integrated Circuits and Systems, 2002.<br/><i><a href="#BIBREF0-I. Introduction-ref">I. Introduction</a>, <a href="#BIBREF0-A. Classical Equivalence Checking-ref">A. Classical Equivalence Checking</a></i></li>
+                    
+                        <li id="BIBREF1">P. Molitor and J. Mohnke, "Equivalence checking of digital circuits: fundamentals, principles, methods." Springer Science & Business Media, 2007.</li>
+                    
+                        <li id="BIBREF10">A. Peruzzo et al., "A variational eigenvalue solver on a photonic quantum processor," Nature Communications, 2014.<br/><i><a href="#BIBREF10-I. Introduction-ref">I. Introduction</a></i></li>
+                    
+                        <li id="BIBREF11">C. Zoufal, A. Lucchi, and S. Woerner, "Quantum Gen- erative Adversarial Networks for learning and loading random distributions," npj Quantum Information, 2019.<br/><i><a href="#BIBREF11-I. Introduction-ref">I. Introduction</a></i></li>
+                    
+                        <li id="BIBREF12">S. Harwood et al., "Formulating and Solving Routing Problems on Quantum Computers," IEEE Transactions on Quantum Engineering, 2021.<br/><i><a href="#BIBREF12-I. Introduction-ref">I. Introduction</a></i></li>
+                    
+                        <li id="BIBREF13">L. K. Grover, "A fast quantum mechanical algorithm for database search," 1996. arXiv: quant-ph/9605043.<br/><i><a href="#BIBREF13-I. Introduction-ref">I. Introduction</a>, <a href="#BIBREF13-A. Grover'S Algorithm-ref">A. Grover'S Algorithm</a></i></li>
+                    
+                        <li id="BIBREF14">R. Seidel et al., "Automatic generation of Grover quantum oracles for arbitrary data structures," Quantum Science and Technology, 2023.<br/><i><a href="#BIBREF14-A. Grover'S Algorithm-ref">A. Grover'S Algorithm</a>, <a href="#BIBREF14-B. Using Grover'S Algorithm For Equivalence Checking-ref">B. Using Grover'S Algorithm For Equivalence Checking</a>, <a href="#BIBREF14-B. Resulting Working Concept-ref">B. Resulting Working Concept</a></i></li>
+                    
+                        <li id="BIBREF15">R. Wille and R. Drechsler, "BDD-based synthesis of reversible logic for large functions," in Design Automa- tion Conf., 2009.</li>
+                    
+                        <li id="BIBREF16">Z. Zilic, K. Radecka, and A. Kazamiphur, "Reversible circuit technology mapping from non-reversible speci- fications," in Design, Automation and Test in Europe, 2007.</li>
+                    
+                        <li id="BIBREF17">Y. Sanaee and G. W. Dueck, "ESOP-based Toffoli network generation with transformations," in Int'l Symp. on Multi-Valued Logic, 2010.</li>
+                    
+                        <li id="BIBREF18">A. Zulehner and R. Wille, "One-pass design of re- versible circuits: Combining embedding and synthesis for reversible logic," IEEE Trans. on CAD of Integrated Circuits and Systems, 2018.</li>
+                    
+                        <li id="BIBREF19">A. Zulehner and R. Wille, "Make It Reversible: Efficient Embedding of Non-reversible Functions," in Design, Automation and Test in Europe, 2017.<br/><i><a href="#BIBREF19-A. Grover'S Algorithm-ref">A. Grover'S Algorithm</a>, <a href="#BIBREF19-B. Using Grover'S Algorithm For Equivalence Checking-ref">B. Using Grover'S Algorithm For Equivalence Checking</a>, <a href="#BIBREF19-B. Resulting Working Concept-ref">B. Resulting Working Concept</a></i></li>
+                    
+                        <li id="BIBREF2">R. E. Bryant, "Graph-based algorithms for Boolean function manipulation," IEEE Trans. on Computers, 1986.<br/><i><a href="#BIBREF2-A. Classical Equivalence Checking-ref">A. Classical Equivalence Checking</a>, <a href="#BIBREF2-B. Resulting Working Concept-ref">B. Resulting Working Concept</a></i></li>
+                    
+                        <li id="BIBREF20">L. Amaru, P.-E. Gaillardon, R. Wille, and G. D. Micheli, "Exploiting Inherent Characteristics of Reversible Cir- cuits for Faster Combinational Equivalence Checking," in Design, Automation and Test in Europe, 2016.<br/><i><a href="#BIBREF20-A. Classical Equivalence Checking-ref">A. Classical Equivalence Checking</a></i></li>
+                    
+                        <li id="BIBREF21">L. Burgholzer and R. Wille, "Exploiting Reversible Computing for Verification: Potential, Possible Paths, and Consequences," in Asia and South Pacific Design Automation Conf., 2023.<br/><i><a href="#BIBREF21-A. Classical Equivalence Checking-ref">A. Classical Equivalence Checking</a></i></li>
+                    
+                        <li id="BIBREF22">A. Zulehner and R. Wille, "Advanced simulation of quantum computations," IEEE Trans. on CAD of In- tegrated Circuits and Systems, 2019.<br/><i><a href="#BIBREF22-B. Implementation-ref">B. Implementation</a></i></li>
+                    
+                        <li id="BIBREF23">G. G. Guerreschi, J. Hogaboam, F. Baruffa, and N. P. D. Sawaya, "Intel quantum simulator: A cloud-ready high- performance simulator of quantum circuits," Quantum Science and Technology, 2020.</li>
+                    
+                        <li id="BIBREF24">S. Hillmich, I. L. Markov, and R. Wille, "Just like the real thing: Fast weak simulation of quantum computa- tion," in Design Automation Conf., 2020.</li>
+                    
+                        <li id="BIBREF25">T. Vincent et al., "Jet: Fast quantum circuit simulations with parallel task-based tensor-network contraction," 2021. arXiv: 2107.09793.</li>
+                    
+                        <li id="BIBREF26">B. Villalonga et al., "A flexible high-performance sim- ulator for verifying and benchmarking quantum circuits implemented on real hardware," npj Quantum Informa- tion, 2019.</li>
+                    
+                        <li id="BIBREF27">A. Zulehner and R. Wille, "Matrix-Vector vs. Matrix- Matrix Multiplication: Potential in DD-based Simula- tion of Quantum Computations," in Design, Automation and Test in Europe, 2019.<br/><i><a href="#BIBREF27-B. Implementation-ref">B. Implementation</a></i></li>
+                    
+                        <li id="BIBREF28">C. Zalka, "A Grover-based quantum search of optimal order for an unknown number of marked elements," 1999. arXiv: quant-ph/9902049.<br/><i><a href="#BIBREF28-B. Implementation-ref">B. Implementation</a></i></li>
+                    
+                        <li id="BIBREF29">R. Wille et al., "The MQT Handbook: A Summary of Design Automation Tools and Software for Quantum Computing," in Int'l Conf. on Quantum Software, 2024. arXiv: 2405.17543, A live version of this document is available at <a href="https://mqt.readthedocs.io." target="_blank">https://mqt.readthedocs.io.</a></li>
+                    
+                        <li id="BIBREF3">A. Biere, "Symbolic model checking using SAT proce- dures instead of BDDs," in Design Automation Conf., 1999.<br/><i><a href="#BIBREF3-A. Classical Equivalence Checking-ref">A. Classical Equivalence Checking</a>, <a href="#BIBREF3-B. Resulting Working Concept-ref">B. Resulting Working Concept</a></i></li>
+                    
+                        <li id="BIBREF4">J. Marques-Silva and T. Glass, "Combinational equiva- lence checking using satisfiability and recursive learn- ing," in Design, Automation and Test in Europe, 1999.</li>
+                    
+                        <li id="BIBREF5">A. Biere and W. Kunz, "SAT and ATPG: Boolean engines for formal hardware verification," in Int'l Conf. on CAD, 2002.</li>
+                    
+                        <li id="BIBREF6">S. Disch and C. Scholl, "Combinational equivalence checking using incremental SAT solving, output or- dering, and resets," in Asia and South Pacific Design Automation Conf., 2007.<br/><i><a href="#BIBREF6-A. Classical Equivalence Checking-ref">A. Classical Equivalence Checking</a>, <a href="#BIBREF6-B. Resulting Working Concept-ref">B. Resulting Working Concept</a></i></li>
+                    
+                        <li id="BIBREF7">D. Brand, "Verification of large synthesized designs," in Int'l Conf. on CAD, 1993.<br/><i><a href="#BIBREF7-I. Introduction-ref">I. Introduction</a>, <a href="#BIBREF7-A. Classical Equivalence Checking-ref">A. Classical Equivalence Checking</a></i></li>
+                    
+                        <li id="BIBREF8">M. A. Nielsen and I. L. Chuang, "Quantum Computa- tion and Quantum Information." Cambridge University Press, 2010.<br/><i><a href="#BIBREF8-I. Introduction-ref">I. Introduction</a></i></li>
+                    
+                        <li id="BIBREF9">N. Stamatopoulos et al., "Option pricing using quantum computers," Quantum, 2020.<br/><i><a href="#BIBREF9-I. Introduction-ref">I. Introduction</a></i></li>
+                    
+                </ul>
+            
+        </footer>
+    </div>
+</article>
+</main>
+
+
+        <footer class="app__footer">
+
+            <div class="app__signup-form">
+                <!--[if lte IE 8]>
+                   <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                <![endif]-->
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                <script>
+                    hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5910970",
+                        formId: "05456229-75ba-4c85-99c0-33e2cbe8d1df"
+                    });
+                </script>
+            </div>
+
+            <div class="content text-center">
+                &copy; <a href="https://allenai.org">The Allen Institute for Artificial Intelligence (AI2)</a> - All Rights Reserved<br>
+                <a href="https://allenai.org/privacy-policy.html">Privacy Policy</a>
+                | <a href="https://allenai.org/terms.html">Terms of Use</a>
+            </div>
+        </footer>
+        <script src="https://stats.allenai.org/init.min.js" data-app-name="a11y2" async></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="/static/a11y.js"></script>
+        
+        <script type="text/javascript">
+            window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+            heap.load("2424575119");
+        </script>
+        
+    </body>
+</html>

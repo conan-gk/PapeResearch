@@ -2,12 +2,19 @@ const express = require('express');
 const router = express.Router();
 require('dotenv').config();
 
+// Define a threshold for input size (in bytes) to switch to GPT-4
+const SIZE_THRESHOLD = 70000; // Adjust this value based on your requirements
+
 // POST route: handle chat requests from the frontend
 router.post('/', async (req, res) => {
   const { messages, paper } = req.body; // Receive messages and paper content from the frontend
 
-  // Log received data size
-  console.log('Received payload size:', Buffer.byteLength(JSON.stringify(req.body)), 'bytes');
+  // Calculate payload size
+  const payloadSize = Buffer.byteLength(JSON.stringify(req.body));
+  console.log('Received payload size:', payloadSize, 'bytes');
+
+  // Determine which model to use based on the payload size
+  const model = payloadSize > SIZE_THRESHOLD ? 'gpt-4o' : 'gpt-4o-mini'; // Use GPT-4 if input size is too large
 
   try {
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
@@ -17,7 +24,7 @@ router.post('/', async (req, res) => {
         Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
       },
       body: JSON.stringify({
-        model: 'gpt-4o-mini',
+        model: model, // Use the determined model
         messages: [
           {
             role: 'system',

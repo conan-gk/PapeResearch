@@ -503,6 +503,11 @@ a:hover {
   border: 1px solid #d9dadb
 }
 
+.paper__figure:hover {
+  background-color: #afe0e22f;
+}
+
+
 .paper__figure .paper__figure-caption {
   padding-top: 12px;
   padding-bottom: 12px;

@@ -6,7 +6,7 @@ const Paper = require('./models/Paper');
 
 
 // MongoDB connection
-mongoose.connect('mongodb://127.0.0.1:27017/mern-test', {
+mongoose.connect('mongodb+srv://test:ZKQ3EgH3OuvKo5YN@mern-paper.lg9xb.mongodb.net/?retryWrites=true&w=majority&appName=MERN-paper', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {

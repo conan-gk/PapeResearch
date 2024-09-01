@@ -46,7 +46,7 @@ function FigurePanel({ figures, visibleFigureIds }) {
                             />
                         </div>
 
-                        {/* Figre rendered in panel */}
+                        {/* Figure rendered in panel */}
                         <img 
                             src={figure.imgSrc} 
                             alt={figure.imgAlt}
@@ -55,7 +55,8 @@ function FigurePanel({ figures, visibleFigureIds }) {
                     </div>
                 ))
             ) : (
-                <p>No figures pinned or in view.</p> // If no figures are visible
+                // <p>No figures pinned or in view.</p> 
+                <p></p>
             )}
         </div>
     );

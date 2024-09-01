@@ -111,4 +111,44 @@ router.get('/:id', async (req, res) => {
     }
 });
 
+// Route to get paper content without images for OpenAI interaction
+router.get('/:id/without-images', async (req, res) => {
+    try {
+        console.log("Fetching paper without images");
+        const paper = await Paper.findById(req.params.id);
+
+        const filePath = path.join(__dirname, '../papers', paper.htmlFilePath);
+        fs.readFile(filePath, 'utf8', (err, htmlContent) => {
+            if (err) {
+                console.error("Error reading HTML file:", err);
+                return res.status(500).json({ message: 'Unable to read HTML file' });
+            }
+
+            const $ = cheerio.load(htmlContent);
+
+            const toc = $('nav.paper__nav').html(); 
+            $('nav.paper__nav').remove();         
+
+            $('header.app__header').remove();                                 
+            $('.content.text-center').remove();                                    
+            $('li.paper__meta-item a[href*="semanticscholar.org"]').parent().remove(); 
+            $('a[href^="mailto:accessibility@semanticscholar.org"]').parent().remove();
+            $('div.app__signup-form').remove();                                       
+            $('figure img').remove();  // Only remove images, keep the figure captions
+
+            const updatedContent = $.html();
+
+            // Respond with the updated HTML content without images
+            res.json({
+                paperContent: updatedContent,
+                tableOfContents: toc
+            });
+        });
+
+    } catch (err) {
+        console.error("Error fetching paper:", err);
+        res.status(500).json({ message: 'Unable to serve HTML' });
+    }
+});
+
 module.exports = router;

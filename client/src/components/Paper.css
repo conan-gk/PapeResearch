@@ -91,7 +91,7 @@
 }
 
 .figure-container p {
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
     line-height: 1.1;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -121,15 +121,20 @@
     height: 25px;
     font-size: 14pt;
     position: absolute;
-    top: -5px;
-    right: -5px;
+    top: -2px;
+    right: -2px;
     transform: rotate(45deg);
     text-align: center;
     vertical-align: middle;
     line-height: 25px;
     cursor: pointer;
+    display: none;
 }
 
 .pin-icon i {
     transition: transform 0.2s ease-in-out;
+}
+
+.figure-container:hover .pin-icon {
+    display: block;
 }
