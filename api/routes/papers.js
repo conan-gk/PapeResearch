@@ -19,6 +19,29 @@ router.get('/', async (req, res) => {
     }
 });
 
+
+// Search papers based on title, authors, or journal
+router.get('/search', async (req, res) => {
+    const { query } = req.query; // Get the search query from request
+
+    try {
+        // Search for papers that match the title, authors, or journal
+        const papers = await Paper.find({
+            $or: [
+                { title: { $regex: query, $options: 'i' } }, // Case-insensitive search
+                { authors: { $regex: query, $options: 'i' } },
+                { journal: { $regex: query, $options: 'i' } }
+            ]
+        });
+
+        res.json(papers); // Send the matching papers as response
+    } catch (err) {
+        console.error("Error fetching search results:", err);
+        res.status(500).json({ message: 'Error fetching search results' });
+    }
+});
+
+
 // Route to get a specific paper by ID and modify the HTML content for HTML file to be served
 router.get('/:id', async (req, res) => {
     try {

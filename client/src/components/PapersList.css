@@ -1,0 +1,115 @@
+/* PapersList.css */
+
+.paperlist-wrapper{
+    border-top: #e5e7eb;
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+
+.papers-list a{
+    font-size: 1.15rem;
+    text-decoration-line: none;
+}
+.papers-list{
+    padding-top: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.papers-list h1, .subheading {
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.subheading {
+    text-align: center;
+    color: #555;
+    margin-bottom: 25px;
+    font-size: 15.5px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.paper-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.paper-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    /* padding-bottom: 0; */
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 155px; /* Fixed height to keep all cards the same size */
+    width: 386.662px;
+}
+
+.paper-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.paper-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #09090B;
+    text-decoration: none;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.paper-title:hover {
+    text-decoration: underline;
+}
+
+.paper-authors {
+    font-size: 13px;
+    color: #555;
+    margin: 5px 0;
+    /* margin-top: 0; */
+    /* margin-bottom: 0; */
+    flex-grow: 1;
+}
+
+.paper-year {
+    font-size: 13px;
+    color: #888;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* ------------------------------------------------------ */
+
+.search-bar {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
